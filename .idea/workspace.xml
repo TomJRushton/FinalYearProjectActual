@@ -1,18 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c725c84-8794-464a-8755-e3ba6eeeeb33" name="Default Changelist" comment="" />
+    <list default="true" id="9c725c84-8794-464a-8755-e3ba6eeeeb33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/controls/charts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controls/controls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controls/style.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/csv/TomsDataFile1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/csv/profiledata.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-controls/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-loading/dataSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/js/phoneDataTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deckgl-layers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deckgl-layers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/taxi.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YOvRJVA4FtIAoT7cx2badYwFIj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src\tests" />
+      <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src\controls" />
+      <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src\data" />
+      <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src" />
+      <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\data" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
@@ -47,7 +98,56 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582826446225</updated>
+      <workItem from="1588170037875" duration="1463000" />
+      <workItem from="1588171577105" duration="741000" />
+      <workItem from="1588173795598" duration="5349000" />
+      <workItem from="1588184763888" duration="5648000" />
+      <workItem from="1588271071866" duration="2518000" />
+      <workItem from="1588334859389" duration="907000" />
+      <workItem from="1588336340869" duration="22275000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#ESLint" timestamp="1588178198534">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#ESLint/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588178198534" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588187043312">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588187043312" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1588170954450">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588170954450" />
+    <state width="1493" height="88" key="GridCell.Tab.0.bottom" timestamp="1588173621015">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="88" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588173621015" />
+    <state width="1493" height="88" key="GridCell.Tab.0.center" timestamp="1588173621014">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="88" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588173621014" />
+    <state width="1493" height="88" key="GridCell.Tab.0.left" timestamp="1588173621014">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="88" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588173621014" />
+    <state width="1493" height="88" key="GridCell.Tab.0.right" timestamp="1588173621015">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="88" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588173621015" />
+    <state x="2501" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1588336350480">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588184819677" />
+    <state x="2501" y="298" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588336350480" />
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1588185448080">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588185448080" />
   </component>
 </project>
