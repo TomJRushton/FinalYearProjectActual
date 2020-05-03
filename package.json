@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@deck.gl/aggregation-layers": "^8.1.4",
+    "@deck.gl/extensions": "latest",
+    "@deck.gl/layers": "latest",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
+    "deck.gl": "^8.1.4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
-    "deck.gl": "latest"
+    "react-vis": "^1.11.7"
   },
   "scripts": {
     "start": "react-scripts start",

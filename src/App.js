@@ -29,20 +29,20 @@ const INITIAL_VIEW_STATE = {
   longitude: -1.470085,
   latitude: 53.381130,
   zoom: 11,
-  minZoom: 2,
-  maxZoom: 20,
+  minZoom: 2,  maxZoom: 20,
   pitch: 20,
   bearing: 330
 };
 
 export default class App extends Component {
   state = {
-    data: null,
+    data: '',
     hover: {
       x: 0,
       y: 0,
       hoveredObject: null
     },
+    //age: null,
     points: [],
     settings: Object.keys(HEXAGON_CONTROLS).reduce(
         (accu, key) => ({
@@ -66,7 +66,7 @@ export default class App extends Component {
     this._processData(phoneData);
   }
 
-//make a process data that proccess the data depending on whats entered
+//make a process data that proccess the data depending on whats entered (dont need to?)
     _processData = (importedData) => {
         //importedData = phoneData;
         // const data = taxiData.reduce(
@@ -110,36 +110,54 @@ export default class App extends Component {
         //       dropoffObj: {}
         //     }
         // );
-        console.log(this.state.data);
+        //console.log(this.state.data);
         const data = importedData.reduce(
             (accu, curr) => {
-                const pickupHour = new Date(curr.p).getUTCHours();
+                const pickupHour = new Date(curr.p).getUTCHours(),
+                    age = Number(curr.Age),
+                    pickupLongitude = Number(curr.Longitude),
+                    pickupLatitude = Number(curr.Latitude),
+                    spendingCategory = Number(curr.SpendCat),
+                    residentCategory = Number(curr.ResidentCat),
+                    networkFlag = Number(curr.NetworkFlag),
+                    appleOrAndroid = Number(curr.AppleAndorid),
+                    networkProvider = Number(curr.NetworkProvider),
+                    prePaidOrPostPaid = Number(curr.PrePaidPostPaid),
+                    activeOrPassive = Number(curr.ActivePassive),
+                    voiceData = Number(curr.VoiceData);
 
-                const pickupLongitude = Number(curr.Longitude);
-                const pickupLatitude = Number(curr.Latitude);
 
                 if (!isNaN(pickupLongitude) && !isNaN(pickupLatitude)) {
                     accu.points.push({
                         position: [pickupLongitude, pickupLatitude],
-                        hour: pickupHour,
+                        age: age,
+                        spendCategory: spendingCategory,
+                        residentCategory: residentCategory,
+                        networkFlag: networkFlag,
+                        appleOrAndroid: appleOrAndroid,
+                        networkProvider: networkProvider,
+                        prePaidOrPostPaid: prePaidOrPostPaid,
+                        activeOrPassive: activeOrPassive,
+                        voiceData: voiceData,
+                        //hour: pickupHour,
                         pickup: true
                     });
                 }
-                const prevPickups = accu.pickupObj[pickupHour] || 0;
+                //const prevPickups = accu.pickupObj[pickupHour] || 0;
 
-                accu.pickupObj[pickupHour] = prevPickups + 1;
+                //accu.pickupObj[pickupHour] = prevPickups + 1;
 
                 return accu;
             },
             {
                 points: [],
-                pickupObj: {},
+                //pickupObj: {},
             }
         );
-        data.pickups = Object.entries(data.pickupObj).map(([hour, count]) => {
-            return { hour: Number(hour), x: Number(hour) + 0.5, y: count };
-        });
-        //console.log(data);
+        // data.pickups = Object.entries(data.pickupObj).map(([hour, count]) => {
+        //     return { hour: Number(hour), x: Number(hour) + 0.5, y: count };
+        // });
+        console.log(data);
 
         this.setState(data);
 
@@ -173,11 +191,10 @@ export default class App extends Component {
 
   onStyleChange = style => {
     this.setState({ style });
-    //console.log(style);
   };
 
   onDataChange = data => {
-      console.log(data);
+      //console.log(data);
       if(data === 'phoneDataTest'){
           this._processData(phoneDataTest);
       }
@@ -231,18 +248,20 @@ export default class App extends Component {
               propTypes={HEXAGON_CONTROLS}
               onChange={settings => this._updateLayerSettings(settings)}
           />
-          {/*<DataControls*/}
-          {/*    settings={this.state.dataSettings}*/}
-          {/*    propTypes={DATA_CONTROLS}*/}
-          {/*    onChange={dataSettings => this._updateDataLayerSettings(dataSettings)}/>*/}
+          <DataControls
+              dataSettings={this.state.dataSettings}
+              propTypes={DATA_CONTROLS}
+              onChange={dataSettings => this._updateDataLayerSettings(dataSettings)}/>
           <DeckGL
               {...this.state.settings}
+              {...this.state.dataSettings}
               onWebGLInitialized={this._onWebGLInitialize}
               layers={renderLayers({
                 data: this.state.points,
                 hour: this.state.highlightedHour || this.state.selectedHour,
                 onHover: hover => this._onHover(hover),
-                settings: this.state.settings
+                settings: this.state.settings,
+                dataSettings: this.state.dataSettings
               })}
               initialViewState={INITIAL_VIEW_STATE}
               viewState={viewState}
@@ -250,10 +269,10 @@ export default class App extends Component {
           >
               <StaticMap mapStyle={this.state.style}  mapboxApiAccessToken={"pk.eyJ1IjoiYWJsZWthbmUxMjMiLCJhIjoiY2s2bTczbHNvMGwxNjNscnIxMXg4ODU4aCJ9.luI_mSXhJ3LKcCcFanpXJg"}/>
           </DeckGL>
-          <Charts {...this.state}
-                  highlight={hour => this._onHighlight(hour)}
-                  select={hour => this._onSelect(hour)}
-          />
+          {/*<Charts {...this.state}*/}
+          {/*        highlight={hour => this._onHighlight(hour)}*/}
+          {/*        select={hour => this._onSelect(hour)}*/}
+          {/*/>*/}
         </div>
     );
   }

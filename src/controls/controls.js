@@ -57,12 +57,20 @@ export const HEXAGON_CONTROLS = {
         min: 1,
         max: 5
     },
+    opacity: {
+        displayName: 'Opacity',
+        type: 'range',
+        value: 1,
+        step: 0.01,
+        min: 0,
+        max: 1
+    }
 };
 
 export const DATA_CONTROLS = {
     showMales:{
         displayName: 'Male',
-        type: 'booelan',
+        type: 'boolean',
         value: true
     },
     showFemale:{
@@ -70,22 +78,80 @@ export const DATA_CONTROLS = {
         type: 'boolean',
         value: true
     },
+    lowerAgeLimit:{
+        displayName: 'Lower Age Limit',
+        type: 'range',
+        value: 1,
+        step: 1,
+        min: 0,
+        max: 100
+    },
+    upperAgeLimit:{
+        displayName: 'Upper Age Limit',
+        type: 'range',
+        value: 99,
+        step: 1,
+        min: 0,
+        max: 100
+    },
+    spendCategory:{
+        displayName: 'Spend Category',
+        type: 'range',
+        value: 1,
+        step: 1,
+        min: 1,
+        max: 5
+    },
+    AppleAndorid: {
+        displayName: 'Resident Category',
+        type: 'range',
+        value: 1,
+        step: 1,
+        min: 1,
+        max: 3
+    },
+    NetworkFlag: {
+        displayName: 'Network Flag',
+        type: 'range',
+        value: 1,
+        step: 1,
+        min: 1,
+        max: 3
+    },
+    NetworkProvider: {
+        displayName: 'Network Provider',
+        type: 'range',
+        value: 1,
+        step: 1,
+        min: 1,
+        max: 5
+    },
+    PrePaidPostPaid: {
+        displayName: 'Pre-paid / Post-paid',
+        type: 'range',
+        value: 1,
+        step: 1,
+        min: 1,
+        max: 2
+    },
+    ActivePassive: {
+        displayName: 'Active / Passive',
+        type: 'range',
+        value: 1,
+        step: 1,
+        min: 1,
+        max: 2
+    },
+    VoiceData: {
+        displayName: 'Voice Data',
+        type: 'range',
+        value: 1,
+        step: 1,
+        min: 1,
+        max: 2
+    }
+
 };
-// export const SCATTERPLOT_CONTROLS = {
-//     showScatterplot: {
-//         displayName: 'Show Scatterplot',
-//         type: 'boolean',
-//         value: true
-//     },
-//     radiusScale: {
-//         displayName: 'Scatterplot Radius',
-//         type: 'range',
-//         value: 30,
-//         step: 10,
-//         min: 10,
-//         max: 200
-//     }
-// };
 
 const IMPORTED_DATA = [
     {label: 'Phone Data', value: 'phoneData'},
@@ -154,43 +220,43 @@ export function MapStylePicker({ currentStyle, onStyleChange }) {
 
 
 export class DataControls extends Component{
-    // _onValueChange(settingName, newValue) {
-    //     const { dataSettings } = this.props;
-    //     // Only update if we have a confirmed change
-    //     if (dataSettings[settingName] !== newValue) {
-    //         // Create a new object so that shallow-equal detects a change
-    //         const newSettings = {
-    //             ...this.props.dataSettings,
-    //             [settingName]: newValue
-    //         };
-    //
-    //         this.props.onChange(newSettings);
-    //     }
-    // }
+    _onValueChange(settingName, newValue) {
+        const { dataSettings } = this.props;
+        // Only update if we have a confirmed change
+        if (dataSettings[settingName] !== newValue) {
+            // Create a new object so that shallow-equal detects a change
+            const newSettings = {
+                ...this.props.dataSettings,
+                [settingName]: newValue
+            };
 
-    // render() {
-    //     const { title, dataSettings, propTypes = {} } = this.props;
-    //
-    //     return (
-    //         <div className="data-controls" style={dataControl}>
-    //             {title && <h4>{title}</h4>}
-    //             {Object.keys(dataSettings).map(key => (
-    //                 <div key={key}>
-    //                     <label>{propTypes[key].displayName}</label>
-    //                     <div style={{ display: 'inline-block', float: 'right' }}>
-    //                         {dataSettings[key]}
-    //                     </div>
-    //                     <Setting
-    //                         settingName={key}
-    //                         value={dataSettings[key]}
-    //                         propType={propTypes[key]}
-    //                         onChange={this._onValueChange.bind(this)}
-    //                     />
-    //                 </div>
-    //             ))}
-    //         </div>
-    //     );
-    // }
+            this.props.onChange(newSettings);
+        }
+    }
+
+    render() {
+        const { title, dataSettings, propTypes = {} } = this.props;
+
+        return (
+            <div className="data-controls" style={dataControl}>
+                {title && <h4>{title}</h4>}
+                {Object.keys(dataSettings).map(key => (
+                    <div key={key}>
+                        <label>{propTypes[key].displayName}</label>
+                        <div style={{ display: 'inline-block', float: 'right' }}>
+                            {dataSettings[key]}
+                        </div>
+                        <Setting
+                            settingName={key}
+                            value={dataSettings[key]}
+                            propType={propTypes[key]}
+                            onChange={this._onValueChange.bind(this)}
+                        />
+                    </div>
+                ))}
+            </div>
+        );
+    }
 }
 
 export class LayerControls extends Component {
@@ -238,7 +304,7 @@ const Setting = props => {
     if (propType && propType.type) {
         switch (propType.type) {
             case 'range':
-                return <Slider {...props} />;
+                return <Slider  {...props} />;
             case 'boolean':
                 return <Checkbox {...props} />;
             default:
@@ -264,7 +330,8 @@ const Checkbox = ({ settingName, value, onChange }) => {
 
 const Slider = ({ settingName, value, propType, onChange }) => {
     const { max = 100 } = propType;
-
+    const { min = 0 } = propType;
+    const { step = 1 } = propType;
     return (
         <div key={settingName}>
             <div className="input-group">
@@ -272,9 +339,9 @@ const Slider = ({ settingName, value, propType, onChange }) => {
                     <input
                         type="range"
                         id={settingName}
-                        min={0}
+                        min={min}
                         max={max}
-                        step={max / 100}
+                        step={step}
                         value={value}
                         onChange={e => onChange(settingName, Number(e.target.value))}
                     />

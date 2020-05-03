@@ -31,8 +31,8 @@ export const dataControl = {
     lineHeight: 1.833,
     width: 200,
     position: 'absolute',
-    top: '400px',
-    right: '20px',
+    top: '80px',
+    left: '20px',
     padding: '20px',
     zIndex: 100,
     background: 'white'

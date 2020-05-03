@@ -737,11 +737,6 @@ const format = {
     PrePaidPostPaid: String,
     ActivePassive: String,
     VoiceData: String,
-    //dropoff_longitude: Number,
-    //dropoff_latitude: Number,
-    // fare_amount: Number,
-    // tip_amount: Number,
-    // total_amount: Number,
 };
 
 module.exports = dataRows.map(r => r.split(',').reduce((prev, curr, i) => {

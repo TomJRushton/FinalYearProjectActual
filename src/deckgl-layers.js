@@ -1,4 +1,8 @@
-import { ScatterplotLayer, HexagonLayer, HeatmapLayer } from 'deck.gl';
+import {ScatterplotLayer} from '@deck.gl/layers';
+import {HexagonLayer, HeatmapLayer } from '@deck.gl/aggregation-layers';
+//import {HexagonLayer, HeatmapLayer, ScatterplotLayer } from 'deck.gl';
+import { DataFilterExtension } from '@deck.gl/extensions';
+//new DataFilterExtension({filterSize: 1, fp64: true});
 
 const PICKUP_COLOR = [240, 19, 12];
 const DROPOFF_COLOR = [243, 185, 72];
@@ -23,22 +27,30 @@ const LIGHT_SETTINGS = {
 
 const elevationRange = [0, 1000];
 
-export function renderLayers(props) {
-    const { data, hour, onHover, settings } = props;
-    const filteredData = hour === null ? data : data.filter(d => d.hour === hour);
 
+export function renderLayers(props) {
+    const { data, hour, onHover, settings, dataSettings } = props;
+    //const filteredData = hour === null ? data : data.filter(d => d.hour === hour);
+    //console.log(data);
     return [
         settings.showScatterplot &&
         new ScatterplotLayer({
             id: 'scatterplot',
+            //data: filteredData,
+            data,
             getPosition: d => d.position,
             getColor: d => (d.pickup ? PICKUP_COLOR : DROPOFF_COLOR),
+            getFilterValue: d => [d.age, d.spendCategory],
+            filterRange: [
+                [dataSettings.lowerAgeLimit, dataSettings.upperAgeLimit],
+                [dataSettings.spendCategory, dataSettings.spendCategory]
+            ],
+            extensions: [new DataFilterExtension({filterSize: 2})],
             getRadius: d => 5,
             opacity: 0.5,
             pickable: true,
             radiusMinPixels: 0.25,
             radiusMaxPixels: 30,
-            data: filteredData,
             onHover,
             ...settings
         }),
@@ -53,7 +65,8 @@ export function renderLayers(props) {
             lightSettings: LIGHT_SETTINGS,
             opacity: 0.8,
             pickable: true,
-            data: filteredData,
+            //data: filteredData,
+            data,
             onHover,
             ...settings
         }),
@@ -62,10 +75,14 @@ export function renderLayers(props) {
             id: 'heatmapActual',
             colorRange: HEATMAP_COLORS,
             getPosition: d => d.position,
+            getFilterValue: d => d.age,
+            filterRange: [dataSettings.lowerAgeLimit, dataSettings.upperAgeLimit],
+            extensions: [new DataFilterExtension({filterSize: 1})],
             lightSettings: LIGHT_SETTINGS,
             opacity: 0.8,
             pickable: true,
-            data: filteredData,
+            //data: filteredData,
+            data,
             onHover,
             ...settings
         })
