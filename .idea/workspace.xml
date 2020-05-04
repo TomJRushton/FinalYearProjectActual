@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c725c84-8794-464a-8755-e3ba6eeeeb33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/npm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controls/controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controls/controls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controls/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controls/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/js/phoneData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/js/phoneData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deckgl-layers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deckgl-layers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +97,7 @@
       <workItem from="1588271071866" duration="2518000" />
       <workItem from="1588334859389" duration="907000" />
       <workItem from="1588336340869" duration="41338000" />
-      <workItem from="1588511701877" duration="15166000" />
+      <workItem from="1588511701877" duration="16318000" />
     </task>
     <servers />
   </component>
