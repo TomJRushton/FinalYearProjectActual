@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { mapStylePicker, layerControl, dataPicker, dataControl } from './style';
+//import layersAvaliable from '../App';
+import 'rc-slider/assets/index.css';
+import Slider from 'rc-slider';
 
 export const HEXAGON_CONTROLS = {
     showHexagon: {
-        displayName: 'Show Hexagon',
+        displayName: 'Show Hexagon (Not compatible w/ data filters)',
         type: 'boolean',
         value: false
     },
@@ -53,9 +56,9 @@ export const HEXAGON_CONTROLS = {
         displayName: 'Heat Intensity',
         type: 'range',
         value: 1,
-        step: 1,
-        min: 1,
-        max: 5
+        step: 0.05,
+        min: 0,
+        max: 1
     },
     opacity: {
         displayName: 'Opacity',
@@ -66,7 +69,6 @@ export const HEXAGON_CONTROLS = {
         max: 1
     }
 };
-
 export const DATA_CONTROLS = {
     showMales:{
         displayName: 'Male',
@@ -94,69 +96,106 @@ export const DATA_CONTROLS = {
         min: 0,
         max: 100
     },
-    spendCategory:{
-        displayName: 'Spend Category',
+    lowerSpendCategory:{
+        displayName: 'Lower Spend Category Limit',
         type: 'range',
+        // value1: 1,
+        // value2: 50,
         value: 1,
         step: 1,
         min: 1,
         max: 5
     },
-    AppleAndorid: {
-        displayName: 'Resident Category',
+    upperSpendCategory:{
+        displayName: 'Upper Spend Category Limit',
         type: 'range',
-        value: 1,
-        step: 1,
-        min: 1,
-        max: 3
-    },
-    NetworkFlag: {
-        displayName: 'Network Flag',
-        type: 'range',
-        value: 1,
-        step: 1,
-        min: 1,
-        max: 3
-    },
-    NetworkProvider: {
-        displayName: 'Network Provider',
-        type: 'range',
-        value: 1,
+        // value1: 1,
+        // value2: 50,
+        value: 5,
         step: 1,
         min: 1,
         max: 5
     },
-    PrePaidPostPaid: {
-        displayName: 'Pre-paid / Post-paid',
-        type: 'range',
-        value: 1,
-        step: 1,
-        min: 1,
-        max: 2
-    },
-    ActivePassive: {
-        displayName: 'Active / Passive',
-        type: 'range',
-        value: 1,
-        step: 1,
-        min: 1,
-        max: 2
-    },
-    VoiceData: {
-        displayName: 'Voice Data',
-        type: 'range',
-        value: 1,
-        step: 1,
-        min: 1,
-        max: 2
-    }
+    // residentCategory: {
+    //     displayName: 'Resident Category',
+    //     type: 'range',
+    //     value: 1,
+    //     step: 1,
+    //     min: 1,
+    //     max: 3
+    // },
+    // appleAndorid: {
+    //     displayName: 'Android Or Apple',
+    //     type: 'range',
+    //     value: 1,
+    //     step: 1,
+    //     min: 1,
+    //     max: 3
+    // },
+    // networkFlag: {
+    //     displayName: 'Network Flag',
+    //     type: 'range',
+    //     value: 1,
+    //     step: 1,
+    //     min: 1,
+    //     max: 3
+    // },
+    // networkProvider: {
+    //     displayName: 'Network Provider',
+    //     type: 'range',
+    //     value: 1,
+    //     step: 1,
+    //     min: 1,
+    //     max: 5
+    // },
+    // prePaidPostPaid: {
+    //     displayName: 'Pre-paid / Post-paid',
+    //     type: 'range',
+    //     value: 1,
+    //     step: 1,
+    //     min: 1,
+    //     max: 2
+    // },
+    // activePassive: {
+    //     displayName: 'Active / Passive',
+    //     type: 'range',
+    //     value: 1,
+    //     step: 1,
+    //     min: 1,
+    //     max: 2
+    // },
+    // voiceData: {
+    //     displayName: 'Voice Data',
+    //     type: 'range',
+    //     value: 1,
+    //     step: 1,
+    //     min: 1,
+    //     max: 2
+    // }
 
 };
+export const layersAvaliable = ['phoneData', 'phoneDataTest'];
 
-const IMPORTED_DATA = [
+//pass uploaded data into this
+export const avaliableDatalist = [
     {label: 'Phone Data', value: 'phoneData'},
     {label: 'Phone Test', value: 'phoneDataTest'}
-    ];
+     ];
+
+export function recalculateLayers(){
+    for(let i = 0; i < layersAvaliable.length; i++){
+        console.log(layersAvaliable[i]);
+        avaliableDatalist[i] = {label: layersAvaliable[i], value: layersAvaliable[i]}
+    }
+}
+console.log(avaliableDatalist);
+
+// const IMPORTED_DATA = [
+//     {label: 'Phone Data', value: 'phoneData'},
+//     {label: 'Phone Test', value: 'phoneDataTest'}
+//     ];
+
+const IMPORTED_DATA = avaliableDatalist;
 export function DataPicker({ currentData, onDataChange}){
     return (
         <select
@@ -255,6 +294,7 @@ export class DataControls extends Component{
                     </div>
                 ))}
             </div>
+
         );
     }
 }
@@ -301,10 +341,14 @@ export class LayerControls extends Component {
 
 const Setting = props => {
     const { propType } = props;
+   // console.log(propType);
     if (propType && propType.type) {
         switch (propType.type) {
             case 'range':
-                return <Slider  {...props} />;
+                return <Sliders  {...props}/>;
+            // case 'doubleRange':
+            //     console.log({...props});
+            //     return <DoubleSlider {...props}/>
             case 'boolean':
                 return <Checkbox {...props} />;
             default:
@@ -328,7 +372,7 @@ const Checkbox = ({ settingName, value, onChange }) => {
     );
 };
 
-const Slider = ({ settingName, value, propType, onChange }) => {
+const Sliders = ({ settingName, value, propType, onChange }) => {
     const { max = 100 } = propType;
     const { min = 0 } = propType;
     const { step = 1 } = propType;
@@ -348,5 +392,49 @@ const Slider = ({ settingName, value, propType, onChange }) => {
                 </div>
             </div>
         </div>
+
     );
 };
+
+// export class CustomizedRange extends Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             lowerBound: 20,
+//             upperBound: 40,
+//             value: [20, 40],
+//         };
+//     }
+//     onSliderChange = (value) => {
+//         console.log(value);
+//         this.setState({
+//             value,
+//         });
+//     }
+//     render() {
+//         return (
+//             <div className="data-controls" style={dataControl}>
+//                 <Range allowCross={false} value={this.state.value} onChange={this.onSliderChange} />
+//             </div>
+//         );
+//     }
+// }
+//
+// const Range = Slider.Range;
+//
+// const DoubleSlider = ({ settingName, value1, value2, propType, onChange }) => {
+//     const { max = 100 } = propType;
+//     const { min = 0 } = propType;
+//     //const { step = 1 } = propType;
+//     console.log(settingName);
+//     console.log(value1,value2);
+//     console.log(propType);
+//     console.log(onChange);
+//     return (
+//         <div key={settingName}>
+//             <div>
+//                 <Range allowCross={false} value={[value1, value2]} onChange={e => onChange(settingName, [Number(e.target.value1), Number(e.target.value2)])} />
+//             </div>
+//         </div>
+//     );
+// };

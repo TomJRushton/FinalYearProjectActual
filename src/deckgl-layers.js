@@ -32,6 +32,15 @@ export function renderLayers(props) {
     const { data, hour, onHover, settings, dataSettings } = props;
     //const filteredData = hour === null ? data : data.filter(d => d.hour === hour);
     //console.log(data);
+    let sexLowerLimit = 1, sexUpperLimit = 2;
+
+    if(dataSettings.showMales === false){
+        sexLowerLimit = 2;
+    }else{sexLowerLimit = 1;}
+    if(dataSettings.showFemale === false){
+        sexUpperLimit = 1;
+    }else{sexUpperLimit = 2;}
+
     return [
         settings.showScatterplot &&
         new ScatterplotLayer({
@@ -40,12 +49,13 @@ export function renderLayers(props) {
             data,
             getPosition: d => d.position,
             getColor: d => (d.pickup ? PICKUP_COLOR : DROPOFF_COLOR),
-            getFilterValue: d => [d.age, d.spendCategory],
+            getFilterValue: d => [d.age, d.spendCategory, d.sex],
             filterRange: [
                 [dataSettings.lowerAgeLimit, dataSettings.upperAgeLimit],
-                [dataSettings.spendCategory, dataSettings.spendCategory]
+                [dataSettings.lowerSpendCategory, dataSettings.upperSpendCategory],
+                [sexLowerLimit, sexUpperLimit]
             ],
-            extensions: [new DataFilterExtension({filterSize: 2})],
+            extensions: [new DataFilterExtension({filterSize: 3})],
             getRadius: d => 5,
             opacity: 0.5,
             pickable: true,
@@ -75,9 +85,13 @@ export function renderLayers(props) {
             id: 'heatmapActual',
             colorRange: HEATMAP_COLORS,
             getPosition: d => d.position,
-            getFilterValue: d => d.age,
-            filterRange: [dataSettings.lowerAgeLimit, dataSettings.upperAgeLimit],
-            extensions: [new DataFilterExtension({filterSize: 1})],
+            getFilterValue: d => [d.age, d.spendCategory, d.sex],
+            filterRange: [
+                [dataSettings.lowerAgeLimit, dataSettings.upperAgeLimit],
+                [dataSettings.lowerSpendCategory, dataSettings.upperSpendCategory],
+                [sexLowerLimit, sexUpperLimit]
+            ],
+            extensions: [new DataFilterExtension({filterSize: 3})],
             lightSettings: LIGHT_SETTINGS,
             opacity: 0.8,
             pickable: true,
