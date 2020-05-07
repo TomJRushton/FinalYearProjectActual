@@ -3,6 +3,9 @@ import { mapStylePicker, layerControl, dataPicker, dataControl } from './style';
 //import layersAvaliable from '../App';
 import 'rc-slider/assets/index.css';
 import Slider from 'rc-slider';
+import phoneData from '../data/js/phoneData'
+import phoneDataTest from '../data/js/phoneDataTest'
+import {layers} from '../App'
 
 export const HEXAGON_CONTROLS = {
     showHexagon: {
@@ -63,10 +66,30 @@ export const HEXAGON_CONTROLS = {
     opacity: {
         displayName: 'Opacity',
         type: 'range',
-        value: 1,
+        value: 0.5,
         step: 0.01,
         min: 0,
         max: 1
+    },
+    show1stAddedLayerScatterplot:{
+        displayName: 'Show 1st Added Layer : Scatterplot',
+        type: 'boolean',
+        value: true
+    },
+    show1stAddedLayerHeatmap:{
+        displayName: 'Show 1st Added Layer : Heatmap',
+        type: 'boolean',
+        value: false
+    },
+    show2ndAddedLayerScatterplot:{
+        displayName: 'Show 2nd Added Layer : Scatterplot',
+        type: 'boolean',
+        value: true
+    },
+    show2ndAddedLayerHeatmap:{
+        displayName: 'Show 2nd Added Layer : Heatmap',
+        type: 'boolean',
+        value: false
     }
 };
 export const DATA_CONTROLS = {
@@ -116,14 +139,23 @@ export const DATA_CONTROLS = {
         min: 1,
         max: 5
     },
-    // residentCategory: {
-    //     displayName: 'Resident Category',
-    //     type: 'range',
-    //     value: 1,
-    //     step: 1,
-    //     min: 1,
-    //     max: 3
-    // },
+    lowerResidentCategory: {
+        displayName: 'Lower Resident Category',
+        type: 'range',
+        value: 1,
+        step: 1,
+        min: 1,
+        max: 3
+    },
+    upperResidentCategory: {
+        displayName: 'Upper Resident Category',
+        type: 'range',
+        value: 3,
+        step: 1,
+        min: 1,
+        max: 3
+    },
+
     // appleAndorid: {
     //     displayName: 'Android Or Apple',
     //     type: 'range',
@@ -174,26 +206,20 @@ export const DATA_CONTROLS = {
     // }
 
 };
-export const layersAvaliable = ['phoneData', 'phoneDataTest'];
+export const layersAvaliable = ['phoneData'];
 
-//pass uploaded data into this
 export const avaliableDatalist = [
-    {label: 'Phone Data', value: 'phoneData'},
-    {label: 'Phone Test', value: 'phoneDataTest'}
+    {label: 'Phone Data', value: 'phoneData', id: phoneData},
      ];
 
 export function recalculateLayers(){
     for(let i = 0; i < layersAvaliable.length; i++){
-        console.log(layersAvaliable[i]);
-        avaliableDatalist[i] = {label: layersAvaliable[i], value: layersAvaliable[i]}
+        avaliableDatalist[i] = {
+            label: layersAvaliable[i],
+            value: layersAvaliable[i],
+            id: layers[i]}
     }
 }
-console.log(avaliableDatalist);
-
-// const IMPORTED_DATA = [
-//     {label: 'Phone Data', value: 'phoneData'},
-//     {label: 'Phone Test', value: 'phoneDataTest'}
-//     ];
 
 const IMPORTED_DATA = avaliableDatalist;
 export function DataPicker({ currentData, onDataChange}){

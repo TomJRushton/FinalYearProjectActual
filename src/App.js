@@ -7,15 +7,15 @@ import {
     HEXAGON_CONTROLS,
     DATA_CONTROLS,
     DataPicker,
-    DataControls
+    DataControls, avaliableDatalist
 } from './controls/controls';
-import {dataPicker, tooltipStyle, uploadButton} from './controls/style';
+import {dataPicker, tooltipStyle, uploadButton1, uploadButton2} from './controls/style';
 import DeckGL from 'deck.gl';
 import { renderLayers } from './deckgl-layers';
 //import FactoryUploadData, {UploadData} from './data-loading/dataImporter';
-import {UploadData} from './data-loading/dataImporter';
-import {DataParser} from "./data-loading/CSVParser";
-import {dataParsing} from './data/dataParser';
+// import {UploadData} from './data-loading/dataImporter';
+// import {DataParser} from "./data-loading/CSVParser";
+import {dataParsing, abstractDataParser} from './data/dataParser';
 import Charts from './controls/charts';
 import {layersAvaliable} from './controls/controls';
 import {recalculateLayers} from './controls/controls'
@@ -29,8 +29,8 @@ import phoneDataTest from './data/js/phoneDataTest'
 import UploadButton from "./data-loading/uploadButton";
 import CSVReader from "react-csv-reader";
 //import phoneDataJson from './data/phoneDataJson'
-console.log(phoneDataTest);
-// export const layersAvaliable = ['phoneData', 'phoneDataTest'];
+//console.log(phoneDataTest);
+export const layers = [phoneData];
 
 const INITIAL_VIEW_STATE = {
   longitude: -1.470085,
@@ -44,13 +44,15 @@ const INITIAL_VIEW_STATE = {
 export default class App extends Component {
   state = {
     data: '',
+    addedLayerData: [],
     hover: {
       x: 0,
       y: 0,
       hoveredObject: null
     },
-    //age: null,
     points: [],
+    firstImportedPoints: [],
+    secondImportedPoints: [],
     settings: Object.keys(HEXAGON_CONTROLS).reduce(
         (accu, key) => ({
           ...accu,
@@ -117,11 +119,11 @@ export default class App extends Component {
         //     }
         // );
         //console.log(this.state.data);
-        console.log(importedData);
+        //console.log(importedData);
         const data = importedData.reduce(
             (accu, curr) => {
 
-                const pickupHour = new Date(curr.p).getUTCHours(),
+                const pickupHour = new Date(curr.PickUpDateTime).getUTCHours(),
                     sex = Number(curr.Sex),
                     age = Number(curr.Age),
                     pickupLongitude = Number(curr.Longitude),
@@ -149,25 +151,25 @@ export default class App extends Component {
                         prePaidOrPostPaid: prePaidOrPostPaid,
                         activeOrPassive: activeOrPassive,
                         voiceData: voiceData,
-                        //hour: pickupHour,
+                        hour: pickupHour,
                         //pickup: true
                     });
                 }
-                //const prevPickups = accu.pickupObj[pickupHour] || 0;
+                const prevPickups = accu.pickupObj[pickupHour] || 0;
 
-                //accu.pickupObj[pickupHour] = prevPickups + 1;
+                accu.pickupObj[pickupHour] = prevPickups + 1;
 
                 return accu;
             },
             {
                 points: [],
-                //pickupObj: {},
+                pickupObj: {},
             }
         );
-        // data.pickups = Object.entries(data.pickupObj).map(([hour, count]) => {
-        //     return { hour: Number(hour), x: Number(hour) + 0.5, y: count };
-        // });
-        console.log(data);
+         data.pickups = Object.entries(data.pickupObj).map(([hour, count]) => {
+             return { hour: Number(hour), x: Number(hour) + 0.5, y: count };
+         });
+        console.log(data.points);
 
         this.setState(data);
 
@@ -241,7 +243,7 @@ export default class App extends Component {
     //     prePaidPostPaid = `Pre-paid / Post-paid : ${object.prePaidOrPostPaid}`,
     //     activePassive = `Active / Passive : ${object.activeOrPassive}`,
     //     voiceData = `Voice Data : ${object.voiceData}`;
-    console.log(label);
+    //console.log(label);
     this.setState({ hover: { x, y, hoveredObject: object, label } });
   }
 
@@ -263,21 +265,48 @@ export default class App extends Component {
   };
 
   onDataChange = data => {
-      //console.log(data);
-      if(data === 'phoneDataTest'){
-          this._processData(phoneDataTest);
-      }
-      if(data === 'phoneData'){
-          this._processData(phoneData);
-      }
+      console.log(data);
       this.setState({data});
+      for(let i = 0; i < avaliableDatalist.length; i++){
+          if(avaliableDatalist[i].value === data){
+              if(avaliableDatalist[i].value === "TomsDataFile1.csv"){
+                  data = avaliableDatalist[i].id;
+                  // console.log(data);
+                  // console.log(this.state.data);
+                  // console.log("test1");
+                  this.setState(dataParsing(data, null))
+                  break;
+              }
+              if(avaliableDatalist[i].value === "2019-01-south-yorkshire-street.csv"){
+                  data = avaliableDatalist[i].id;
+                  console.log(data);
+                  console.log(this.state.data);
+                  console.log("test1");
+                  this.setState(dataParsing(data, null))
+                  break;
+              }
+              console.log("test2");
+              //console.log(this.state.data);
+              data = avaliableDatalist[i].id;
+              //console.log(data);
+              this._processData(data);
+              break;
+          }
+      }
+      // if(data === 'phoneDataTest'){
+      //     this._processData(phoneDataTest);
+      // }
+      // if(data === 'phoneData'){
+      //     this._processData(avaliableDatalist[0].id);
+      // }
+      //console.log(avaliableDatalist[0].id);
+      //const dataToBeProcessed = avaliableDatalist.id;
   };
 
   _onWebGLInitialize = gl => {
     gl.enable(gl.DEPTH_TEST);
     gl.depthFunc(gl.LEQUAL);
   };
-
   _updateLayerSettings(settings) {
     this.setState({ settings });
   }
@@ -285,14 +314,24 @@ export default class App extends Component {
       this.setState({ dataSettings });
   }
 
-  _addNewData(csvData, fileInfo){
-      console.log(csvData, fileInfo);
-      this.setState(dataParsing(csvData, fileInfo));
+  _addFirstNewData(csvData, fileInfo){
+      const parsedData = dataParsing(csvData);
+      //this.setState(dataParsing(csvData, fileInfo));
+      this.setState({firstImportedPoints: parsedData.firstImportedPoints});
+      layers.push(csvData);
       layersAvaliable.push(fileInfo.name);
-      console.log(layersAvaliable);
+      //console.log(avaliableDatalist);
       recalculateLayers();
-      this.onDataChange();
   }
+  _addSecondNewData(csvData, fileInfo){
+      const parsedData = abstractDataParser(csvData);
+      //this.setState(dataParsing(csvData, fileInfo));
+      this.setState({secondImportedPoints: parsedData.secondImportedPoints});
+      layers.push(csvData);
+      layersAvaliable.push(fileInfo.name);
+      //console.log(avaliableDatalist);
+      recalculateLayers();
+    }
 
   render() {
     const papaparseOptions = {
@@ -301,13 +340,13 @@ export default class App extends Component {
       skipEmptyLines: true,
       transformHeader: header => header.toLowerCase().replace(/\W/g, "_")
     };
-    const handleForce = (csvData, fileInfo) => this._addNewData(csvData, fileInfo);
+    const processData = (csvData, fileInfo) => this._addFirstNewData(csvData, fileInfo);
+    const processData2 = (csvData, fileInfo) => this._addSecondNewData(csvData, fileInfo);
     const { viewState, controller = true } = this.props;
     const data = this.state.points;
       if (!data.length) {
       return null;
     }
-
     const { hover, settings } = this.state;
     return (
         <div>
@@ -330,25 +369,23 @@ export default class App extends Component {
               onDataChange={this.onDataChange}
               currentData={this.state.data}
           />
-          {/*<FactoryUploadData>*/}
-          {/*    /!*currentData={this.state.data}*!/*/}
-          {/*    onFileUpload={this._addNewData}*/}
-          {/*</FactoryUploadData>*/}
-          {/*<UploadData onFileUpload={this._addNewData}/>*/}
-          {/*<UploadButton*/}
-          {/*    onUpload={this._addNewData}/>*/}
-          {/*<UploadData onFileUpload={this._addNewData}/>*/}
-          {/*<DataParser*/}
-          {/*    {...console.log('testy')}*/}
-          {/*    onFileLoaded={this._addNewData}/>*/}
-          <div className="container" style={uploadButton}>
+          <div className="container" style={uploadButton1}>
             <CSVReader
                 cssClass="react-csv-input"
-                onFileLoaded={handleForce}
+                onFileLoaded={processData}
                 parserOptions={papaparseOptions}
                 currentData={this.state.data}
                 //onChange={this._onChange()}>
             />
+          </div>
+          <div className="container" style={uploadButton2}>
+            <CSVReader
+                cssClass="react-csv-input"
+                onFileLoaded={processData2}
+                parserOptions={papaparseOptions}
+                currentData={this.state.data}
+                //onChange={this._onChange()}>
+                />
           </div>
           <LayerControls
               settings={this.state.settings}
@@ -363,13 +400,14 @@ export default class App extends Component {
               {...this.state.settings}
               {...this.state.dataSettings}
               onWebGLInitialized={this._onWebGLInitialize}
-              {...console.log(this.state.points)}
               layers={renderLayers({
                 data: this.state.points,
                 hour: this.state.highlightedHour || this.state.selectedHour,
                 onHover: hover => this._onHover(hover),
                 settings: this.state.settings,
-                dataSettings: this.state.dataSettings
+                dataSettings: this.state.dataSettings,
+                firstAddedLayerData: this.state.firstImportedPoints,
+                secondAddedLayerData: this.state.secondImportedPoints
               })}
               initialViewState={INITIAL_VIEW_STATE}
               viewState={viewState}
@@ -377,10 +415,10 @@ export default class App extends Component {
           >
               <StaticMap mapStyle={this.state.style}  mapboxApiAccessToken={"pk.eyJ1IjoiYWJsZWthbmUxMjMiLCJhIjoiY2s2bTczbHNvMGwxNjNscnIxMXg4ODU4aCJ9.luI_mSXhJ3LKcCcFanpXJg"}/>
           </DeckGL>
-          {/*<Charts {...this.state}*/}
-          {/*        highlight={hour => this._onHighlight(hour)}*/}
-          {/*        select={hour => this._onSelect(hour)}*/}
-          {/*/>*/}
+          <Charts {...this.state}
+                  highlight={hour => this._onHighlight(hour)}
+                  select={hour => this._onSelect(hour)}
+          />
         </div>
     );
   }

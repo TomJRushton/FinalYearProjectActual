@@ -1,724 +1,1519 @@
 const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,AppleAndorid,NetworkFlag,NetworkProvider,PrePaidPostPaid,ActivePassive,VoiceData
-2020-04-29 19:14:00,-1.485501,53.372683,85,1,5,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2020-04-30 19:14:00,-1.461127,53.381278,47,1,3,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-05-01 19:14:00,-1.448171,53.388471,64,1,4,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-05-02 19:14:00,-1.444236,53.388691,76,2,2,Resident,Apple,2,O2,PrePaid,Passive,NotInUse
-2020-05-03 19:14:00,-1.515010,53.373948,45,2,1,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-05-04 19:14:00,-1.460910,53.378946,43,2,3,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2020-05-05 19:14:00,-1.488353,53.374096,71,2,5,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-05-06 19:14:00,-1.462120,53.372942,43,1,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2020-05-07 19:14:00,-1.515946,53.368596,48,2,3,Resident,Android,1,BT,PostPaid,Active,Voice
-2020-05-08 19:14:00,-1.468114,53.384966,37,1,3,Resident,Android,6,MVNO,PostPaid,Active,Data
-2020-05-09 19:14:00,-1.514968,53.380344,48,2,1,UK,Android,1,BT,PostPaid,Active,Data
-2020-05-10 19:14:00,-1.444155,53.367989,60,2,1,Non-UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-05-11 19:14:00,-1.495806,53.386251,60,1,4,UK,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2020-05-12 19:14:00,-1.447195,53.368269,35,2,3,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-05-13 19:14:00,-1.514639,53.372151,77,2,3,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-05-14 19:14:00,-1.509568,53.386402,37,1,2,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-05-15 19:14:00,-1.453106,53.379769,41,1,3,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2020-05-16 19:14:00,-1.511737,53.373031,33,2,4,Non-UK,Android,1,BT,PostPaid,Active,Data
-2020-05-17 19:14:00,-1.439321,53.376823,16,2,5,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2020-05-18 19:14:00,-1.445585,53.385310,72,1,2,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2020-05-19 19:14:00,-1.511713,53.370609,36,1,4,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-05-20 19:14:00,-1.456774,53.377729,25,1,5,UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-05-21 19:14:00,-1.501399,53.391715,44,2,1,Non-UK,Android,1,BT,PostPaid,Passive,NotInUse
-2020-05-22 19:14:00,-1.449514,53.380123,80,1,3,Resident,Android,1,BT,PostPaid,Active,Data
-2020-05-23 19:14:00,-1.459357,53.374431,38,1,4,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2020-05-24 19:14:00,-1.450148,53.384449,15,2,1,UK,Apple,3,Vodafone,PostPaid,Active,Data
-2020-05-25 19:14:00,-1.453097,53.383504,57,2,3,Resident,Apple,4,EE,PrePaid,Passive,NotInUse
-2020-05-26 19:14:00,-1.446262,53.382109,76,1,2,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2020-05-27 19:14:00,-1.452657,53.374159,30,1,3,UK,Apple,5,Three,PostPaid,Passive,NotInUse
-2020-05-28 19:14:00,-1.515806,53.379709,63,2,3,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-05-29 19:14:00,-1.507000,53.376952,79,1,3,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2020-05-30 19:14:00,-1.468814,53.376051,21,1,4,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2020-05-31 19:14:00,-1.498426,53.375488,41,2,3,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2020-06-01 19:14:00,-1.474850,53.376359,69,2,1,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-06-02 19:14:00,-1.479257,53.383120,38,1,5,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2020-06-03 19:14:00,-1.492788,53.370932,32,2,3,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-06-04 19:14:00,-1.480063,53.390120,24,2,1,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-06-05 19:14:00,-1.511572,53.391101,56,2,5,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-06-06 19:14:00,-1.434800,53.373127,81,1,1,Resident,Apple,6,MVNO,PrePaid,Passive,NotInUse
-2020-06-07 19:14:00,-1.502187,53.373291,73,2,3,Resident,Android,6,MVNO,PostPaid,Active,Data
-2020-06-08 19:14:00,-1.493160,53.378604,80,1,5,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-06-09 19:14:00,-1.446618,53.379819,81,1,3,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-06-10 19:14:00,-1.479347,53.385701,57,2,4,Resident,Android,1,BT,PostPaid,Active,Voice
-2020-06-11 19:14:00,-1.475772,53.382446,64,1,2,Non-UK,Android,5,Three,PostPaid,Passive,NotInUse
-2020-06-12 19:14:00,-1.441946,53.392136,19,2,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-06-13 19:14:00,-1.500384,53.391925,68,1,1,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2020-06-14 19:14:00,-1.496665,53.376121,40,2,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-06-15 19:14:00,-1.465532,53.369758,74,1,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-06-16 19:14:00,-1.472840,53.380665,56,2,2,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-06-17 19:14:00,-1.505998,53.377457,38,2,4,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-06-18 19:14:00,-1.435635,53.381518,44,1,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-06-19 19:14:00,-1.494862,53.371831,25,1,5,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2020-06-20 19:14:00,-1.469322,53.381066,61,2,5,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2020-06-21 19:14:00,-1.467160,53.381953,66,2,2,UK,Android,5,Three,PostPaid,Passive,NotInUse
-2020-06-22 19:14:00,-1.487011,53.372380,81,1,5,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-06-23 19:14:00,-1.493795,53.378920,14,1,2,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-06-24 19:14:00,-1.464659,53.383983,17,1,1,Resident,Apple,1,BT,PostPaid,Active,Voice
-2020-06-25 19:14:00,-1.515636,53.386514,74,2,2,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2020-06-26 19:14:00,-1.508779,53.389299,18,2,1,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2020-06-27 19:14:00,-1.496568,53.381536,68,1,1,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2020-06-28 19:14:00,-1.491720,53.370983,18,2,4,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2020-06-29 19:14:00,-1.445981,53.381027,26,2,3,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2020-06-30 19:14:00,-1.436924,53.388377,41,1,1,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-07-01 19:14:00,-1.504452,53.374417,63,1,4,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2020-07-02 19:14:00,-1.499076,53.387648,18,2,1,Resident,Android,2,O2,PostPaid,Active,Data
-2020-07-03 19:14:00,-1.441109,53.385284,12,2,4,UK,Android,5,Three,PrePaid,Passive,NotInUse
-2020-07-04 19:14:00,-1.445201,53.390792,47,2,3,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-07-05 19:14:00,-1.497337,53.388226,28,2,4,Resident,Apple,1,BT,PrePaid,Passive,NotInUse
-2020-07-06 19:14:00,-1.498332,53.383497,17,1,5,Resident,Apple,6,MVNO,PostPaid,Active,Data
-2020-07-07 19:14:00,-1.508195,53.384930,41,2,1,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2020-07-08 19:14:00,-1.488097,53.369472,46,2,4,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-07-09 19:14:00,-1.440307,53.374083,54,1,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-07-10 19:14:00,-1.499430,53.385893,29,2,5,Resident,Apple,3,Vodafone,PrePaid,Passive,NotInUse
-2020-07-11 19:14:00,-1.505544,53.387332,53,2,5,Resident,Android,3,Vodafone,PostPaid,Active,Data
-2020-07-12 19:14:00,-1.513097,53.384531,18,2,5,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2020-07-13 19:14:00,-1.510069,53.374180,47,2,4,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2020-07-14 19:14:00,-1.454412,53.370926,15,1,5,Resident,Android,5,Three,PostPaid,Active,Voice
-2020-07-15 19:14:00,-1.463616,53.371969,27,1,2,UK,Android,3,Vodafone,PostPaid,Active,Data
-2020-07-16 19:14:00,-1.496079,53.377146,47,2,4,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-07-17 19:14:00,-1.476097,53.387925,67,2,4,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2020-07-18 19:14:00,-1.504996,53.379025,23,1,5,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2020-07-19 19:14:00,-1.496824,53.368534,37,1,5,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2020-07-20 19:14:00,-1.489819,53.390096,42,1,4,Resident,Apple,4,EE,PrePaid,Passive,NotInUse
-2020-07-21 19:14:00,-1.458762,53.380996,18,2,5,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-07-22 19:14:00,-1.483314,53.374143,34,1,5,UK,Apple,2,O2,PrePaid,Passive,NotInUse
-2020-07-23 19:14:00,-1.487307,53.387893,43,2,5,Resident,Apple,6,MVNO,PrePaid,Active,Voice
-2020-07-24 19:14:00,-1.495408,53.386285,37,1,2,Resident,Android,6,MVNO,PostPaid,Active,Voice
-2020-07-25 19:14:00,-1.493921,53.378679,26,1,5,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-07-26 19:14:00,-1.454984,53.374960,79,2,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-07-27 19:14:00,-1.492956,53.369134,52,2,2,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2020-07-28 19:14:00,-1.445192,53.391307,36,1,3,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2020-07-29 19:14:00,-1.461619,53.369493,50,2,5,Resident,Apple,3,Vodafone,PostPaid,Active,Data
-2020-07-30 19:14:00,-1.445980,53.374799,48,1,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-07-31 19:14:00,-1.496655,53.374198,25,1,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-08-01 19:14:00,-1.500793,53.381287,55,2,4,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2020-08-02 19:14:00,-1.471538,53.376004,40,1,1,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-08-03 19:14:00,-1.493916,53.379156,12,2,2,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2020-08-04 19:14:00,-1.473758,53.369035,34,1,3,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-08-05 19:14:00,-1.437078,53.368652,76,2,4,UK,Android,1,BT,PrePaid,Passive,NotInUse
-2020-08-06 19:14:00,-1.479558,53.391643,37,1,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-08-07 19:14:00,-1.448263,53.378752,42,2,5,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2020-08-08 19:14:00,-1.469293,53.376604,20,2,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-08-09 19:14:00,-1.502514,53.391273,19,2,2,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-08-10 19:14:00,-1.477569,53.389097,21,1,3,UK,Apple,1,BT,PostPaid,Passive,NotInUse
-2020-08-11 19:14:00,-1.437461,53.379039,19,2,5,Resident,Android,2,O2,PostPaid,Active,Data
-2020-08-12 19:14:00,-1.467563,53.387584,42,2,1,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-08-13 19:14:00,-1.494671,53.380280,27,1,4,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2020-08-14 19:14:00,-1.462595,53.392117,37,2,3,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2020-08-15 19:14:00,-1.455070,53.385715,17,1,1,Resident,Apple,1,BT,PrePaid,Passive,NotInUse
-2020-08-16 19:14:00,-1.506722,53.384993,27,1,5,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-08-17 19:14:00,-1.452095,53.376895,32,U,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-08-18 19:14:00,-1.514766,53.367707,73,U,3,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2020-08-19 19:14:00,-1.469544,53.384036,70,1,2,Resident,Apple,3,Vodafone,PostPaid,Active,Voice
-2020-08-20 19:14:00,-1.500471,53.383783,60,1,5,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2020-08-21 19:14:00,-1.488600,53.379540,18,2,5,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2020-08-22 19:14:00,-1.515052,53.382744,48,1,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-08-23 19:14:00,-1.440129,53.385021,33,1,5,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2020-08-24 19:14:00,-1.482625,53.384204,27,2,4,Resident,Android,2,O2,PrePaid,Active,Data
-2020-08-25 19:14:00,-1.447312,53.390344,56,1,4,Resident,Apple,1,BT,PostPaid,Active,Data
-2020-08-26 19:14:00,-1.439971,53.387652,54,1,5,Non-UK,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-08-27 19:14:00,-1.491932,53.388964,71,1,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-08-28 19:14:00,-1.446968,53.386440,68,1,2,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-08-29 19:14:00,-1.500452,53.382007,25,2,3,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-08-30 19:14:00,-1.498699,53.376817,18,1,5,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-08-31 19:14:00,-1.488107,53.384048,22,2,4,Resident,Apple,4,EE,PostPaid,Passive,NotInUse
-2020-09-01 19:14:00,-1.473456,53.390696,76,2,4,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-09-02 19:14:00,-1.458842,53.387619,12,2,5,Resident,Android,2,O2,PrePaid,Active,Voice
-2020-09-03 19:14:00,-1.481039,53.369279,74,2,3,UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-09-04 19:14:00,-1.452173,53.392165,53,1,1,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-09-05 19:14:00,-1.501635,53.384046,59,1,5,UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-09-06 19:14:00,-1.465167,53.391503,29,2,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-09-07 19:14:00,-1.481635,53.374933,27,2,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-09-08 19:14:00,-1.448650,53.372391,50,1,1,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-09-09 19:14:00,-1.502384,53.378876,30,2,4,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2020-09-10 19:14:00,-1.435015,53.368243,68,1,2,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-09-11 19:14:00,-1.453341,53.375551,13,1,4,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-09-12 19:14:00,-1.443298,53.392283,70,2,2,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-09-13 19:14:00,-1.495824,53.374090,57,1,5,Resident,Android,6,MVNO,PostPaid,Active,Voice
-2020-09-14 19:14:00,-1.437354,53.385523,17,1,2,UK,Apple,3,Vodafone,PrePaid,Passive,NotInUse
-2020-09-15 19:14:00,-1.490753,53.386336,76,1,1,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2020-09-16 19:14:00,-1.486102,53.378950,22,2,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2020-09-17 19:14:00,-1.455173,53.382876,62,2,3,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-09-18 19:14:00,-1.465395,53.384749,73,2,5,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-09-19 19:14:00,-1.447664,53.390719,17,2,2,UK,Apple,4,EE,PrePaid,Passive,NotInUse
-2020-09-20 19:14:00,-1.454063,53.375954,25,2,2,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2020-09-21 19:14:00,-1.442039,53.376935,17,2,4,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-09-22 19:14:00,-1.443314,53.381591,35,1,1,Non-UK,Android,5,Three,PostPaid,Passive,NotInUse
-2020-09-23 19:14:00,-1.496539,53.392217,14,2,2,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2020-09-24 19:14:00,-1.476028,53.374693,21,2,2,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2020-09-25 19:14:00,-1.514987,53.371750,69,1,3,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2020-09-26 19:14:00,-1.474888,53.390357,48,1,2,UK,Apple,4,EE,PostPaid,Passive,NotInUse
-2020-09-27 19:14:00,-1.437608,53.369193,69,2,2,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-09-28 19:14:00,-1.471890,53.374334,54,2,4,Non-UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-09-29 19:14:00,-1.447031,53.386749,79,2,4,Resident,Apple,2,O2,PostPaid,Active,Voice
-2020-09-30 19:14:00,-1.464409,53.367820,32,2,1,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2020-10-01 19:14:00,-1.474763,53.386987,69,2,2,UK,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-10-02 19:14:00,-1.498433,53.367914,58,1,5,UK,Android,6,MVNO,PostPaid,Active,Data
-2020-10-03 19:14:00,-1.477432,53.372488,82,1,3,Resident,Apple,5,Three,PostPaid,Active,Voice
-2020-10-04 19:14:00,-1.473933,53.383713,81,2,5,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2020-10-05 19:14:00,-1.480215,53.380152,72,2,1,UK,Apple,4,EE,PrePaid,Passive,NotInUse
-2020-10-06 19:14:00,-1.463376,53.384015,74,2,4,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2020-10-07 19:14:00,-1.477422,53.371993,19,2,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-10-08 19:14:00,-1.497358,53.368558,62,2,1,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2020-10-09 19:14:00,-1.458550,53.370206,12,2,2,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-10-10 19:14:00,-1.476455,53.368902,79,1,2,UK,Android,5,Three,PostPaid,Passive,NotInUse
-2020-10-11 19:14:00,-1.437087,53.377294,30,2,4,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-10-12 19:14:00,-1.486225,53.387581,54,2,4,Resident,Android,2,O2,PrePaid,Active,Data
-2020-10-13 19:14:00,-1.482912,53.377331,50,2,3,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2020-10-14 19:14:00,-1.509012,53.389122,26,1,3,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2020-10-15 19:14:00,-1.447290,53.367665,84,1,1,Non-UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-10-16 19:14:00,-1.506054,53.380727,72,1,4,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-10-17 19:14:00,-1.511046,53.382468,41,2,4,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-10-18 19:14:00,-1.470273,53.370758,68,2,3,Resident,Apple,5,Three,PrePaid,Passive,NotInUse
-2020-10-19 19:14:00,-1.499179,53.374185,32,1,4,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-10-20 19:14:00,-1.438628,53.392015,57,2,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-10-21 19:14:00,-1.507521,53.388516,15,1,4,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2020-10-22 19:14:00,-1.492578,53.375353,28,2,1,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2020-10-23 19:14:00,-1.472833,53.370595,27,2,5,Resident,Android,1,BT,PostPaid,Active,Voice
-2020-10-24 19:14:00,-1.489189,53.369724,47,1,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-10-25 19:14:00,-1.434473,53.367674,83,2,2,Resident,Android,1,BT,PostPaid,Active,Data
-2020-10-26 19:14:00,-1.479591,53.379932,38,2,4,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2020-10-27 19:14:00,-1.506600,53.379995,65,1,5,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2020-10-28 19:14:00,-1.461436,53.392339,66,1,1,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-10-29 19:14:00,-1.473737,53.369790,80,1,4,Resident,Apple,6,MVNO,PrePaid,Passive,NotInUse
-2020-10-30 19:14:00,-1.501330,53.379009,54,1,2,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-10-31 19:14:00,-1.485371,53.381040,31,2,1,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-11-01 19:14:00,-1.490549,53.385778,82,2,4,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2020-11-02 19:14:00,-1.505107,53.382839,35,2,5,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-11-03 19:14:00,-1.438482,53.386609,55,1,3,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2020-11-04 19:14:00,-1.495693,53.385002,53,2,4,Resident,Android,5,Three,PostPaid,Active,Data
-2020-11-05 19:14:00,-1.467220,53.368305,77,1,1,Non-UK,Android,5,Three,PostPaid,Passive,NotInUse
-2020-11-06 19:14:00,-1.454027,53.373007,51,1,2,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-11-07 19:14:00,-1.471916,53.371243,57,1,5,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-11-08 19:14:00,-1.469130,53.374837,59,1,3,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-11-09 19:14:00,-1.499571,53.374819,13,2,3,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2020-11-10 19:14:00,-1.455941,53.391838,18,1,4,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-11-11 19:14:00,-1.486086,53.377305,40,1,5,UK,Android,2,O2,PrePaid,Passive,NotInUse
-2020-11-12 19:14:00,-1.502092,53.387632,41,1,4,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2020-11-13 19:14:00,-1.503605,53.384892,28,U,4,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2020-11-14 19:14:00,-1.470371,53.383439,79,2,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-11-15 19:14:00,-1.514953,53.382375,39,U,3,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-11-16 19:14:00,-1.458991,53.386087,29,2,1,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2020-11-17 19:14:00,-1.469982,53.391231,50,1,2,UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-11-18 19:14:00,-1.474698,53.391779,17,2,4,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2020-11-19 19:14:00,-1.460077,53.376499,51,2,3,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-11-20 19:14:00,-1.446977,53.371668,28,1,1,UK,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-11-21 19:14:00,-1.505910,53.380353,76,2,5,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2020-11-22 19:14:00,-1.452401,53.384523,63,1,4,UK,Apple,5,Three,PostPaid,Passive,NotInUse
-2020-11-23 19:14:00,-1.469102,53.384204,32,1,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-11-24 19:14:00,-1.479007,53.370698,45,2,4,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2020-11-25 19:14:00,-1.437451,53.376157,85,2,4,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-11-26 19:14:00,-1.500098,53.381773,12,1,3,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2020-11-27 19:14:00,-1.459849,53.373013,70,1,3,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2020-11-28 19:14:00,-1.482610,53.371327,32,1,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2020-11-29 19:14:00,-1.498333,53.369565,20,2,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-11-30 19:14:00,-1.482532,53.382235,16,2,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2020-12-01 19:14:00,-1.451945,53.392093,61,1,2,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2020-12-02 19:14:00,-1.452249,53.391199,20,2,3,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2020-12-03 19:14:00,-1.471315,53.375976,55,2,1,Resident,Android,4,EE,PostPaid,Active,Data
-2020-12-04 19:14:00,-1.498645,53.382764,75,2,2,UK,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2020-12-05 19:14:00,-1.474122,53.382368,44,2,5,Non-UK,Android,2,O2,PostPaid,Passive,NotInUse
-2020-12-06 19:14:00,-1.495225,53.384600,35,2,5,UK,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-12-07 19:14:00,-1.443327,53.383852,68,U,5,UK,Apple,4,EE,PostPaid,Passive,NotInUse
-2020-12-08 19:14:00,-1.481655,53.373744,31,2,2,Resident,Android,4,EE,PostPaid,Active,Voice
-2020-12-09 19:14:00,-1.491064,53.375713,64,2,1,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2020-12-10 19:14:00,-1.487430,53.391614,13,1,1,Resident,Android,1,BT,PostPaid,Active,Voice
-2020-12-11 19:14:00,-1.459169,53.380250,32,1,4,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2020-12-12 19:14:00,-1.437505,53.371083,64,1,4,UK,Android,3,Vodafone,PostPaid,Active,Data
-2020-12-13 19:14:00,-1.456352,53.390687,71,2,4,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2020-12-14 19:14:00,-1.443211,53.382659,41,1,4,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-12-15 19:14:00,-1.435153,53.389577,73,2,3,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2020-12-16 19:14:00,-1.447752,53.372072,13,1,5,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2020-12-17 19:14:00,-1.488364,53.388371,21,1,4,Resident,Android,2,O2,PostPaid,Active,Voice
-2020-12-18 19:14:00,-1.437030,53.371751,18,2,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2020-12-19 19:14:00,-1.460987,53.386855,73,1,4,Resident,Apple,1,BT,PrePaid,Passive,NotInUse
-2020-12-20 19:14:00,-1.462156,53.371191,60,1,2,UK,Apple,4,EE,PostPaid,Passive,NotInUse
-2020-12-21 19:14:00,-1.486727,53.389874,31,1,5,Resident,Apple,5,Three,PrePaid,Passive,NotInUse
-2020-12-22 19:14:00,-1.475500,53.387201,42,1,3,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2020-12-23 19:14:00,-1.434484,53.392280,64,1,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2020-12-24 19:14:00,-1.445959,53.384323,62,1,4,UK,Apple,4,EE,PostPaid,Passive,NotInUse
-2020-12-25 19:14:00,-1.454025,53.385444,80,1,5,Resident,Apple,4,EE,PostPaid,Passive,NotInUse
-2020-12-26 19:14:00,-1.502620,53.386561,43,1,4,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2020-12-27 19:14:00,-1.472348,53.371333,29,1,3,Non-UK,Android,1,BT,PostPaid,Passive,NotInUse
-2020-12-28 19:14:00,-1.505824,53.373435,42,1,1,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-12-29 19:14:00,-1.509232,53.392285,77,2,5,Resident,Android,1,BT,PostPaid,Active,Voice
-2020-12-30 19:14:00,-1.463678,53.387192,61,1,4,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-12-31 19:14:00,-1.499303,53.372840,35,1,3,Resident,Android,3,Vodafone,PostPaid,Active,Data
-2021-01-01 19:14:00,-1.513079,53.381326,43,1,4,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2021-01-02 19:14:00,-1.496715,53.372145,46,2,5,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2021-01-03 19:14:00,-1.496206,53.382119,74,1,3,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2021-01-04 19:14:00,-1.497240,53.387687,23,2,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-01-05 19:14:00,-1.491985,53.369409,52,2,2,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-01-06 19:14:00,-1.475688,53.367750,23,2,3,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2021-01-07 19:14:00,-1.471465,53.372100,17,2,2,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-01-08 19:14:00,-1.459819,53.377278,78,2,5,Resident,Android,4,EE,PrePaid,Active,Voice
-2021-01-09 19:14:00,-1.492759,53.380034,37,1,5,UK,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-01-10 19:14:00,-1.493528,53.388816,45,2,1,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-01-11 19:14:00,-1.501501,53.377537,38,2,5,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-01-12 19:14:00,-1.503133,53.369021,68,U,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-01-13 19:14:00,-1.503635,53.382799,82,1,1,Non-UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-01-14 19:14:00,-1.441721,53.388621,69,1,4,Resident,Apple,1,BT,PostPaid,Active,Voice
-2021-01-15 19:14:00,-1.487759,53.380381,62,1,2,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2021-01-16 19:14:00,-1.473777,53.378825,30,1,2,UK,Apple,4,EE,PrePaid,Passive,NotInUse
-2021-01-17 19:14:00,-1.511260,53.373643,51,1,4,UK,Android,5,Three,PostPaid,Passive,NotInUse
-2021-01-18 19:14:00,-1.493767,53.379086,20,1,1,Resident,Apple,4,EE,PrePaid,Passive,NotInUse
-2021-01-19 19:14:00,-1.503680,53.377137,81,1,2,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-01-20 19:14:00,-1.490826,53.388059,28,1,1,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2021-01-21 19:14:00,-1.450048,53.371223,20,1,1,Resident,Apple,2,O2,PrePaid,Passive,NotInUse
-2021-01-22 19:14:00,-1.440053,53.370223,30,2,4,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-01-23 19:14:00,-1.441102,53.377419,15,1,5,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-01-24 19:14:00,-1.476246,53.374395,68,1,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-01-25 19:14:00,-1.456664,53.382687,62,1,1,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-01-26 19:14:00,-1.502935,53.368546,14,2,3,Resident,Android,3,Vodafone,PostPaid,Active,Data
-2021-01-27 19:14:00,-1.479886,53.371585,21,1,3,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-01-28 19:14:00,-1.475241,53.383595,35,1,3,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-01-29 19:14:00,-1.489127,53.369615,64,2,2,Resident,Android,2,O2,PostPaid,Active,Data
-2021-01-30 19:14:00,-1.501978,53.382425,40,2,4,Resident,Apple,5,Three,PrePaid,Passive,NotInUse
-2021-01-31 19:14:00,-1.501602,53.387706,79,1,2,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-02-01 19:14:00,-1.469321,53.368222,62,2,2,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2021-02-02 19:14:00,-1.450295,53.373703,32,2,4,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2021-02-03 19:14:00,-1.456833,53.379221,28,2,1,UK,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-02-04 19:14:00,-1.500367,53.390260,85,1,3,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-02-05 19:14:00,-1.480008,53.392403,48,1,2,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2021-02-06 19:14:00,-1.483248,53.388056,47,2,2,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-02-07 19:14:00,-1.441380,53.384857,26,1,5,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-02-08 19:14:00,-1.495214,53.378739,51,2,3,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-02-09 19:14:00,-1.446044,53.372855,79,2,1,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-02-10 19:14:00,-1.443572,53.387772,67,1,5,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-02-11 19:14:00,-1.470434,53.374661,75,1,4,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2021-02-12 19:14:00,-1.446189,53.386076,39,1,4,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-02-13 19:14:00,-1.448500,53.381885,30,1,2,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-02-14 19:14:00,-1.509755,53.389948,67,1,5,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-02-15 19:14:00,-1.493690,53.389433,68,1,3,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2021-02-16 19:14:00,-1.458260,53.377934,79,2,5,Resident,Apple,1,BT,PrePaid,Passive,NotInUse
-2021-02-17 19:14:00,-1.471097,53.375123,49,2,5,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-02-18 19:14:00,-1.444614,53.382134,62,1,2,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-02-19 19:14:00,-1.445241,53.388574,46,1,4,Non-UK,Android,5,Three,PostPaid,Passive,NotInUse
-2021-02-20 19:14:00,-1.466455,53.374018,78,2,4,Resident,Apple,5,Three,PrePaid,Active,Data
-2021-02-21 19:14:00,-1.505425,53.368306,57,1,2,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-02-22 19:14:00,-1.444962,53.371561,21,2,3,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2021-02-23 19:14:00,-1.495440,53.378761,21,1,5,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2021-02-24 19:14:00,-1.442582,53.377284,45,1,3,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-02-25 19:14:00,-1.446068,53.389062,45,2,2,Resident,Android,6,MVNO,PostPaid,Active,Data
-2021-02-26 19:14:00,-1.501809,53.379717,64,2,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-02-27 19:14:00,-1.440034,53.370547,79,2,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-02-28 19:14:00,-1.478643,53.388018,74,1,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-03-01 19:14:00,-1.463995,53.372964,80,1,5,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2021-03-02 19:14:00,-1.483618,53.377281,84,2,1,Resident,Apple,3,Vodafone,PrePaid,Passive,NotInUse
-2021-03-03 19:14:00,-1.512927,53.392046,27,2,3,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2021-03-04 19:14:00,-1.484427,53.367711,57,2,3,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-03-05 19:14:00,-1.507299,53.384878,55,1,3,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-03-06 19:14:00,-1.498848,53.388607,72,2,1,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-03-07 19:14:00,-1.502274,53.373003,23,2,2,Resident,Apple,6,MVNO,PostPaid,Active,Data
-2021-03-08 19:14:00,-1.477437,53.369632,70,2,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-03-09 19:14:00,-1.445078,53.378684,28,1,3,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-03-10 19:14:00,-1.434562,53.382754,84,1,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-03-11 19:14:00,-1.485449,53.377655,64,1,1,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2021-03-12 19:14:00,-1.475796,53.370572,62,2,4,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-03-13 19:14:00,-1.434640,53.372556,28,2,1,UK,Android,5,Three,PostPaid,Passive,NotInUse
-2021-03-14 19:14:00,-1.459536,53.379524,13,1,2,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2021-03-15 19:14:00,-1.439108,53.381318,60,1,4,Resident,Android,4,EE,PrePaid,Active,Voice
-2021-03-16 19:14:00,-1.486829,53.391153,60,1,4,UK,Apple,5,Three,PostPaid,Active,Voice
-2021-03-17 19:14:00,-1.486114,53.375118,83,1,1,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-03-18 19:14:00,-1.440172,53.377687,54,2,1,Non-UK,Android,4,EE,PrePaid,Passive,NotInUse
-2021-03-19 19:14:00,-1.435707,53.376226,77,2,3,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-03-20 19:14:00,-1.507253,53.371964,18,1,3,Resident,Apple,5,Three,PostPaid,Active,Data
-2021-03-21 19:14:00,-1.466407,53.389841,60,1,1,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2021-03-22 19:14:00,-1.510930,53.379491,49,2,3,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-03-23 19:14:00,-1.513514,53.376021,32,1,1,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-03-24 19:14:00,-1.492289,53.375034,57,1,1,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2021-03-25 19:14:00,-1.474920,53.383956,38,1,5,UK,Android,5,Three,PostPaid,Passive,NotInUse
-2021-03-26 19:14:00,-1.484298,53.379948,17,1,3,Resident,Android,5,Three,PostPaid,Active,Voice
-2021-03-27 19:14:00,-1.494127,53.378508,59,2,4,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2021-03-28 19:14:00,-1.487339,53.374703,60,1,1,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-03-29 19:14:00,-1.436544,53.379353,19,2,5,Resident,Android,2,O2,PrePaid,Active,Data
-2021-03-30 19:14:00,-1.470350,53.373826,53,1,1,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-03-31 19:14:00,-1.505098,53.380397,83,2,4,Resident,Apple,2,O2,PrePaid,Active,Data
-2021-04-01 19:14:00,-1.487209,53.371293,75,1,4,Resident,Android,2,O2,PostPaid,Active,Voice
-2021-04-02 19:14:00,-1.484461,53.377975,70,2,2,UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-04-03 19:14:00,-1.459309,53.380145,77,2,5,Non-UK,Apple,4,EE,PrePaid,Passive,NotInUse
-2021-04-04 19:14:00,-1.444148,53.379236,40,1,5,Resident,Apple,5,Three,PrePaid,Passive,NotInUse
-2021-04-05 19:14:00,-1.493381,53.387408,68,1,3,Non-UK,Android,1,BT,PostPaid,Passive,NotInUse
-2021-04-06 19:14:00,-1.475048,53.385477,35,2,1,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-04-07 19:14:00,-1.499458,53.370703,74,2,4,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-04-08 19:14:00,-1.509028,53.390312,38,2,2,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-04-09 19:14:00,-1.507359,53.387471,43,1,1,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2021-04-10 19:14:00,-1.506290,53.391996,53,1,4,UK,Android,2,O2,PrePaid,Passive,NotInUse
-2021-04-11 19:14:00,-1.510074,53.380326,46,1,4,UK,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2021-04-12 19:14:00,-1.473368,53.389082,65,2,4,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2021-04-13 19:14:00,-1.510443,53.391420,64,2,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-04-14 19:14:00,-1.446132,53.383718,61,1,4,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2021-04-15 19:14:00,-1.488076,53.368916,85,1,5,Resident,Android,1,BT,PrePaid,Active,Data
-2021-04-16 19:14:00,-1.483885,53.386945,80,2,1,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-04-17 19:14:00,-1.513121,53.378027,13,2,2,Resident,Apple,4,EE,PostPaid,Passive,NotInUse
-2021-04-18 19:14:00,-1.464717,53.368026,62,2,1,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-04-19 19:14:00,-1.491721,53.384625,23,1,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-04-20 19:14:00,-1.438682,53.386133,68,2,5,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2021-04-21 19:14:00,-1.496171,53.391820,52,1,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-04-22 19:14:00,-1.463402,53.383331,79,1,1,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2021-04-23 19:14:00,-1.458048,53.388138,18,1,2,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2021-04-24 19:14:00,-1.439027,53.378629,49,1,1,Resident,Android,5,Three,PostPaid,Active,Data
-2021-04-25 19:14:00,-1.481837,53.383414,20,2,3,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-04-26 19:14:00,-1.449580,53.376322,55,1,2,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2021-04-27 19:14:00,-1.465371,53.381608,32,2,4,UK,Apple,6,MVNO,PostPaid,Active,Data
-2021-04-28 19:14:00,-1.503529,53.381423,25,2,5,Resident,Android,6,MVNO,PostPaid,Active,Data
-2021-04-29 19:14:00,-1.476170,53.379390,30,1,4,Non-UK,Android,2,O2,PrePaid,Passive,NotInUse
-2021-04-30 19:14:00,-1.464376,53.379144,66,2,2,Resident,Apple,1,BT,PostPaid,Active,Data
-2021-05-01 19:14:00,-1.448383,53.378656,67,1,4,UK,Apple,2,O2,PrePaid,Passive,NotInUse
-2021-05-02 19:14:00,-1.515433,53.384323,14,1,3,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-05-03 19:14:00,-1.492690,53.387790,35,2,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-05-04 19:14:00,-1.485773,53.387268,29,1,4,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2021-05-05 19:14:00,-1.453470,53.374889,73,1,2,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-05-06 19:14:00,-1.472740,53.372280,60,1,1,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-05-07 19:14:00,-1.459977,53.372206,41,2,3,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2021-05-08 19:14:00,-1.456059,53.386070,56,1,3,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-05-09 19:14:00,-1.515085,53.377281,72,2,1,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2021-05-10 19:14:00,-1.488236,53.369418,15,1,5,UK,Android,1,BT,PrePaid,Passive,NotInUse
-2021-05-11 19:14:00,-1.462981,53.390230,78,1,3,Resident,Apple,4,EE,PrePaid,Passive,NotInUse
-2021-05-12 19:14:00,-1.486240,53.376791,19,2,1,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2021-05-13 19:14:00,-1.489934,53.373364,13,2,3,Resident,Apple,3,Vodafone,PrePaid,Passive,NotInUse
-2021-05-14 19:14:00,-1.488414,53.370389,45,2,4,Resident,Android,4,EE,PostPaid,Active,Data
-2021-05-15 19:14:00,-1.440643,53.378941,33,2,2,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-05-16 19:14:00,-1.512173,53.387754,14,2,5,Resident,Android,4,EE,PostPaid,Active,Data
-2021-05-17 19:14:00,-1.473748,53.374555,72,2,4,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-05-18 19:14:00,-1.440495,53.385707,76,1,2,UK,Android,1,BT,PrePaid,Passive,NotInUse
-2021-05-19 19:14:00,-1.480403,53.373059,64,1,4,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-05-20 19:14:00,-1.476712,53.387748,53,2,2,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-05-21 19:14:00,-1.513478,53.373507,23,2,5,UK,Apple,5,Three,PostPaid,Active,Data
-2021-05-22 19:14:00,-1.462865,53.379366,16,2,3,UK,Android,2,O2,PostPaid,Passive,NotInUse
-2021-05-23 19:14:00,-1.502012,53.373256,30,2,3,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-05-24 19:14:00,-1.475790,53.388558,63,1,1,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-05-25 19:14:00,-1.444773,53.370317,45,2,5,Resident,Apple,3,Vodafone,PrePaid,Passive,NotInUse
-2021-05-26 19:14:00,-1.484457,53.367706,52,1,3,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-05-27 19:14:00,-1.475321,53.368180,58,1,5,Resident,Android,6,MVNO,PostPaid,Active,Data
-2021-05-28 19:14:00,-1.467177,53.368980,31,2,2,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2021-05-29 19:14:00,-1.444604,53.374079,16,1,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-05-30 19:14:00,-1.437992,53.379265,24,2,4,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-05-31 19:14:00,-1.444239,53.374743,17,2,4,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-06-01 19:14:00,-1.453835,53.380537,42,1,1,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2021-06-02 19:14:00,-1.477164,53.384247,43,1,3,UK,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2021-06-03 19:14:00,-1.469148,53.384761,45,1,5,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-06-04 19:14:00,-1.495945,53.381436,36,2,3,Resident,Apple,3,Vodafone,PrePaid,Passive,NotInUse
-2021-06-05 19:14:00,-1.474490,53.385447,14,1,3,Resident,Android,4,EE,PostPaid,Active,Data
-2021-06-06 19:14:00,-1.483385,53.382938,17,1,3,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-06-07 19:14:00,-1.483088,53.368135,64,1,2,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-06-08 19:14:00,-1.448101,53.370635,16,1,1,Resident,Android,4,EE,PrePaid,Active,Voice
-2021-06-09 19:14:00,-1.459899,53.382074,78,1,1,Non-UK,Android,4,EE,PostPaid,Passive,NotInUse
-2021-06-10 19:14:00,-1.435039,53.385239,49,1,4,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-06-11 19:14:00,-1.498258,53.371358,55,2,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-06-12 19:14:00,-1.469241,53.389636,84,2,3,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2021-06-13 19:14:00,-1.509700,53.369935,76,1,1,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2021-06-14 19:14:00,-1.463191,53.381667,66,2,5,Resident,Android,6,MVNO,PrePaid,Active,Data
-2021-06-15 19:14:00,-1.448811,53.372707,17,1,2,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-06-16 19:14:00,-1.449956,53.390681,43,1,2,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2021-06-17 19:14:00,-1.455551,53.381448,28,1,1,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-06-18 19:14:00,-1.441409,53.374948,57,1,5,Resident,Android,2,O2,PrePaid,Active,Data
-2021-06-19 19:14:00,-1.502711,53.374068,55,2,2,Resident,Android,1,BT,PostPaid,Active,Voice
-2021-06-20 19:14:00,-1.480174,53.377356,50,1,1,Resident,Android,3,Vodafone,PostPaid,Active,Data
-2021-06-21 19:14:00,-1.451949,53.390384,30,1,4,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-06-22 19:14:00,-1.473442,53.378116,72,1,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-06-23 19:14:00,-1.472069,53.370586,46,1,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-06-24 19:14:00,-1.477408,53.370662,16,1,3,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-06-25 19:14:00,-1.443285,53.376686,77,1,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-06-26 19:14:00,-1.451131,53.386080,79,1,5,Resident,Android,4,EE,PostPaid,Active,Data
-2021-06-27 19:14:00,-1.512325,53.379664,21,2,5,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2021-06-28 19:14:00,-1.490491,53.373218,39,1,5,Resident,Apple,1,BT,PostPaid,Active,Voice
-2021-06-29 19:14:00,-1.443082,53.369507,36,2,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-06-30 19:14:00,-1.462912,53.391882,70,2,4,UK,Android,5,Three,PrePaid,Active,Data
-2021-07-01 19:14:00,-1.463134,53.379841,12,2,3,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-07-02 19:14:00,-1.498974,53.383736,34,2,2,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-07-03 19:14:00,-1.500176,53.388535,41,2,3,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2021-07-04 19:14:00,-1.464567,53.372946,27,1,1,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-07-05 19:14:00,-1.482155,53.375480,13,2,1,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2021-07-06 19:14:00,-1.479572,53.377971,63,1,2,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2021-07-07 19:14:00,-1.467838,53.379105,31,1,1,Non-UK,Android,1,BT,PrePaid,Passive,NotInUse
-2021-07-08 19:14:00,-1.507403,53.369963,49,2,5,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2021-07-09 19:14:00,-1.503591,53.382731,53,1,3,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-07-10 19:14:00,-1.450210,53.389178,34,2,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-07-11 19:14:00,-1.468913,53.376564,68,1,3,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2021-07-12 19:14:00,-1.506289,53.377703,51,1,4,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-07-13 19:14:00,-1.443810,53.389920,33,2,3,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-07-14 19:14:00,-1.505758,53.376823,73,2,2,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-07-15 19:14:00,-1.451418,53.369964,47,1,5,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2021-07-16 19:14:00,-1.495870,53.376944,61,1,4,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2021-07-17 19:14:00,-1.509886,53.371319,45,2,4,UK,Android,5,Three,PostPaid,Passive,NotInUse
-2021-07-18 19:14:00,-1.473140,53.374345,43,2,3,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2021-07-19 19:14:00,-1.465899,53.374455,45,1,4,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-07-20 19:14:00,-1.440071,53.388480,56,1,1,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2021-07-21 19:14:00,-1.489341,53.376104,50,2,3,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-07-22 19:14:00,-1.462629,53.388155,56,1,1,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2021-07-23 19:14:00,-1.479719,53.391649,55,1,4,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-07-24 19:14:00,-1.453083,53.391312,31,2,5,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-07-25 19:14:00,-1.509209,53.387729,53,1,2,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2021-07-26 19:14:00,-1.515303,53.383040,76,2,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-07-27 19:14:00,-1.492630,53.388421,59,1,4,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-07-28 19:14:00,-1.502281,53.384869,48,2,5,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-07-29 19:14:00,-1.469835,53.387013,59,2,5,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-07-30 19:14:00,-1.515600,53.386035,58,2,1,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2021-07-31 19:14:00,-1.455248,53.377660,77,2,5,UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-08-01 19:14:00,-1.481878,53.368714,18,1,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-08-02 19:14:00,-1.487813,53.379183,77,1,2,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-08-03 19:14:00,-1.465559,53.387114,67,2,2,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-08-04 19:14:00,-1.463578,53.377764,54,1,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-08-05 19:14:00,-1.510506,53.373162,32,2,1,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2021-08-06 19:14:00,-1.477675,53.381331,38,2,5,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-08-07 19:14:00,-1.434512,53.369624,70,1,3,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2021-08-08 19:14:00,-1.461512,53.391568,59,1,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-08-09 19:14:00,-1.480888,53.388007,78,1,5,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-08-10 19:14:00,-1.436013,53.391785,18,1,5,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-08-11 19:14:00,-1.503377,53.370350,65,1,4,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-08-12 19:14:00,-1.515596,53.386999,52,2,5,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-08-13 19:14:00,-1.439268,53.390891,18,2,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-08-14 19:14:00,-1.493287,53.388158,33,2,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-08-15 19:14:00,-1.507213,53.387622,43,1,1,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-08-16 19:14:00,-1.468905,53.372632,72,2,1,UK,Android,4,EE,PrePaid,Passive,NotInUse
-2021-08-17 19:14:00,-1.485632,53.382759,46,1,5,UK,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-08-18 19:14:00,-1.472067,53.372578,66,1,4,Resident,Android,3,Vodafone,PostPaid,Active,Data
-2021-08-19 19:14:00,-1.478175,53.368389,61,2,2,Resident,Apple,6,MVNO,PrePaid,Passive,NotInUse
-2021-08-20 19:14:00,-1.483756,53.377044,19,1,4,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2021-08-21 19:14:00,-1.501896,53.372770,46,1,3,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-08-22 19:14:00,-1.466724,53.372732,81,1,2,UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-08-23 19:14:00,-1.488425,53.381774,71,2,4,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2021-08-24 19:14:00,-1.509341,53.387660,42,1,3,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-08-25 19:14:00,-1.452110,53.373121,42,1,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-08-26 19:14:00,-1.442947,53.382988,49,1,3,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-08-27 19:14:00,-1.479711,53.376849,65,1,3,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-08-28 19:14:00,-1.484547,53.371108,80,1,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-08-29 19:14:00,-1.479049,53.387015,61,1,3,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-08-30 19:14:00,-1.478189,53.373640,68,1,1,Resident,Android,5,Three,PostPaid,Active,Data
-2021-08-31 19:14:00,-1.463390,53.382577,83,1,3,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2021-09-01 19:14:00,-1.505767,53.371913,29,2,4,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-09-02 19:14:00,-1.454587,53.374086,77,2,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-09-03 19:14:00,-1.513833,53.374168,41,1,1,UK,Android,5,Three,PostPaid,Passive,NotInUse
-2021-09-04 19:14:00,-1.476211,53.379090,66,1,5,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2021-09-05 19:14:00,-1.440648,53.386239,49,1,4,UK,Apple,1,BT,PrePaid,Passive,NotInUse
-2021-09-06 19:14:00,-1.496990,53.385299,22,1,2,UK,Android,2,O2,PrePaid,Passive,NotInUse
-2021-09-07 19:14:00,-1.490237,53.370951,70,U,3,UK,Apple,2,O2,PostPaid,Passive,NotInUse
-2021-09-08 19:14:00,-1.516038,53.387717,26,2,5,Non-UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-09-09 19:14:00,-1.487546,53.385955,65,2,5,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-09-10 19:14:00,-1.452757,53.375026,66,1,5,UK,Android,1,BT,PrePaid,Passive,NotInUse
-2021-09-11 19:14:00,-1.494819,53.383916,77,1,4,UK,Apple,2,O2,PostPaid,Passive,NotInUse
-2021-09-12 19:14:00,-1.462113,53.388693,24,2,2,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2021-09-13 19:14:00,-1.475268,53.382336,39,2,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-09-14 19:14:00,-1.453642,53.375796,61,2,1,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2021-09-15 19:14:00,-1.506029,53.375238,13,1,5,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-09-16 19:14:00,-1.512458,53.384347,16,2,4,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2021-09-17 19:14:00,-1.512673,53.387488,82,2,3,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2021-09-18 19:14:00,-1.476971,53.368355,83,2,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-09-19 19:14:00,-1.444046,53.385508,46,2,3,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-09-20 19:14:00,-1.477928,53.374682,80,1,2,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-09-21 19:14:00,-1.456695,53.382867,73,1,5,Resident,Apple,1,BT,PrePaid,Passive,NotInUse
-2021-09-22 19:14:00,-1.456695,53.375584,19,1,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-09-23 19:14:00,-1.513277,53.381132,34,1,2,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-09-24 19:14:00,-1.506799,53.388258,68,2,4,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2021-09-25 19:14:00,-1.451570,53.373667,46,2,4,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-09-26 19:14:00,-1.475093,53.374680,72,2,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-09-27 19:14:00,-1.444448,53.379584,66,2,1,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2021-09-28 19:14:00,-1.503570,53.372243,37,2,2,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-09-29 19:14:00,-1.487275,53.382674,34,2,4,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-09-30 19:14:00,-1.474560,53.372664,41,1,2,Non-UK,Android,6,MVNO,PrePaid,Active,Data
-2021-10-01 19:14:00,-1.501269,53.374294,59,1,1,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2021-10-02 19:14:00,-1.505345,53.377478,65,1,3,Non-UK,Android,2,O2,PostPaid,Passive,NotInUse
-2021-10-03 19:14:00,-1.448660,53.378629,43,1,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-10-04 19:14:00,-1.499037,53.387525,59,1,2,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-10-05 19:14:00,-1.455399,53.389679,76,1,2,Resident,Apple,1,BT,PostPaid,Active,Data
-2021-10-06 19:14:00,-1.513130,53.368287,20,2,5,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-10-07 19:14:00,-1.472430,53.369753,57,1,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-10-08 19:14:00,-1.485920,53.385780,40,1,2,UK,Apple,4,EE,PostPaid,Passive,NotInUse
-2021-10-09 19:14:00,-1.495409,53.377559,78,1,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-10-10 19:14:00,-1.514209,53.382161,32,1,5,Resident,Android,2,O2,PostPaid,Active,Voice
-2021-10-11 19:14:00,-1.437094,53.368060,71,2,4,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2021-10-12 19:14:00,-1.487611,53.380402,37,1,4,UK,Android,2,O2,PrePaid,Passive,NotInUse
-2021-10-13 19:14:00,-1.492909,53.377657,50,1,4,Resident,Apple,2,O2,PrePaid,Passive,NotInUse
-2021-10-14 19:14:00,-1.478907,53.392256,16,1,4,Resident,Apple,2,O2,PrePaid,Passive,NotInUse
-2021-10-15 19:14:00,-1.440296,53.388247,35,1,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-10-16 19:14:00,-1.467232,53.381252,30,2,3,Resident,Apple,2,O2,PrePaid,Passive,NotInUse
-2021-10-17 19:14:00,-1.493015,53.389245,21,1,2,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-10-18 19:14:00,-1.510822,53.380582,38,2,5,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-10-19 19:14:00,-1.489447,53.382877,54,1,2,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-10-20 19:14:00,-1.472137,53.392238,17,2,5,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-10-21 19:14:00,-1.508248,53.369642,71,1,4,Resident,Android,1,BT,PostPaid,Active,Data
-2021-10-22 19:14:00,-1.496892,53.379236,15,2,1,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2021-10-23 19:14:00,-1.514356,53.371631,59,2,3,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2021-10-24 19:14:00,-1.504173,53.372250,51,2,4,Non-UK,Android,4,EE,PostPaid,Passive,NotInUse
-2021-10-25 19:14:00,-1.465237,53.368479,45,2,4,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-10-26 19:14:00,-1.460629,53.383541,33,2,2,Resident,Apple,6,MVNO,PrePaid,Passive,NotInUse
-2021-10-27 19:14:00,-1.448291,53.369346,16,1,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-10-28 19:14:00,-1.434738,53.379493,56,2,3,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-10-29 19:14:00,-1.483851,53.378455,83,1,3,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-10-30 19:14:00,-1.508843,53.376703,31,1,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-10-31 19:14:00,-1.438417,53.375599,74,1,5,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-11-01 19:14:00,-1.500717,53.382720,45,1,5,Resident,Apple,5,Three,PostPaid,Active,Data
-2021-11-02 19:14:00,-1.510242,53.378689,69,1,2,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-11-03 19:14:00,-1.499621,53.377171,69,2,4,UK,Apple,1,BT,PostPaid,Active,Voice
-2021-11-04 19:14:00,-1.486814,53.373470,37,1,2,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2021-11-05 19:14:00,-1.498392,53.372489,17,2,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-11-06 19:14:00,-1.465595,53.386850,66,U,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-11-07 19:14:00,-1.481355,53.389349,29,2,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-11-08 19:14:00,-1.510247,53.376344,56,2,5,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-11-09 19:14:00,-1.488593,53.386651,47,2,5,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2021-11-10 19:14:00,-1.441615,53.371140,48,2,5,UK,Android,3,Vodafone,PostPaid,Active,Data
-2021-11-11 19:14:00,-1.471096,53.374841,12,2,2,Resident,Apple,6,MVNO,PostPaid,Active,Data
-2021-11-12 19:14:00,-1.481557,53.378501,81,2,2,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-11-13 19:14:00,-1.446571,53.376726,17,1,4,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-11-14 19:14:00,-1.503184,53.378371,17,1,2,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-11-15 19:14:00,-1.465690,53.378815,30,2,2,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-11-16 19:14:00,-1.438058,53.373872,77,2,1,UK,Android,5,Three,PostPaid,Passive,NotInUse
-2021-11-17 19:14:00,-1.471777,53.388813,31,1,2,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-11-18 19:14:00,-1.499283,53.380774,35,2,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-11-19 19:14:00,-1.469275,53.370889,45,1,1,Resident,Android,5,Three,PostPaid,Active,Voice
-2021-11-20 19:14:00,-1.492666,53.381142,12,1,4,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2021-11-21 19:14:00,-1.468532,53.384399,27,1,4,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-11-22 19:14:00,-1.491827,53.391359,43,1,5,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-11-23 19:14:00,-1.454810,53.389188,17,1,2,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-11-24 19:14:00,-1.492531,53.380415,14,2,1,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-11-25 19:14:00,-1.486137,53.367900,29,2,4,UK,Apple,1,BT,PostPaid,Passive,NotInUse
-2021-11-26 19:14:00,-1.447085,53.376320,60,2,5,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2021-11-27 19:14:00,-1.435108,53.385215,54,1,5,Non-UK,Android,5,Three,PostPaid,Passive,NotInUse
-2021-11-28 19:14:00,-1.505657,53.376983,18,2,4,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-11-29 19:14:00,-1.438629,53.391310,14,1,5,Resident,Android,1,BT,PostPaid,Active,Voice
-2021-11-30 19:14:00,-1.449817,53.389843,40,1,4,UK,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2021-12-01 19:14:00,-1.453818,53.377329,25,1,3,UK,Android,1,BT,PostPaid,Active,Data
-2021-12-02 19:14:00,-1.451793,53.390178,42,2,4,Resident,Android,2,O2,PostPaid,Active,Data
-2021-12-03 19:14:00,-1.439619,53.376094,24,2,3,UK,Apple,5,Three,PostPaid,Passive,NotInUse
-2021-12-04 19:14:00,-1.476681,53.380572,55,1,2,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-12-05 19:14:00,-1.492458,53.379173,12,2,2,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-12-06 19:14:00,-1.446921,53.385193,63,1,4,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2021-12-07 19:14:00,-1.511934,53.376733,64,1,2,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-12-08 19:14:00,-1.495538,53.368208,63,2,1,Resident,Apple,4,EE,PostPaid,Passive,NotInUse
-2021-12-09 19:14:00,-1.442522,53.382177,60,1,5,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-12-10 19:14:00,-1.438501,53.390100,68,1,2,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-12-11 19:14:00,-1.451143,53.379235,61,2,1,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2021-12-12 19:14:00,-1.512230,53.383122,21,2,3,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-12-13 19:14:00,-1.471762,53.369633,19,1,5,Non-UK,Android,6,MVNO,PostPaid,Passive,NotInUse
-2021-12-14 19:14:00,-1.460099,53.390642,54,2,3,Resident,Apple,4,EE,PostPaid,Passive,NotInUse
-2021-12-15 19:14:00,-1.497638,53.382361,26,2,1,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2021-12-16 19:14:00,-1.443848,53.382719,40,2,5,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2021-12-17 19:14:00,-1.437922,53.369225,61,2,5,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2021-12-18 19:14:00,-1.474291,53.371143,20,2,1,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2021-12-19 19:14:00,-1.495164,53.392186,52,2,4,UK,Android,2,O2,PrePaid,Passive,NotInUse
-2021-12-20 19:14:00,-1.443889,53.386545,57,1,1,UK,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2021-12-21 19:14:00,-1.509017,53.387891,64,1,4,Non-UK,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2021-12-22 19:14:00,-1.480293,53.375282,84,2,3,UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-12-23 19:14:00,-1.471808,53.381067,70,2,1,Resident,Apple,4,EE,PostPaid,Active,Data
-2021-12-24 19:14:00,-1.473337,53.367775,73,1,1,UK,Apple,4,EE,PostPaid,Passive,NotInUse
-2021-12-25 19:14:00,-1.498166,53.389129,73,2,1,Non-UK,Apple,1,BT,PostPaid,Passive,NotInUse
-2021-12-26 19:14:00,-1.449134,53.388261,40,2,2,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2021-12-27 19:14:00,-1.489607,53.370092,71,1,2,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2021-12-28 19:14:00,-1.457525,53.368315,21,1,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2021-12-29 19:14:00,-1.506881,53.391345,59,1,2,Non-UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2021-12-30 19:14:00,-1.474824,53.378842,30,2,1,UK,Android,3,Vodafone,PostPaid,Active,Voice
-2021-12-31 19:14:00,-1.498320,53.392159,44,2,3,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2022-01-01 19:14:00,-1.496562,53.391247,25,1,1,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-01-02 19:14:00,-1.446280,53.388917,60,U,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2022-01-03 19:14:00,-1.515335,53.384348,18,2,5,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2022-01-04 19:14:00,-1.476627,53.375270,75,2,3,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-01-05 19:14:00,-1.484174,53.372744,71,1,5,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2022-01-06 19:14:00,-1.463153,53.379214,61,1,4,Resident,Apple,2,O2,PostPaid,Active,Data
-2022-01-07 19:14:00,-1.476529,53.389559,59,1,4,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2022-01-08 19:14:00,-1.458784,53.369459,18,2,2,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2022-01-09 19:14:00,-1.482967,53.376901,77,1,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2022-01-10 19:14:00,-1.479117,53.376695,36,2,4,UK,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2022-01-11 19:14:00,-1.476421,53.372846,25,2,4,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2022-01-12 19:14:00,-1.506308,53.385026,76,1,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2022-01-13 19:14:00,-1.435137,53.371027,28,2,1,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2022-01-14 19:14:00,-1.467418,53.376192,45,1,3,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2022-01-15 19:14:00,-1.463658,53.378221,19,1,5,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2022-01-16 19:14:00,-1.447382,53.385543,46,1,1,UK,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2022-01-17 19:14:00,-1.484592,53.385899,60,2,4,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2022-01-18 19:14:00,-1.478072,53.389250,41,2,4,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2022-01-19 19:14:00,-1.493712,53.381615,85,2,5,Resident,Apple,6,MVNO,PrePaid,Passive,NotInUse
-2022-01-20 19:14:00,-1.512572,53.384351,47,2,5,UK,Android,6,MVNO,PrePaid,Passive,NotInUse
-2022-01-21 19:14:00,-1.448959,53.378096,71,1,4,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-01-22 19:14:00,-1.496887,53.376853,79,1,4,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2022-01-23 19:14:00,-1.436054,53.370067,27,2,1,Resident,Apple,4,EE,PostPaid,Passive,NotInUse
-2022-01-24 19:14:00,-1.444988,53.376614,29,2,3,Resident,Apple,5,Three,PrePaid,Passive,NotInUse
-2022-01-25 19:14:00,-1.467135,53.380813,23,1,2,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2022-01-26 19:14:00,-1.513251,53.378134,49,2,3,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2022-01-27 19:14:00,-1.466434,53.379407,24,1,1,UK,Android,3,Vodafone,PostPaid,Active,Data
-2022-01-28 19:14:00,-1.504809,53.369702,14,2,5,Resident,Apple,4,EE,PrePaid,Passive,NotInUse
-2022-01-29 19:14:00,-1.459996,53.376426,41,1,1,Resident,Android,3,Vodafone,PrePaid,Active,Data
-2022-01-30 19:14:00,-1.495379,53.374338,61,2,5,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2022-01-31 19:14:00,-1.490424,53.369621,65,1,5,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2022-02-01 19:14:00,-1.479924,53.368464,80,2,2,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2022-02-02 19:14:00,-1.465370,53.388664,25,1,1,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-02-03 19:14:00,-1.503775,53.379137,48,1,5,UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-02-04 19:14:00,-1.485999,53.389778,64,2,3,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2022-02-05 19:14:00,-1.444173,53.367893,64,1,1,Resident,Apple,4,EE,PrePaid,Passive,NotInUse
-2022-02-06 19:14:00,-1.444464,53.387035,82,2,5,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2022-02-07 19:14:00,-1.481269,53.373690,66,1,5,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2022-02-08 19:14:00,-1.513130,53.368439,53,2,2,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2022-02-09 19:14:00,-1.467197,53.377542,80,2,3,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2022-02-10 19:14:00,-1.473328,53.370739,44,1,2,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-02-11 19:14:00,-1.459329,53.375438,40,2,5,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2022-02-12 19:14:00,-1.455242,53.369755,24,1,3,Resident,Android,2,O2,PrePaid,Active,Data
-2022-02-13 19:14:00,-1.440547,53.369455,26,1,4,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2022-02-14 19:14:00,-1.447820,53.388246,36,1,5,Resident,Android,1,BT,PostPaid,Active,Voice
-2022-02-15 19:14:00,-1.461541,53.385259,32,1,5,Resident,Apple,3,Vodafone,PrePaid,Passive,NotInUse
-2022-02-16 19:14:00,-1.484749,53.387352,63,1,4,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2022-02-17 19:14:00,-1.481454,53.376182,22,1,2,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2022-02-18 19:14:00,-1.445597,53.386307,37,2,4,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2022-02-19 19:14:00,-1.479224,53.380620,83,1,1,UK,Apple,5,Three,PostPaid,Passive,NotInUse
-2022-02-20 19:14:00,-1.473933,53.369317,54,2,5,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2022-02-21 19:14:00,-1.506635,53.385068,15,2,4,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2022-02-22 19:14:00,-1.456227,53.370108,65,2,4,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2022-02-23 19:14:00,-1.443157,53.387233,39,1,5,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2022-02-24 19:14:00,-1.471220,53.380608,66,2,5,UK,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2022-02-25 19:14:00,-1.471570,53.378742,13,1,2,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2022-02-26 19:14:00,-1.466492,53.369767,37,2,2,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2022-02-27 19:14:00,-1.475345,53.381261,80,2,1,Resident,Apple,2,O2,PrePaid,Passive,NotInUse
-2022-02-28 19:14:00,-1.469162,53.380779,84,2,2,UK,Android,4,EE,PostPaid,Passive,NotInUse
-2022-03-01 19:14:00,-1.464395,53.375889,57,1,4,Resident,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2022-03-02 19:14:00,-1.458480,53.384655,17,1,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2022-03-03 19:14:00,-1.442180,53.369091,34,1,5,Resident,Android,4,EE,PostPaid,Passive,NotInUse
-2022-03-04 19:14:00,-1.443648,53.386827,30,1,1,Non-UK,Android,6,MVNO,PostPaid,Active,Data
-2022-03-05 19:14:00,-1.474882,53.390307,51,1,2,UK,Android,2,O2,PrePaid,Passive,NotInUse
-2022-03-06 19:14:00,-1.445978,53.368796,69,2,3,Resident,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2022-03-07 19:14:00,-1.505350,53.372492,27,1,2,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2022-03-08 19:14:00,-1.509909,53.389788,69,1,4,UK,Android,1,BT,PrePaid,Passive,NotInUse
-2022-03-09 19:14:00,-1.509874,53.371982,57,1,3,UK,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-03-10 19:14:00,-1.472203,53.387217,69,2,3,Non-UK,Android,6,MVNO,PrePaid,Passive,NotInUse
-2022-03-11 19:14:00,-1.452139,53.389647,12,1,4,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2022-03-12 19:14:00,-1.486477,53.384627,83,2,5,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2022-03-13 19:14:00,-1.475285,53.378272,83,2,5,UK,Android,1,BT,PostPaid,Passive,NotInUse
-2022-03-14 19:14:00,-1.506854,53.368790,72,1,1,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2022-03-15 19:14:00,-1.486143,53.384104,24,1,1,Resident,Apple,5,Three,PostPaid,Passive,NotInUse
-2022-03-16 19:14:00,-1.459567,53.382142,84,2,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2022-03-17 19:14:00,-1.470956,53.374622,26,1,4,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2022-03-18 19:14:00,-1.454991,53.372516,85,1,1,Resident,Android,6,MVNO,PrePaid,Passive,NotInUse
-2022-03-19 19:14:00,-1.501082,53.377676,54,1,2,UK,Android,1,BT,PostPaid,Active,Data
-2022-03-20 19:14:00,-1.468639,53.379911,71,2,1,UK,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2022-03-21 19:14:00,-1.443982,53.378658,51,1,1,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2022-03-22 19:14:00,-1.491708,53.380922,46,2,1,Resident,Android,5,Three,PrePaid,Active,Data
-2022-03-23 19:14:00,-1.449470,53.381191,38,2,1,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2022-03-24 19:14:00,-1.507537,53.368306,73,2,3,Resident,Apple,4,EE,PostPaid,Passive,NotInUse
-2022-03-25 19:14:00,-1.488577,53.371198,49,2,3,Resident,Android,2,O2,PrePaid,Passive,NotInUse
-2022-03-26 19:14:00,-1.454403,53.388846,20,1,4,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-03-27 19:14:00,-1.454769,53.384035,54,1,1,Resident,Apple,1,BT,PostPaid,Passive,NotInUse
-2022-03-28 19:14:00,-1.438141,53.376865,34,2,5,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2022-03-29 19:14:00,-1.446259,53.380906,13,1,3,Resident,Android,1,BT,PostPaid,Active,Data
-2022-03-30 19:14:00,-1.459676,53.390395,12,2,1,Resident,Android,4,EE,PrePaid,Passive,NotInUse
-2022-03-31 19:14:00,-1.470525,53.370130,50,1,5,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2022-04-01 19:14:00,-1.438137,53.392400,36,2,2,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-04-02 19:14:00,-1.438971,53.388801,26,1,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2022-04-03 19:14:00,-1.499583,53.389171,52,1,5,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2022-04-04 19:14:00,-1.516079,53.370426,61,1,1,Resident,Android,2,O2,PostPaid,Passive,NotInUse
-2022-04-05 19:14:00,-1.443704,53.372853,72,2,1,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-04-06 19:14:00,-1.445036,53.391698,35,2,1,Resident,Apple,4,EE,PrePaid,Passive,NotInUse
-2022-04-07 19:14:00,-1.472215,53.375345,21,2,3,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2022-04-08 19:14:00,-1.452713,53.376738,63,2,1,Resident,Android,1,BT,PrePaid,Passive,NotInUse
-2022-04-09 19:14:00,-1.472378,53.371742,82,2,4,Resident,Android,5,Three,PrePaid,Passive,NotInUse
-2022-04-10 19:14:00,-1.441121,53.389734,53,1,2,Resident,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2022-04-11 19:14:00,-1.504172,53.375748,52,1,5,Resident,Android,5,Three,PostPaid,Passive,NotInUse
-2022-04-12 19:14:00,-1.511358,53.373748,46,1,2,Resident,Apple,2,O2,PostPaid,Passive,NotInUse
-2022-04-13 19:14:00,-1.486971,53.378552,59,1,4,Resident,Apple,2,O2,PrePaid,Passive,NotInUse
-2022-04-14 19:14:00,-1.502292,53.375715,55,1,4,UK,Apple,4,EE,PrePaid,Active,Data
-2022-04-15 19:14:00,-1.461699,53.371472,79,2,3,Resident,Android,6,MVNO,PostPaid,Passive,NotInUse
-2022-04-16 19:14:00,-1.512097,53.377778,48,1,2,Resident,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-04-17 19:14:00,-1.446135,53.385667,15,2,3,Resident,Android,1,BT,PostPaid,Passive,NotInUse
-2022-04-18 19:14:00,-1.453799,53.387228,81,2,1,UK,Android,4,EE,PostPaid,Active,Data`;
+2020-04-29 19:14:00 +00:00,-1.485501,53.372683,85,1,5,2,Android,4,EE,PostPaid,Passive,NotInUse
+2020-04-30 19:14:00 +00:00,-1.461127,53.381278,47,1,3,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-05-01 09:14:00 +00:00,-1.448171,53.388471,64,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-05-02 09:14:00 +00:00,-1.444236,53.388691,76,2,2,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2020-05-03 19:14:00 +00:00,-1.515010,53.373948,45,2,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-05-04 19:14:00 +00:00,-1.460910,53.378946,43,2,3,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2020-05-05 09:14:00 +00:00,-1.488353,53.374096,71,2,5,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-05-06 19:14:00 +00:00,-1.462120,53.372942,43,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-05-07 19:14:00 +00:00,-1.515946,53.368596,48,2,3,1,Android,1,BT,PostPaid,Active,Voice
+2020-05-08 19:14:00 +00:00,-1.468114,53.384966,37,1,3,1,Android,6,MVNO,PostPaid,Active,Data
+2020-05-09 19:14:00 +00:00,-1.514968,53.380344,48,2,1,2,Android,1,BT,PostPaid,Active,Data
+2020-05-10 19:14:00 +00:00,-1.444155,53.367989,60,2,1,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-05-11 19:14:00 +00:00,-1.495806,53.386251,60,1,4,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2020-05-12 19:14:00 +00:00,-1.447195,53.368269,35,2,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-05-13 18:14:00 +00:00,-1.514639,53.372151,77,2,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-05-14 20:14:00 +00:00,-1.509568,53.386402,37,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-05-15 20:14:00 +00:00,-1.453106,53.379769,41,1,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2020-05-16 20:14:00 +00:00,-1.511737,53.373031,33,2,4,3,Android,1,BT,PostPaid,Active,Data
+2020-05-17 18:14:00 +00:00,-1.439321,53.376823,16,2,5,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2020-05-18 19:14:00 +00:00,-1.445585,53.385310,72,1,2,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2020-05-19 19:14:00 +00:00,-1.511713,53.370609,36,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-05-20 12:14:00 +00:00,-1.456774,53.377729,25,1,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-05-21 19:14:00 +00:00,-1.501399,53.391715,44,2,1,3,Android,1,BT,PostPaid,Passive,NotInUse
+2020-05-22 19:14:00 +00:00,-1.449514,53.380123,80,1,3,1,Android,1,BT,PostPaid,Active,Data
+2020-05-23 19:14:00 +00:00,-1.459357,53.374431,38,1,4,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2020-05-24 19:14:00 +00:00,-1.450148,53.384449,15,2,1,2,Apple,3,Vodafone,PostPaid,Active,Data
+2020-05-25 19:14:00 +00:00,-1.453097,53.383504,57,2,3,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2020-05-26 19:14:00 +00:00,-1.446262,53.382109,76,1,2,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2020-05-27 17:14:00 +00:00,-1.452657,53.374159,30,1,3,2,Apple,5,Three,PostPaid,Passive,NotInUse
+2020-05-28 15:14:00 +00:00,-1.515806,53.379709,63,2,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-05-29 19:14:00 +00:00,-1.507000,53.376952,79,1,3,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2020-05-30 19:14:00 +00:00,-1.468814,53.376051,21,1,4,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2020-05-31 19:14:00 +00:00,-1.498426,53.375488,41,2,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2020-06-01 09:14:00 +00:00,-1.474850,53.376359,69,2,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-06-02 09:14:00 +00:00,-1.479257,53.383120,38,1,5,1,Android,4,EE,PrePaid,Passive,NotInUse
+2020-06-03 19:14:00 +00:00,-1.492788,53.370932,32,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-06-04 19:14:00 +00:00,-1.480063,53.390120,24,2,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-06-05 09:14:00 +00:00,-1.511572,53.391101,56,2,5,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-06-06 19:14:00 +00:00,-1.434800,53.373127,81,1,1,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2020-06-07 19:14:00 +00:00,-1.502187,53.373291,73,2,3,1,Android,6,MVNO,PostPaid,Active,Data
+2020-06-08 19:14:00 +00:00,-1.493160,53.378604,80,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-06-09 19:14:00 +00:00,-1.446618,53.379819,81,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-06-10 19:14:00 +00:00,-1.479347,53.385701,57,2,4,1,Android,1,BT,PostPaid,Active,Voice
+2020-06-11 19:14:00 +00:00,-1.475772,53.382446,64,1,2,3,Android,5,Three,PostPaid,Passive,NotInUse
+2020-06-12 19:14:00 +00:00,-1.441946,53.392136,19,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-06-13 18:14:00 +00:00,-1.500384,53.391925,68,1,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2020-06-14 20:14:00 +00:00,-1.496665,53.376121,40,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-06-15 20:14:00 +00:00,-1.465532,53.369758,74,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-06-16 20:14:00 +00:00,-1.472840,53.380665,56,2,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-06-17 18:14:00 +00:00,-1.505998,53.377457,38,2,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-06-18 19:14:00 +00:00,-1.435635,53.381518,44,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-06-19 19:14:00 +00:00,-1.494862,53.371831,25,1,5,1,Android,5,Three,PrePaid,Passive,NotInUse
+2020-06-20 12:14:00 +00:00,-1.469322,53.381066,61,2,5,2,Android,1,BT,PostPaid,Passive,NotInUse
+2020-06-21 19:14:00 +00:00,-1.467160,53.381953,66,2,2,2,Android,5,Three,PostPaid,Passive,NotInUse
+2020-06-22 19:14:00 +00:00,-1.487011,53.372380,81,1,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-06-23 19:14:00 +00:00,-1.493795,53.378920,14,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-06-24 19:14:00 +00:00,-1.464659,53.383983,17,1,1,1,Apple,1,BT,PostPaid,Active,Voice
+2020-06-25 19:14:00 +00:00,-1.515636,53.386514,74,2,2,1,Android,5,Three,PrePaid,Passive,NotInUse
+2020-06-26 19:14:00 +00:00,-1.508779,53.389299,18,2,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2020-06-27 17:14:00 +00:00,-1.496568,53.381536,68,1,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2020-06-28 15:14:00 +00:00,-1.491720,53.370983,18,2,4,2,Android,4,EE,PostPaid,Passive,NotInUse
+2020-06-29 19:14:00 +00:00,-1.445981,53.381027,26,2,3,2,Android,2,O2,PostPaid,Passive,NotInUse
+2020-06-30 19:14:00 +00:00,-1.436924,53.388377,41,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-07-01 09:14:00 +00:00,-1.504452,53.374417,63,1,4,1,Android,5,Three,PrePaid,Passive,NotInUse
+2020-07-02 09:14:00 +00:00,-1.499076,53.387648,18,2,1,1,Android,2,O2,PostPaid,Active,Data
+2020-07-03 19:14:00 +00:00,-1.441109,53.385284,12,2,4,2,Android,5,Three,PrePaid,Passive,NotInUse
+2020-07-04 19:14:00 +00:00,-1.445201,53.390792,47,2,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-07-05 09:14:00 +00:00,-1.497337,53.388226,28,2,4,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2020-07-06 19:14:00 +00:00,-1.498332,53.383497,17,1,5,1,Apple,6,MVNO,PostPaid,Active,Data
+2020-07-07 19:14:00 +00:00,-1.508195,53.384930,41,2,1,1,Android,5,Three,PrePaid,Passive,NotInUse
+2020-07-08 19:14:00 +00:00,-1.488097,53.369472,46,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-07-09 19:14:00 +00:00,-1.440307,53.374083,54,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-07-10 19:14:00 +00:00,-1.499430,53.385893,29,2,5,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2020-07-11 19:14:00 +00:00,-1.505544,53.387332,53,2,5,1,Android,3,Vodafone,PostPaid,Active,Data
+2020-07-12 19:14:00 +00:00,-1.513097,53.384531,18,2,5,1,Android,4,EE,PrePaid,Passive,NotInUse
+2020-07-13 18:14:00 +00:00,-1.510069,53.374180,47,2,4,2,Android,1,BT,PostPaid,Passive,NotInUse
+2020-07-14 20:14:00 +00:00,-1.454412,53.370926,15,1,5,1,Android,5,Three,PostPaid,Active,Voice
+2020-07-15 20:14:00 +00:00,-1.463616,53.371969,27,1,2,2,Android,3,Vodafone,PostPaid,Active,Data
+2020-07-16 20:14:00 +00:00,-1.496079,53.377146,47,2,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-07-17 18:14:00 +00:00,-1.476097,53.387925,67,2,4,2,Android,2,O2,PostPaid,Passive,NotInUse
+2020-07-18 19:14:00 +00:00,-1.504996,53.379025,23,1,5,2,Android,1,BT,PostPaid,Passive,NotInUse
+2020-07-19 19:14:00 +00:00,-1.496824,53.368534,37,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-07-20 12:14:00 +00:00,-1.489819,53.390096,42,1,4,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2020-07-21 19:14:00 +00:00,-1.458762,53.380996,18,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-07-22 19:14:00 +00:00,-1.483314,53.374143,34,1,5,2,Apple,2,O2,PrePaid,Passive,NotInUse
+2020-07-23 19:14:00 +00:00,-1.487307,53.387893,43,2,5,1,Apple,6,MVNO,PrePaid,Active,Voice
+2020-07-24 19:14:00 +00:00,-1.495408,53.386285,37,1,2,1,Android,6,MVNO,PostPaid,Active,Voice
+2020-07-25 19:14:00 +00:00,-1.493921,53.378679,26,1,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-07-26 19:14:00 +00:00,-1.454984,53.374960,79,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-07-27 17:14:00 +00:00,-1.492956,53.369134,52,2,2,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2020-07-28 15:14:00 +00:00,-1.445192,53.391307,36,1,3,1,Android,1,BT,PrePaid,Passive,NotInUse
+2020-07-29 19:14:00 +00:00,-1.461619,53.369493,50,2,5,1,Apple,3,Vodafone,PostPaid,Active,Data
+2020-07-30 19:14:00 +00:00,-1.445980,53.374799,48,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-07-31 19:14:00 +00:00,-1.496655,53.374198,25,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-08-01 09:14:00 +00:00,-1.500793,53.381287,55,2,4,2,Android,2,O2,PostPaid,Passive,NotInUse
+2020-08-02 09:14:00 +00:00,-1.471538,53.376004,40,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-08-03 19:14:00 +00:00,-1.493916,53.379156,12,2,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-08-04 19:14:00 +00:00,-1.473758,53.369035,34,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-08-05 09:14:00 +00:00,-1.437078,53.368652,76,2,4,2,Android,1,BT,PrePaid,Passive,NotInUse
+2020-08-06 19:14:00 +00:00,-1.479558,53.391643,37,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-08-07 19:14:00 +00:00,-1.448263,53.378752,42,2,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2020-08-08 19:14:00 +00:00,-1.469293,53.376604,20,2,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-08-09 19:14:00 +00:00,-1.502514,53.391273,19,2,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-08-10 19:14:00 +00:00,-1.477569,53.389097,21,1,3,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2020-08-11 19:14:00 +00:00,-1.437461,53.379039,19,2,5,1,Android,2,O2,PostPaid,Active,Data
+2020-08-12 19:14:00 +00:00,-1.467563,53.387584,42,2,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-08-13 18:14:00 +00:00,-1.494671,53.380280,27,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-08-14 20:14:00 +00:00,-1.462595,53.392117,37,2,3,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2020-08-15 20:14:00 +00:00,-1.455070,53.385715,17,1,1,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2020-08-16 20:14:00 +00:00,-1.506722,53.384993,27,1,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-08-17 18:14:00 +00:00,-1.452095,53.376895,32,U,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-08-18 19:14:00 +00:00,-1.514766,53.367707,73,U,3,1,Android,1,BT,PrePaid,Passive,NotInUse
+2020-08-19 19:14:00 +00:00,-1.469544,53.384036,70,1,2,1,Apple,3,Vodafone,PostPaid,Active,Voice
+2020-08-20 12:14:00 +00:00,-1.500471,53.383783,60,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-08-21 19:14:00 +00:00,-1.488600,53.379540,18,2,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2020-08-22 19:14:00 +00:00,-1.515052,53.382744,48,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-08-23 19:14:00 +00:00,-1.440129,53.385021,33,1,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2020-08-24 19:14:00 +00:00,-1.482625,53.384204,27,2,4,1,Android,2,O2,PrePaid,Active,Data
+2020-08-25 19:14:00 +00:00,-1.447312,53.390344,56,1,4,1,Apple,1,BT,PostPaid,Active,Data
+2020-08-26 19:14:00 +00:00,-1.439971,53.387652,54,1,5,3,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-08-27 17:14:00 +00:00,-1.491932,53.388964,71,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-08-28 15:14:00 +00:00,-1.446968,53.386440,68,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-08-29 19:14:00 +00:00,-1.500452,53.382007,25,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-08-30 19:14:00 +00:00,-1.498699,53.376817,18,1,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-08-31 19:14:00 +00:00,-1.488107,53.384048,22,2,4,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2020-09-01 09:14:00 +00:00,-1.473456,53.390696,76,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-09-02 09:14:00 +00:00,-1.458842,53.387619,12,2,5,1,Android,2,O2,PrePaid,Active,Voice
+2020-09-03 19:14:00 +00:00,-1.481039,53.369279,74,2,3,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-09-04 19:14:00 +00:00,-1.452173,53.392165,53,1,1,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-09-05 09:14:00 +00:00,-1.501635,53.384046,59,1,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-09-06 19:14:00 +00:00,-1.465167,53.391503,29,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-09-07 19:14:00 +00:00,-1.481635,53.374933,27,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-09-08 19:14:00 +00:00,-1.448650,53.372391,50,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-09-09 19:14:00 +00:00,-1.502384,53.378876,30,2,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2020-09-10 19:14:00 +00:00,-1.435015,53.368243,68,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-09-11 19:14:00 +00:00,-1.453341,53.375551,13,1,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-09-12 19:14:00 +00:00,-1.443298,53.392283,70,2,2,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-09-13 18:14:00 +00:00,-1.495824,53.374090,57,1,5,1,Android,6,MVNO,PostPaid,Active,Voice
+2020-09-14 20:14:00 +00:00,-1.437354,53.385523,17,1,2,2,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2020-09-15 20:14:00 +00:00,-1.490753,53.386336,76,1,1,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2020-09-16 20:14:00 +00:00,-1.486102,53.378950,22,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-09-17 18:14:00 +00:00,-1.455173,53.382876,62,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-09-18 19:14:00 +00:00,-1.465395,53.384749,73,2,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-09-19 19:14:00 +00:00,-1.447664,53.390719,17,2,2,2,Apple,4,EE,PrePaid,Passive,NotInUse
+2020-09-20 12:14:00 +00:00,-1.454063,53.375954,25,2,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2020-09-21 19:14:00 +00:00,-1.442039,53.376935,17,2,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-09-22 19:14:00 +00:00,-1.443314,53.381591,35,1,1,3,Android,5,Three,PostPaid,Passive,NotInUse
+2020-09-23 19:14:00 +00:00,-1.496539,53.392217,14,2,2,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2020-09-24 19:14:00 +00:00,-1.476028,53.374693,21,2,2,2,Android,1,BT,PostPaid,Passive,NotInUse
+2020-09-25 19:14:00 +00:00,-1.514987,53.371750,69,1,3,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2020-09-26 19:14:00 +00:00,-1.474888,53.390357,48,1,2,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2020-09-27 17:14:00 +00:00,-1.437608,53.369193,69,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-09-28 15:14:00 +00:00,-1.471890,53.374334,54,2,4,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-09-29 19:14:00 +00:00,-1.447031,53.386749,79,2,4,1,Apple,2,O2,PostPaid,Active,Voice
+2020-09-30 19:14:00 +00:00,-1.464409,53.367820,32,2,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2020-10-01 09:14:00 +00:00,-1.474763,53.386987,69,2,2,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-10-02 09:14:00 +00:00,-1.498433,53.367914,58,1,5,2,Android,6,MVNO,PostPaid,Active,Data
+2020-10-03 19:14:00 +00:00,-1.477432,53.372488,82,1,3,1,Apple,5,Three,PostPaid,Active,Voice
+2020-10-04 19:14:00 +00:00,-1.473933,53.383713,81,2,5,2,Android,4,EE,PostPaid,Passive,NotInUse
+2020-10-05 09:14:00 +00:00,-1.480215,53.380152,72,2,1,2,Apple,4,EE,PrePaid,Passive,NotInUse
+2020-10-06 19:14:00 +00:00,-1.463376,53.384015,74,2,4,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2020-10-07 19:14:00 +00:00,-1.477422,53.371993,19,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-10-08 19:14:00 +00:00,-1.497358,53.368558,62,2,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2020-10-09 19:14:00 +00:00,-1.458550,53.370206,12,2,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-10-10 19:14:00 +00:00,-1.476455,53.368902,79,1,2,2,Android,5,Three,PostPaid,Passive,NotInUse
+2020-10-11 19:14:00 +00:00,-1.437087,53.377294,30,2,4,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-10-12 19:14:00 +00:00,-1.486225,53.387581,54,2,4,1,Android,2,O2,PrePaid,Active,Data
+2020-10-13 18:14:00 +00:00,-1.482912,53.377331,50,2,3,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2020-10-14 20:14:00 +00:00,-1.509012,53.389122,26,1,3,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2020-10-15 20:14:00 +00:00,-1.447290,53.367665,84,1,1,3,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-10-16 20:14:00 +00:00,-1.506054,53.380727,72,1,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-10-17 18:14:00 +00:00,-1.511046,53.382468,41,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-10-18 19:14:00 +00:00,-1.470273,53.370758,68,2,3,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2020-10-19 19:14:00 +00:00,-1.499179,53.374185,32,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-10-20 12:14:00 +00:00,-1.438628,53.392015,57,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-10-21 19:14:00 +00:00,-1.507521,53.388516,15,1,4,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2020-10-22 19:14:00 +00:00,-1.492578,53.375353,28,2,1,1,Android,2,O2,PrePaid,Passive,NotInUse
+2020-10-23 19:14:00 +00:00,-1.472833,53.370595,27,2,5,1,Android,1,BT,PostPaid,Active,Voice
+2020-10-24 19:14:00 +00:00,-1.489189,53.369724,47,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-10-25 19:14:00 +00:00,-1.434473,53.367674,83,2,2,1,Android,1,BT,PostPaid,Active,Data
+2020-10-26 19:14:00 +00:00,-1.479591,53.379932,38,2,4,2,Android,2,O2,PostPaid,Passive,NotInUse
+2020-10-27 17:14:00 +00:00,-1.506600,53.379995,65,1,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2020-10-28 15:14:00 +00:00,-1.461436,53.392339,66,1,1,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-10-29 19:14:00 +00:00,-1.473737,53.369790,80,1,4,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2020-10-30 19:14:00 +00:00,-1.501330,53.379009,54,1,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-10-31 19:14:00 +00:00,-1.485371,53.381040,31,2,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-11-01 09:14:00 +00:00,-1.490549,53.385778,82,2,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2020-11-02 09:14:00 +00:00,-1.505107,53.382839,35,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-11-03 19:14:00 +00:00,-1.438482,53.386609,55,1,3,2,Android,1,BT,PostPaid,Passive,NotInUse
+2020-11-04 19:14:00 +00:00,-1.495693,53.385002,53,2,4,1,Android,5,Three,PostPaid,Active,Data
+2020-11-05 09:14:00 +00:00,-1.467220,53.368305,77,1,1,3,Android,5,Three,PostPaid,Passive,NotInUse
+2020-11-06 19:14:00 +00:00,-1.454027,53.373007,51,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-11-07 19:14:00 +00:00,-1.471916,53.371243,57,1,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-11-08 19:14:00 +00:00,-1.469130,53.374837,59,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-11-09 19:14:00 +00:00,-1.499571,53.374819,13,2,3,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2020-11-10 19:14:00 +00:00,-1.455941,53.391838,18,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-11-11 19:14:00 +00:00,-1.486086,53.377305,40,1,5,2,Android,2,O2,PrePaid,Passive,NotInUse
+2020-11-12 19:14:00 +00:00,-1.502092,53.387632,41,1,4,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2020-11-13 18:14:00 +00:00,-1.503605,53.384892,28,U,4,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2020-11-14 20:14:00 +00:00,-1.470371,53.383439,79,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-11-15 20:14:00 +00:00,-1.514953,53.382375,39,U,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-11-16 20:14:00 +00:00,-1.458991,53.386087,29,2,1,2,Android,4,EE,PostPaid,Passive,NotInUse
+2020-11-17 18:14:00 +00:00,-1.469982,53.391231,50,1,2,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-11-18 19:14:00 +00:00,-1.474698,53.391779,17,2,4,2,Android,4,EE,PostPaid,Passive,NotInUse
+2020-11-19 19:14:00 +00:00,-1.460077,53.376499,51,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-11-20 12:14:00 +00:00,-1.446977,53.371668,28,1,1,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-11-21 19:14:00 +00:00,-1.505910,53.380353,76,2,5,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2020-11-22 19:14:00 +00:00,-1.452401,53.384523,63,1,4,2,Apple,5,Three,PostPaid,Passive,NotInUse
+2020-11-23 19:14:00 +00:00,-1.469102,53.384204,32,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-11-24 19:14:00 +00:00,-1.479007,53.370698,45,2,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2020-11-25 19:14:00 +00:00,-1.437451,53.376157,85,2,4,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2020-11-26 19:14:00 +00:00,-1.500098,53.381773,12,1,3,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2020-11-27 17:14:00 +00:00,-1.459849,53.373013,70,1,3,1,Android,4,EE,PrePaid,Passive,NotInUse
+2020-11-28 15:14:00 +00:00,-1.482610,53.371327,32,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-11-29 19:14:00 +00:00,-1.498333,53.369565,20,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-11-30 19:14:00 +00:00,-1.482532,53.382235,16,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-12-01 09:14:00 +00:00,-1.451945,53.392093,61,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-12-02 09:14:00 +00:00,-1.452249,53.391199,20,2,3,1,Android,4,EE,PrePaid,Passive,NotInUse
+2020-12-03 19:14:00 +00:00,-1.471315,53.375976,55,2,1,1,Android,4,EE,PostPaid,Active,Data
+2020-12-04 19:14:00 +00:00,-1.498645,53.382764,75,2,2,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2020-12-05 09:14:00 +00:00,-1.474122,53.382368,44,2,5,3,Android,2,O2,PostPaid,Passive,NotInUse
+2020-12-06 19:14:00 +00:00,-1.495225,53.384600,35,2,5,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-12-07 19:14:00 +00:00,-1.443327,53.383852,68,U,5,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2020-12-08 19:14:00 +00:00,-1.481655,53.373744,31,2,2,1,Android,4,EE,PostPaid,Active,Voice
+2020-12-09 19:14:00 +00:00,-1.491064,53.375713,64,2,1,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2020-12-10 19:14:00 +00:00,-1.487430,53.391614,13,1,1,1,Android,1,BT,PostPaid,Active,Voice
+2020-12-11 19:14:00 +00:00,-1.459169,53.380250,32,1,4,2,Android,4,EE,PostPaid,Passive,NotInUse
+2020-12-12 19:14:00 +00:00,-1.437505,53.371083,64,1,4,2,Android,3,Vodafone,PostPaid,Active,Data
+2020-12-13 18:14:00 +00:00,-1.456352,53.390687,71,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-12-14 20:14:00 +00:00,-1.443211,53.382659,41,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-12-15 20:14:00 +00:00,-1.435153,53.389577,73,2,3,1,Android,4,EE,PrePaid,Passive,NotInUse
+2020-12-16 20:14:00 +00:00,-1.447752,53.372072,13,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-12-17 18:14:00 +00:00,-1.488364,53.388371,21,1,4,1,Android,2,O2,PostPaid,Active,Voice
+2020-12-18 19:14:00 +00:00,-1.437030,53.371751,18,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-12-19 19:14:00 +00:00,-1.460987,53.386855,73,1,4,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2020-12-20 12:14:00 +00:00,-1.462156,53.371191,60,1,2,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2020-12-21 19:14:00 +00:00,-1.486727,53.389874,31,1,5,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2020-12-22 19:14:00 +00:00,-1.475500,53.387201,42,1,3,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2020-12-23 19:14:00 +00:00,-1.434484,53.392280,64,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-12-24 19:14:00 +00:00,-1.445959,53.384323,62,1,4,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2020-12-25 19:14:00 +00:00,-1.454025,53.385444,80,1,5,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2020-12-26 19:14:00 +00:00,-1.502620,53.386561,43,1,4,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2020-12-27 17:14:00 +00:00,-1.472348,53.371333,29,1,3,3,Android,1,BT,PostPaid,Passive,NotInUse
+2020-12-28 15:14:00 +00:00,-1.505824,53.373435,42,1,1,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-12-29 19:14:00 +00:00,-1.509232,53.392285,77,2,5,1,Android,1,BT,PostPaid,Active,Voice
+2020-12-30 19:14:00 +00:00,-1.463678,53.387192,61,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-12-31 19:14:00 +00:00,-1.499303,53.372840,35,1,3,1,Android,3,Vodafone,PostPaid,Active,Data
+2019-01-01 09:14:00 +00:00,-1.513079,53.381326,43,1,4,2,Android,2,O2,PostPaid,Passive,NotInUse
+2019-01-02 09:14:00 +00:00,-1.496715,53.372145,46,2,5,1,Android,4,EE,PrePaid,Passive,NotInUse
+2019-01-03 19:14:00 +00:00,-1.496206,53.382119,74,1,3,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-01-04 19:14:00 +00:00,-1.497240,53.387687,23,2,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-01-05 09:14:00 +00:00,-1.491985,53.369409,52,2,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-01-06 19:14:00 +00:00,-1.475688,53.367750,23,2,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-01-07 19:14:00 +00:00,-1.471465,53.372100,17,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-01-08 19:14:00 +00:00,-1.459819,53.377278,78,2,5,1,Android,4,EE,PrePaid,Active,Voice
+2019-01-09 19:14:00 +00:00,-1.492759,53.380034,37,1,5,2,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-01-10 19:14:00 +00:00,-1.493528,53.388816,45,2,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-01-11 19:14:00 +00:00,-1.501501,53.377537,38,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-01-12 19:14:00 +00:00,-1.503133,53.369021,68,U,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-01-13 18:14:00 +00:00,-1.503635,53.382799,82,1,1,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-01-14 20:14:00 +00:00,-1.441721,53.388621,69,1,4,1,Apple,1,BT,PostPaid,Active,Voice
+2019-01-15 20:14:00 +00:00,-1.487759,53.380381,62,1,2,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-01-16 20:14:00 +00:00,-1.473777,53.378825,30,1,2,2,Apple,4,EE,PrePaid,Passive,NotInUse
+2019-01-17 18:14:00 +00:00,-1.511260,53.373643,51,1,4,2,Android,5,Three,PostPaid,Passive,NotInUse
+2019-01-18 19:14:00 +00:00,-1.493767,53.379086,20,1,1,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2019-01-19 19:14:00 +00:00,-1.503680,53.377137,81,1,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-01-20 12:14:00 +00:00,-1.490826,53.388059,28,1,1,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-01-21 19:14:00 +00:00,-1.450048,53.371223,20,1,1,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2019-01-22 19:14:00 +00:00,-1.440053,53.370223,30,2,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-01-23 19:14:00 +00:00,-1.441102,53.377419,15,1,5,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-01-24 19:14:00 +00:00,-1.476246,53.374395,68,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-01-25 19:14:00 +00:00,-1.456664,53.382687,62,1,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-01-26 19:14:00 +00:00,-1.502935,53.368546,14,2,3,1,Android,3,Vodafone,PostPaid,Active,Data
+2019-01-27 17:14:00 +00:00,-1.479886,53.371585,21,1,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-01-28 15:14:00 +00:00,-1.475241,53.383595,35,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-01-29 19:14:00 +00:00,-1.489127,53.369615,64,2,2,1,Android,2,O2,PostPaid,Active,Data
+2019-01-30 19:14:00 +00:00,-1.501978,53.382425,40,2,4,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2019-01-31 19:14:00 +00:00,-1.501602,53.387706,79,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-02-01 09:14:00 +00:00,-1.469321,53.368222,62,2,2,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2019-02-02 09:14:00 +00:00,-1.450295,53.373703,32,2,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-02-03 19:14:00 +00:00,-1.456833,53.379221,28,2,1,2,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-02-04 19:14:00 +00:00,-1.500367,53.390260,85,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-02-05 09:14:00 +00:00,-1.480008,53.392403,48,1,2,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-02-06 19:14:00 +00:00,-1.483248,53.388056,47,2,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-02-07 19:14:00 +00:00,-1.441380,53.384857,26,1,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-02-08 19:14:00 +00:00,-1.495214,53.378739,51,2,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-02-09 19:14:00 +00:00,-1.446044,53.372855,79,2,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-02-10 19:14:00 +00:00,-1.443572,53.387772,67,1,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-02-11 19:14:00 +00:00,-1.470434,53.374661,75,1,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2019-02-12 19:14:00 +00:00,-1.446189,53.386076,39,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-02-13 18:14:00 +00:00,-1.448500,53.381885,30,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-02-14 20:14:00 +00:00,-1.509755,53.389948,67,1,5,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-02-15 20:14:00 +00:00,-1.493690,53.389433,68,1,3,2,Android,1,BT,PostPaid,Passive,NotInUse
+2019-02-16 20:14:00 +00:00,-1.458260,53.377934,79,2,5,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2019-02-17 18:14:00 +00:00,-1.471097,53.375123,49,2,5,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-02-18 19:14:00 +00:00,-1.444614,53.382134,62,1,2,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-02-19 19:14:00 +00:00,-1.445241,53.388574,46,1,4,3,Android,5,Three,PostPaid,Passive,NotInUse
+2019-02-20 12:14:00 +00:00,-1.466455,53.374018,78,2,4,1,Apple,5,Three,PrePaid,Active,Data
+2019-02-21 19:14:00 +00:00,-1.505425,53.368306,57,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-02-22 19:14:00 +00:00,-1.444962,53.371561,21,2,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-02-23 19:14:00 +00:00,-1.495440,53.378761,21,1,5,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-02-24 19:14:00 +00:00,-1.442582,53.377284,45,1,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-02-25 19:14:00 +00:00,-1.446068,53.389062,45,2,2,1,Android,6,MVNO,PostPaid,Active,Data
+2019-02-26 19:14:00 +00:00,-1.501809,53.379717,64,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-02-27 17:14:00 +00:00,-1.440034,53.370547,79,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-02-28 15:14:00 +00:00,-1.478643,53.388018,74,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-03-01 09:14:00 +00:00,-1.463995,53.372964,80,1,5,2,Android,1,BT,PostPaid,Passive,NotInUse
+2019-03-02 09:14:00 +00:00,-1.483618,53.377281,84,2,1,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2019-03-03 19:14:00 +00:00,-1.512927,53.392046,27,2,3,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-03-04 19:14:00 +00:00,-1.484427,53.367711,57,2,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-03-05 09:14:00 +00:00,-1.507299,53.384878,55,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-03-06 10:14:00 +00:00,-1.498848,53.388607,72,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-03-07 09:14:00 +00:00,-1.502274,53.373003,23,2,2,1,Apple,6,MVNO,PostPaid,Active,Data
+2019-03-08 09:14:00 +00:00,-1.477437,53.369632,70,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-03-09 09:14:00 +00:00,-1.445078,53.378684,28,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-03-10 17:14:00 +00:00,-1.434562,53.382754,84,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-03-11 19:14:00 +00:00,-1.485449,53.377655,64,1,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2019-03-12 19:14:00 +00:00,-1.475796,53.370572,62,2,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-03-13 18:14:00 +00:00,-1.434640,53.372556,28,2,1,2,Android,5,Three,PostPaid,Passive,NotInUse
+2019-03-14 20:14:00 +00:00,-1.459536,53.379524,13,1,2,2,Android,2,O2,PostPaid,Passive,NotInUse
+2019-03-15 20:14:00 +00:00,-1.439108,53.381318,60,1,4,1,Android,4,EE,PrePaid,Active,Voice
+2019-03-16 20:14:00 +00:00,-1.486829,53.391153,60,1,4,2,Apple,5,Three,PostPaid,Active,Voice
+2019-03-17 18:14:00 +00:00,-1.486114,53.375118,83,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-03-18 19:14:00 +00:00,-1.440172,53.377687,54,2,1,3,Android,4,EE,PrePaid,Passive,NotInUse
+2019-03-19 19:14:00 +00:00,-1.435707,53.376226,77,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-03-20 12:14:00 +00:00,-1.507253,53.371964,18,1,3,1,Apple,5,Three,PostPaid,Active,Data
+2019-03-21 19:14:00 +00:00,-1.466407,53.389841,60,1,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2019-03-22 19:14:00 +00:00,-1.510930,53.379491,49,2,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-03-23 19:14:00 +00:00,-1.513514,53.376021,32,1,1,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-03-24 19:14:00 +00:00,-1.492289,53.375034,57,1,1,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-03-25 19:14:00 +00:00,-1.474920,53.383956,38,1,5,2,Android,5,Three,PostPaid,Passive,NotInUse
+2019-03-26 19:14:00 +00:00,-1.484298,53.379948,17,1,3,1,Android,5,Three,PostPaid,Active,Voice
+2019-03-27 17:14:00 +00:00,-1.494127,53.378508,59,2,4,2,Android,2,O2,PostPaid,Passive,NotInUse
+2019-03-28 15:14:00 +00:00,-1.487339,53.374703,60,1,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-03-29 19:14:00 +00:00,-1.436544,53.379353,19,2,5,1,Android,2,O2,PrePaid,Active,Data
+2019-03-30 19:14:00 +00:00,-1.470350,53.373826,53,1,1,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-03-31 19:14:00 +00:00,-1.505098,53.380397,83,2,4,1,Apple,2,O2,PrePaid,Active,Data
+2019-04-01 09:14:00 +00:00,-1.487209,53.371293,75,1,4,1,Android,2,O2,PostPaid,Active,Voice
+2019-04-02 09:14:00 +00:00,-1.484461,53.377975,70,2,2,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-04-03 19:14:00 +00:00,-1.459309,53.380145,77,2,5,3,Apple,4,EE,PrePaid,Passive,NotInUse
+2019-04-04 19:14:00 +00:00,-1.444148,53.379236,40,1,5,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2019-04-05 09:14:00 +00:00,-1.493381,53.387408,68,1,3,3,Android,1,BT,PostPaid,Passive,NotInUse
+2019-04-06 09:14:00 +00:00,-1.475048,53.385477,35,2,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-04-07 19:14:00 +00:00,-1.499458,53.370703,74,2,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-04-08 19:14:00 +00:00,-1.509028,53.390312,38,2,2,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-04-09 19:14:00 +00:00,-1.507359,53.387471,43,1,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2019-04-10 19:14:00 +00:00,-1.506290,53.391996,53,1,4,2,Android,2,O2,PrePaid,Passive,NotInUse
+2019-04-11 19:14:00 +00:00,-1.510074,53.380326,46,1,4,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-04-12 19:14:00 +00:00,-1.473368,53.389082,65,2,4,2,Android,2,O2,PostPaid,Passive,NotInUse
+2019-04-13 18:14:00 +00:00,-1.510443,53.391420,64,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-04-14 20:14:00 +00:00,-1.446132,53.383718,61,1,4,2,Android,1,BT,PostPaid,Passive,NotInUse
+2019-04-15 20:14:00 +00:00,-1.488076,53.368916,85,1,5,1,Android,1,BT,PrePaid,Active,Data
+2019-04-16 20:14:00 +00:00,-1.483885,53.386945,80,2,1,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-04-17 18:14:00 +00:00,-1.513121,53.378027,13,2,2,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2019-04-18 19:14:00 +00:00,-1.464717,53.368026,62,2,1,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-04-19 19:14:00 +00:00,-1.491721,53.384625,23,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-04-20 12:14:00 +00:00,-1.438682,53.386133,68,2,5,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-04-21 19:14:00 +00:00,-1.496171,53.391820,52,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-04-22 19:14:00 +00:00,-1.463402,53.383331,79,1,1,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-04-23 19:14:00 +00:00,-1.458048,53.388138,18,1,2,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-04-24 19:14:00 +00:00,-1.439027,53.378629,49,1,1,1,Android,5,Three,PostPaid,Active,Data
+2019-04-25 19:14:00 +00:00,-1.481837,53.383414,20,2,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-04-26 19:14:00 +00:00,-1.449580,53.376322,55,1,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-04-27 17:14:00 +00:00,-1.465371,53.381608,32,2,4,2,Apple,6,MVNO,PostPaid,Active,Data
+2019-04-28 15:14:00 +00:00,-1.503529,53.381423,25,2,5,1,Android,6,MVNO,PostPaid,Active,Data
+2019-04-29 19:14:00 +00:00,-1.476170,53.379390,30,1,4,3,Android,2,O2,PrePaid,Passive,NotInUse
+2019-04-30 19:14:00 +00:00,-1.464376,53.379144,66,2,2,1,Apple,1,BT,PostPaid,Active,Data
+2019-05-01 09:14:00 +00:00,-1.448383,53.378656,67,1,4,2,Apple,2,O2,PrePaid,Passive,NotInUse
+2019-05-02 09:14:00 +00:00,-1.515433,53.384323,14,1,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-05-03 19:14:00 +00:00,-1.492690,53.387790,35,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-05-04 19:14:00 +00:00,-1.485773,53.387268,29,1,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-05-05 09:14:00 +00:00,-1.453470,53.374889,73,1,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-05-06 19:14:00 +00:00,-1.472740,53.372280,60,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-05-07 19:14:00 +00:00,-1.459977,53.372206,41,2,3,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2019-05-08 19:14:00 +00:00,-1.456059,53.386070,56,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-05-09 19:14:00 +00:00,-1.515085,53.377281,72,2,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2019-05-10 19:14:00 +00:00,-1.488236,53.369418,15,1,5,2,Android,1,BT,PrePaid,Passive,NotInUse
+2019-05-11 19:14:00 +00:00,-1.462981,53.390230,78,1,3,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2019-05-12 19:14:00 +00:00,-1.486240,53.376791,19,2,1,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-05-13 18:14:00 +00:00,-1.489934,53.373364,13,2,3,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2019-05-14 20:14:00 +00:00,-1.488414,53.370389,45,2,4,1,Android,4,EE,PostPaid,Active,Data
+2019-05-15 20:14:00 +00:00,-1.440643,53.378941,33,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-05-16 20:14:00 +00:00,-1.512173,53.387754,14,2,5,1,Android,4,EE,PostPaid,Active,Data
+2019-05-17 18:14:00 +00:00,-1.473748,53.374555,72,2,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-05-18 19:14:00 +00:00,-1.440495,53.385707,76,1,2,2,Android,1,BT,PrePaid,Passive,NotInUse
+2019-05-19 19:14:00 +00:00,-1.480403,53.373059,64,1,4,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-05-20 12:14:00 +00:00,-1.476712,53.387748,53,2,2,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-05-21 19:14:00 +00:00,-1.513478,53.373507,23,2,5,2,Apple,5,Three,PostPaid,Active,Data
+2019-05-22 19:14:00 +00:00,-1.462865,53.379366,16,2,3,2,Android,2,O2,PostPaid,Passive,NotInUse
+2019-05-23 19:14:00 +00:00,-1.502012,53.373256,30,2,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-05-24 19:14:00 +00:00,-1.475790,53.388558,63,1,1,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-05-25 19:14:00 +00:00,-1.444773,53.370317,45,2,5,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2019-05-26 19:14:00 +00:00,-1.484457,53.367706,52,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-05-27 17:14:00 +00:00,-1.475321,53.368180,58,1,5,1,Android,6,MVNO,PostPaid,Active,Data
+2019-05-28 15:14:00 +00:00,-1.467177,53.368980,31,2,2,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-05-29 19:14:00 +00:00,-1.444604,53.374079,16,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-05-30 19:14:00 +00:00,-1.437992,53.379265,24,2,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-05-31 19:14:00 +00:00,-1.444239,53.374743,17,2,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-06-01 09:14:00 +00:00,-1.453835,53.380537,42,1,1,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2019-06-02 09:14:00 +00:00,-1.477164,53.384247,43,1,3,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-06-03 19:14:00 +00:00,-1.469148,53.384761,45,1,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-06-04 19:14:00 +00:00,-1.495945,53.381436,36,2,3,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2019-06-05 09:14:00 +00:00,-1.474490,53.385447,14,1,3,1,Android,4,EE,PostPaid,Active,Data
+2019-06-06 19:14:00 +00:00,-1.483385,53.382938,17,1,3,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-06-07 19:14:00 +00:00,-1.483088,53.368135,64,1,2,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-06-08 19:14:00 +00:00,-1.448101,53.370635,16,1,1,1,Android,4,EE,PrePaid,Active,Voice
+2019-06-09 19:14:00 +00:00,-1.459899,53.382074,78,1,1,3,Android,4,EE,PostPaid,Passive,NotInUse
+2019-06-10 19:14:00 +00:00,-1.435039,53.385239,49,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-06-11 19:14:00 +00:00,-1.498258,53.371358,55,2,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-06-12 19:14:00 +00:00,-1.469241,53.389636,84,2,3,1,Android,4,EE,PrePaid,Passive,NotInUse
+2019-06-13 18:14:00 +00:00,-1.509700,53.369935,76,1,1,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-06-14 20:14:00 +00:00,-1.463191,53.381667,66,2,5,1,Android,6,MVNO,PrePaid,Active,Data
+2019-06-15 20:14:00 +00:00,-1.448811,53.372707,17,1,2,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-06-16 20:14:00 +00:00,-1.449956,53.390681,43,1,2,1,Android,4,EE,PrePaid,Passive,NotInUse
+2019-06-17 18:14:00 +00:00,-1.455551,53.381448,28,1,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-06-18 19:14:00 +00:00,-1.441409,53.374948,57,1,5,1,Android,2,O2,PrePaid,Active,Data
+2019-06-19 19:14:00 +00:00,-1.502711,53.374068,55,2,2,1,Android,1,BT,PostPaid,Active,Voice
+2019-06-20 12:14:00 +00:00,-1.480174,53.377356,50,1,1,1,Android,3,Vodafone,PostPaid,Active,Data
+2019-06-21 19:14:00 +00:00,-1.451949,53.390384,30,1,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-06-22 19:14:00 +00:00,-1.473442,53.378116,72,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-06-23 19:14:00 +00:00,-1.472069,53.370586,46,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-06-24 19:14:00 +00:00,-1.477408,53.370662,16,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-06-25 19:14:00 +00:00,-1.443285,53.376686,77,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-06-26 19:14:00 +00:00,-1.451131,53.386080,79,1,5,1,Android,4,EE,PostPaid,Active,Data
+2019-06-27 17:14:00 +00:00,-1.512325,53.379664,21,2,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-06-28 15:14:00 +00:00,-1.490491,53.373218,39,1,5,1,Apple,1,BT,PostPaid,Active,Voice
+2019-06-29 19:14:00 +00:00,-1.443082,53.369507,36,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-06-30 19:14:00 +00:00,-1.462912,53.391882,70,2,4,2,Android,5,Three,PrePaid,Active,Data
+2019-07-01 09:14:00 +00:00,-1.463134,53.379841,12,2,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-07-02 09:14:00 +00:00,-1.498974,53.383736,34,2,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-07-03 19:14:00 +00:00,-1.500176,53.388535,41,2,3,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-07-04 19:14:00 +00:00,-1.464567,53.372946,27,1,1,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-07-05 09:14:00 +00:00,-1.482155,53.375480,13,2,1,2,Android,1,BT,PostPaid,Passive,NotInUse
+2019-07-06 19:14:00 +00:00,-1.479572,53.377971,63,1,2,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-07-07 19:14:00 +00:00,-1.467838,53.379105,31,1,1,3,Android,1,BT,PrePaid,Passive,NotInUse
+2019-07-08 19:14:00 +00:00,-1.507403,53.369963,49,2,5,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-07-09 19:14:00 +00:00,-1.503591,53.382731,53,1,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-07-10 19:14:00 +00:00,-1.450210,53.389178,34,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-07-11 19:14:00 +00:00,-1.468913,53.376564,68,1,3,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-07-12 19:14:00 +00:00,-1.506289,53.377703,51,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-07-13 18:14:00 +00:00,-1.443810,53.389920,33,2,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-07-14 20:14:00 +00:00,-1.505758,53.376823,73,2,2,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-07-15 20:14:00 +00:00,-1.451418,53.369964,47,1,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-07-16 20:14:00 +00:00,-1.495870,53.376944,61,1,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-07-17 18:14:00 +00:00,-1.509886,53.371319,45,2,4,2,Android,5,Three,PostPaid,Passive,NotInUse
+2019-07-18 19:14:00 +00:00,-1.473140,53.374345,43,2,3,2,Android,1,BT,PostPaid,Passive,NotInUse
+2019-07-19 19:14:00 +00:00,-1.465899,53.374455,45,1,4,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-07-20 12:14:00 +00:00,-1.440071,53.388480,56,1,1,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-07-21 19:14:00 +00:00,-1.489341,53.376104,50,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-07-22 19:14:00 +00:00,-1.462629,53.388155,56,1,1,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2019-07-23 19:14:00 +00:00,-1.479719,53.391649,55,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-07-24 19:14:00 +00:00,-1.453083,53.391312,31,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-07-25 19:14:00 +00:00,-1.509209,53.387729,53,1,2,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-07-26 19:14:00 +00:00,-1.515303,53.383040,76,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-07-27 17:14:00 +00:00,-1.492630,53.388421,59,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-07-28 15:14:00 +00:00,-1.502281,53.384869,48,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-07-29 19:14:00 +00:00,-1.469835,53.387013,59,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-07-30 19:14:00 +00:00,-1.515600,53.386035,58,2,1,2,Android,1,BT,PostPaid,Passive,NotInUse
+2019-07-31 19:14:00 +00:00,-1.455248,53.377660,77,2,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-08-01 09:14:00 +00:00,-1.481878,53.368714,18,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-08-02 09:14:00 +00:00,-1.487813,53.379183,77,1,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-08-03 19:14:00 +00:00,-1.465559,53.387114,67,2,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-08-04 19:14:00 +00:00,-1.463578,53.377764,54,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-08-05 09:14:00 +00:00,-1.510506,53.373162,32,2,1,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-08-06 19:14:00 +00:00,-1.477675,53.381331,38,2,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-08-07 19:14:00 +00:00,-1.434512,53.369624,70,1,3,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-08-08 19:14:00 +00:00,-1.461512,53.391568,59,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-08-09 19:14:00 +00:00,-1.480888,53.388007,78,1,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-08-10 19:14:00 +00:00,-1.436013,53.391785,18,1,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-08-11 19:14:00 +00:00,-1.503377,53.370350,65,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-08-12 19:14:00 +00:00,-1.515596,53.386999,52,2,5,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-08-13 18:14:00 +00:00,-1.439268,53.390891,18,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-08-14 20:14:00 +00:00,-1.493287,53.388158,33,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-08-15 20:14:00 +00:00,-1.507213,53.387622,43,1,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-08-16 20:14:00 +00:00,-1.468905,53.372632,72,2,1,2,Android,4,EE,PrePaid,Passive,NotInUse
+2019-08-17 18:14:00 +00:00,-1.485632,53.382759,46,1,5,2,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-08-18 19:14:00 +00:00,-1.472067,53.372578,66,1,4,1,Android,3,Vodafone,PostPaid,Active,Data
+2019-08-19 19:14:00 +00:00,-1.478175,53.368389,61,2,2,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2019-08-20 12:14:00 +00:00,-1.483756,53.377044,19,1,4,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2019-08-21 19:14:00 +00:00,-1.501896,53.372770,46,1,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-08-22 19:14:00 +00:00,-1.466724,53.372732,81,1,2,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-08-23 19:14:00 +00:00,-1.488425,53.381774,71,2,4,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2019-08-24 19:14:00 +00:00,-1.509341,53.387660,42,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-08-25 19:14:00 +00:00,-1.452110,53.373121,42,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-08-26 19:14:00 +00:00,-1.442947,53.382988,49,1,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-08-27 17:14:00 +00:00,-1.479711,53.376849,65,1,3,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-08-28 15:14:00 +00:00,-1.484547,53.371108,80,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-08-29 19:14:00 +00:00,-1.479049,53.387015,61,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-08-30 19:14:00 +00:00,-1.478189,53.373640,68,1,1,1,Android,5,Three,PostPaid,Active,Data
+2019-08-31 19:14:00 +00:00,-1.463390,53.382577,83,1,3,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-09-01 09:14:00 +00:00,-1.505767,53.371913,29,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-09-02 09:14:00 +00:00,-1.454587,53.374086,77,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-09-03 19:14:00 +00:00,-1.513833,53.374168,41,1,1,2,Android,5,Three,PostPaid,Passive,NotInUse
+2019-09-04 19:14:00 +00:00,-1.476211,53.379090,66,1,5,2,Android,1,BT,PostPaid,Passive,NotInUse
+2019-09-05 09:14:00 +00:00,-1.440648,53.386239,49,1,4,2,Apple,1,BT,PrePaid,Passive,NotInUse
+2019-09-06 19:14:00 +00:00,-1.496990,53.385299,22,1,2,2,Android,2,O2,PrePaid,Passive,NotInUse
+2019-09-07 19:14:00 +00:00,-1.490237,53.370951,70,U,3,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-09-08 19:14:00 +00:00,-1.516038,53.387717,26,2,5,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-09-09 19:14:00 +00:00,-1.487546,53.385955,65,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-09-10 19:14:00 +00:00,-1.452757,53.375026,66,1,5,2,Android,1,BT,PrePaid,Passive,NotInUse
+2019-09-11 19:14:00 +00:00,-1.494819,53.383916,77,1,4,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-09-12 19:14:00 +00:00,-1.462113,53.388693,24,2,2,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-09-13 18:14:00 +00:00,-1.475268,53.382336,39,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-09-14 20:14:00 +00:00,-1.453642,53.375796,61,2,1,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-09-15 20:14:00 +00:00,-1.506029,53.375238,13,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-09-16 20:14:00 +00:00,-1.512458,53.384347,16,2,4,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-09-17 18:14:00 +00:00,-1.512673,53.387488,82,2,3,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-09-18 19:14:00 +00:00,-1.476971,53.368355,83,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-09-19 19:14:00 +00:00,-1.444046,53.385508,46,2,3,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-09-20 12:14:00 +00:00,-1.477928,53.374682,80,1,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-09-21 19:14:00 +00:00,-1.456695,53.382867,73,1,5,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2019-09-22 19:14:00 +00:00,-1.456695,53.375584,19,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-09-23 19:14:00 +00:00,-1.513277,53.381132,34,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-09-24 19:14:00 +00:00,-1.506799,53.388258,68,2,4,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-09-25 19:14:00 +00:00,-1.451570,53.373667,46,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-09-26 19:14:00 +00:00,-1.475093,53.374680,72,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-09-27 17:14:00 +00:00,-1.444448,53.379584,66,2,1,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-09-28 15:14:00 +00:00,-1.503570,53.372243,37,2,2,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-09-29 19:14:00 +00:00,-1.487275,53.382674,34,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-09-30 19:14:00 +00:00,-1.474560,53.372664,41,1,2,3,Android,6,MVNO,PrePaid,Active,Data
+2019-10-01 09:14:00 +00:00,-1.501269,53.374294,59,1,1,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-10-02 09:14:00 +00:00,-1.505345,53.377478,65,1,3,3,Android,2,O2,PostPaid,Passive,NotInUse
+2019-10-03 19:14:00 +00:00,-1.448660,53.378629,43,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-10-04 19:14:00 +00:00,-1.499037,53.387525,59,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-10-05 09:14:00 +00:00,-1.455399,53.389679,76,1,2,1,Apple,1,BT,PostPaid,Active,Data
+2019-10-06 19:14:00 +00:00,-1.513130,53.368287,20,2,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-10-07 19:14:00 +00:00,-1.472430,53.369753,57,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-10-08 19:14:00 +00:00,-1.485920,53.385780,40,1,2,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2019-10-09 19:14:00 +00:00,-1.495409,53.377559,78,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-10-10 19:14:00 +00:00,-1.514209,53.382161,32,1,5,1,Android,2,O2,PostPaid,Active,Voice
+2019-10-11 19:14:00 +00:00,-1.437094,53.368060,71,2,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-10-12 19:14:00 +00:00,-1.487611,53.380402,37,1,4,2,Android,2,O2,PrePaid,Passive,NotInUse
+2019-10-13 18:14:00 +00:00,-1.492909,53.377657,50,1,4,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2019-10-14 20:14:00 +00:00,-1.478907,53.392256,16,1,4,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2019-10-15 20:14:00 +00:00,-1.440296,53.388247,35,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-10-16 20:14:00 +00:00,-1.467232,53.381252,30,2,3,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2019-10-17 18:14:00 +00:00,-1.493015,53.389245,21,1,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-10-18 19:14:00 +00:00,-1.510822,53.380582,38,2,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-10-19 19:14:00 +00:00,-1.489447,53.382877,54,1,2,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-10-20 12:14:00 +00:00,-1.472137,53.392238,17,2,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-10-21 19:14:00 +00:00,-1.508248,53.369642,71,1,4,1,Android,1,BT,PostPaid,Active,Data
+2019-10-22 19:14:00 +00:00,-1.496892,53.379236,15,2,1,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-10-23 19:14:00 +00:00,-1.514356,53.371631,59,2,3,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-10-24 19:14:00 +00:00,-1.504173,53.372250,51,2,4,3,Android,4,EE,PostPaid,Passive,NotInUse
+2019-10-25 19:14:00 +00:00,-1.465237,53.368479,45,2,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-10-26 19:14:00 +00:00,-1.460629,53.383541,33,2,2,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2019-10-27 17:14:00 +00:00,-1.448291,53.369346,16,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-10-28 15:14:00 +00:00,-1.434738,53.379493,56,2,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-10-29 19:14:00 +00:00,-1.483851,53.378455,83,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-10-30 19:14:00 +00:00,-1.508843,53.376703,31,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-10-31 19:14:00 +00:00,-1.438417,53.375599,74,1,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-11-01 09:14:00 +00:00,-1.500717,53.382720,45,1,5,1,Apple,5,Three,PostPaid,Active,Data
+2019-11-02 09:14:00 +00:00,-1.510242,53.378689,69,1,2,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-11-03 19:14:00 +00:00,-1.499621,53.377171,69,2,4,2,Apple,1,BT,PostPaid,Active,Voice
+2019-11-04 19:14:00 +00:00,-1.486814,53.373470,37,1,2,1,Android,4,EE,PrePaid,Passive,NotInUse
+2019-11-05 09:14:00 +00:00,-1.498392,53.372489,17,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-11-06 19:14:00 +00:00,-1.465595,53.386850,66,U,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-11-07 19:14:00 +00:00,-1.481355,53.389349,29,2,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-11-08 19:14:00 +00:00,-1.510247,53.376344,56,2,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-11-09 19:14:00 +00:00,-1.488593,53.386651,47,2,5,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-11-10 19:14:00 +00:00,-1.441615,53.371140,48,2,5,2,Android,3,Vodafone,PostPaid,Active,Data
+2019-11-11 19:14:00 +00:00,-1.471096,53.374841,12,2,2,1,Apple,6,MVNO,PostPaid,Active,Data
+2019-11-12 19:14:00 +00:00,-1.481557,53.378501,81,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-11-13 18:14:00 +00:00,-1.446571,53.376726,17,1,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-11-14 20:14:00 +00:00,-1.503184,53.378371,17,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-11-15 20:14:00 +00:00,-1.465690,53.378815,30,2,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-11-16 20:14:00 +00:00,-1.438058,53.373872,77,2,1,2,Android,5,Three,PostPaid,Passive,NotInUse
+2019-11-17 18:14:00 +00:00,-1.471777,53.388813,31,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-11-18 19:14:00 +00:00,-1.499283,53.380774,35,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-11-19 19:14:00 +00:00,-1.469275,53.370889,45,1,1,1,Android,5,Three,PostPaid,Active,Voice
+2019-11-20 12:14:00 +00:00,-1.492666,53.381142,12,1,4,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-11-21 19:14:00 +00:00,-1.468532,53.384399,27,1,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-11-22 19:14:00 +00:00,-1.491827,53.391359,43,1,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-11-23 19:14:00 +00:00,-1.454810,53.389188,17,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-11-24 19:14:00 +00:00,-1.492531,53.380415,14,2,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-11-25 19:14:00 +00:00,-1.486137,53.367900,29,2,4,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2019-11-26 19:14:00 +00:00,-1.447085,53.376320,60,2,5,2,Android,1,BT,PostPaid,Passive,NotInUse
+2019-11-27 17:14:00 +00:00,-1.435108,53.385215,54,1,5,3,Android,5,Three,PostPaid,Passive,NotInUse
+2019-11-28 15:14:00 +00:00,-1.505657,53.376983,18,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-11-29 19:14:00 +00:00,-1.438629,53.391310,14,1,5,1,Android,1,BT,PostPaid,Active,Voice
+2019-11-30 19:14:00 +00:00,-1.449817,53.389843,40,1,4,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-12-01 09:14:00 +00:00,-1.453818,53.377329,25,1,3,2,Android,1,BT,PostPaid,Active,Data
+2019-12-02 09:14:00 +00:00,-1.451793,53.390178,42,2,4,1,Android,2,O2,PostPaid,Active,Data
+2019-12-03 19:14:00 +00:00,-1.439619,53.376094,24,2,3,2,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-12-04 19:14:00 +00:00,-1.476681,53.380572,55,1,2,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-12-05 09:14:00 +00:00,-1.492458,53.379173,12,2,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-12-06 19:14:00 +00:00,-1.446921,53.385193,63,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-12-07 19:14:00 +00:00,-1.511934,53.376733,64,1,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-12-08 19:14:00 +00:00,-1.495538,53.368208,63,2,1,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2019-12-09 19:14:00 +00:00,-1.442522,53.382177,60,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-12-10 19:14:00 +00:00,-1.438501,53.390100,68,1,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-12-11 19:14:00 +00:00,-1.451143,53.379235,61,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-12-12 19:14:00 +00:00,-1.512230,53.383122,21,2,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-12-13 18:14:00 +00:00,-1.471762,53.369633,19,1,5,3,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-12-14 20:14:00 +00:00,-1.460099,53.390642,54,2,3,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2019-12-15 20:14:00 +00:00,-1.497638,53.382361,26,2,1,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-12-16 20:14:00 +00:00,-1.443848,53.382719,40,2,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-12-17 18:14:00 +00:00,-1.437922,53.369225,61,2,5,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-12-18 19:14:00 +00:00,-1.474291,53.371143,20,2,1,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-12-19 19:14:00 +00:00,-1.495164,53.392186,52,2,4,2,Android,2,O2,PrePaid,Passive,NotInUse
+2019-12-20 12:14:00 +00:00,-1.443889,53.386545,57,1,1,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-12-21 19:14:00 +00:00,-1.509017,53.387891,64,1,4,3,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2019-12-22 19:14:00 +00:00,-1.480293,53.375282,84,2,3,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-12-23 19:14:00 +00:00,-1.471808,53.381067,70,2,1,1,Apple,4,EE,PostPaid,Active,Data
+2019-12-24 19:14:00 +00:00,-1.473337,53.367775,73,1,1,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2019-12-25 19:14:00 +00:00,-1.498166,53.389129,73,2,1,3,Apple,1,BT,PostPaid,Passive,NotInUse
+2019-12-26 19:14:00 +00:00,-1.449134,53.388261,40,2,2,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-12-27 17:14:00 +00:00,-1.489607,53.370092,71,1,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-12-28 15:14:00 +00:00,-1.457525,53.368315,21,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-12-29 19:14:00 +00:00,-1.506881,53.391345,59,1,2,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-12-30 19:14:00 +00:00,-1.474824,53.378842,30,2,1,2,Android,3,Vodafone,PostPaid,Active,Voice
+2019-12-31 19:14:00 +00:00,-1.498320,53.392159,44,2,3,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-01-01 09:14:00 +00:00,-1.496562,53.391247,25,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-01-02 09:14:00 +00:00,-1.446280,53.388917,60,U,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-01-03 19:14:00 +00:00,-1.515335,53.384348,18,2,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-01-04 19:14:00 +00:00,-1.476627,53.375270,75,2,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-01-05 09:14:00 +00:00,-1.484174,53.372744,71,1,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-01-06 19:14:00 +00:00,-1.463153,53.379214,61,1,4,1,Apple,2,O2,PostPaid,Active,Data
+2019-01-07 19:14:00 +00:00,-1.476529,53.389559,59,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-01-08 19:14:00 +00:00,-1.458784,53.369459,18,2,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-01-09 19:14:00 +00:00,-1.482967,53.376901,77,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-01-10 19:14:00 +00:00,-1.479117,53.376695,36,2,4,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2019-01-11 19:14:00 +00:00,-1.476421,53.372846,25,2,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-01-12 19:14:00 +00:00,-1.506308,53.385026,76,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-01-13 18:14:00 +00:00,-1.435137,53.371027,28,2,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-01-14 20:14:00 +00:00,-1.467418,53.376192,45,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-01-15 20:14:00 +00:00,-1.463658,53.378221,19,1,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-01-16 20:14:00 +00:00,-1.447382,53.385543,46,1,1,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-01-17 18:14:00 +00:00,-1.484592,53.385899,60,2,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-01-18 19:14:00 +00:00,-1.478072,53.389250,41,2,4,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-01-19 19:14:00 +00:00,-1.493712,53.381615,85,2,5,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2019-01-20 12:14:00 +00:00,-1.512572,53.384351,47,2,5,2,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-01-21 19:14:00 +00:00,-1.448959,53.378096,71,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-01-22 19:14:00 +00:00,-1.496887,53.376853,79,1,4,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-01-23 19:14:00 +00:00,-1.436054,53.370067,27,2,1,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2019-01-24 19:14:00 +00:00,-1.444988,53.376614,29,2,3,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2019-01-25 19:14:00 +00:00,-1.467135,53.380813,23,1,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-01-26 19:14:00 +00:00,-1.513251,53.378134,49,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-01-27 17:14:00 +00:00,-1.466434,53.379407,24,1,1,2,Android,3,Vodafone,PostPaid,Active,Data
+2019-01-28 15:14:00 +00:00,-1.504809,53.369702,14,2,5,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2019-01-29 19:14:00 +00:00,-1.459996,53.376426,41,1,1,1,Android,3,Vodafone,PrePaid,Active,Data
+2019-01-30 19:14:00 +00:00,-1.495379,53.374338,61,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-01-31 19:14:00 +00:00,-1.490424,53.369621,65,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-02-01 09:14:00 +00:00,-1.479924,53.368464,80,2,2,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-02-02 09:14:00 +00:00,-1.465370,53.388664,25,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-02-03 19:14:00 +00:00,-1.503775,53.379137,48,1,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-02-04 19:14:00 +00:00,-1.485999,53.389778,64,2,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-02-05 09:14:00 +00:00,-1.444173,53.367893,64,1,1,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2019-02-06 19:14:00 +00:00,-1.444464,53.387035,82,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-02-07 19:14:00 +00:00,-1.481269,53.373690,66,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-02-08 19:14:00 +00:00,-1.513130,53.368439,53,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-02-09 19:14:00 +00:00,-1.467197,53.377542,80,2,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-02-10 19:14:00 +00:00,-1.473328,53.370739,44,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-02-11 19:14:00 +00:00,-1.459329,53.375438,40,2,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-02-12 19:14:00 +00:00,-1.455242,53.369755,24,1,3,1,Android,2,O2,PrePaid,Active,Data
+2019-02-13 18:14:00 +00:00,-1.440547,53.369455,26,1,4,1,Android,4,EE,PrePaid,Passive,NotInUse
+2019-02-14 20:14:00 +00:00,-1.447820,53.388246,36,1,5,1,Android,1,BT,PostPaid,Active,Voice
+2019-02-15 20:14:00 +00:00,-1.461541,53.385259,32,1,5,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2019-02-16 20:14:00 +00:00,-1.484749,53.387352,63,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-02-17 18:14:00 +00:00,-1.481454,53.376182,22,1,2,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-02-18 19:14:00 +00:00,-1.445597,53.386307,37,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-02-19 19:14:00 +00:00,-1.479224,53.380620,83,1,1,2,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-02-20 12:14:00 +00:00,-1.473933,53.369317,54,2,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-02-21 19:14:00 +00:00,-1.506635,53.385068,15,2,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-02-22 19:14:00 +00:00,-1.456227,53.370108,65,2,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-02-23 19:14:00 +00:00,-1.443157,53.387233,39,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-02-24 19:14:00 +00:00,-1.471220,53.380608,66,2,5,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2019-02-25 19:14:00 +00:00,-1.471570,53.378742,13,1,2,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-02-26 19:14:00 +00:00,-1.466492,53.369767,37,2,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-02-27 17:14:00 +00:00,-1.475345,53.381261,80,2,1,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2019-02-28 15:14:00 +00:00,-1.469162,53.380779,84,2,2,2,Android,4,EE,PostPaid,Passive,NotInUse
+2019-03-01 09:14:00 +00:00,-1.464395,53.375889,57,1,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2019-03-02 09:14:00 +00:00,-1.458480,53.384655,17,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-03-03 19:14:00 +00:00,-1.442180,53.369091,34,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2019-03-04 19:14:00 +00:00,-1.443648,53.386827,30,1,1,3,Android,6,MVNO,PostPaid,Active,Data
+2019-03-05 09:14:00 +00:00,-1.474882,53.390307,51,1,2,2,Android,2,O2,PrePaid,Passive,NotInUse
+2019-03-06 10:14:00 +00:00,-1.445978,53.368796,69,2,3,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-03-07 09:14:00 +00:00,-1.505350,53.372492,27,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-03-08 09:14:00 +00:00,-1.509909,53.389788,69,1,4,2,Android,1,BT,PrePaid,Passive,NotInUse
+2019-03-09 09:14:00 +00:00,-1.509874,53.371982,57,1,3,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-03-10 17:14:00 +00:00,-1.472203,53.387217,69,2,3,3,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-03-11 19:14:00 +00:00,-1.452139,53.389647,12,1,4,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-03-12 19:14:00 +00:00,-1.486477,53.384627,83,2,5,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-03-13 17:14:00 +00:00,-1.475285,53.378272,83,2,5,2,Android,1,BT,PostPaid,Passive,NotInUse
+2019-03-14 20:14:00 +00:00,-1.506854,53.368790,72,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-03-15 20:14:00 +00:00,-1.486143,53.384104,24,1,1,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2019-03-16 20:14:00 +00:00,-1.459567,53.382142,84,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-03-17 18:14:00 +00:00,-1.470956,53.374622,26,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-03-18 19:14:00 +00:00,-1.454991,53.372516,85,1,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2019-03-19 19:14:00 +00:00,-1.501082,53.377676,54,1,2,2,Android,1,BT,PostPaid,Active,Data
+2019-03-20 12:14:00 +00:00,-1.468639,53.379911,71,2,1,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2019-03-21 19:14:00 +00:00,-1.443982,53.378658,51,1,1,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-03-22 19:14:00 +00:00,-1.491708,53.380922,46,2,1,1,Android,5,Three,PrePaid,Active,Data
+2019-03-23 19:14:00 +00:00,-1.449470,53.381191,38,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-03-24 19:14:00 +00:00,-1.507537,53.368306,73,2,3,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2019-03-25 19:14:00 +00:00,-1.488577,53.371198,49,2,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-03-26 19:14:00 +00:00,-1.454403,53.388846,20,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-03-27 17:14:00 +00:00,-1.454769,53.384035,54,1,1,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2019-03-28 15:14:00 +00:00,-1.438141,53.376865,34,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-03-29 19:14:00 +00:00,-1.446259,53.380906,13,1,3,1,Android,1,BT,PostPaid,Active,Data
+2019-03-30 19:14:00 +00:00,-1.459676,53.390395,12,2,1,1,Android,4,EE,PrePaid,Passive,NotInUse
+2019-03-31 19:14:00 +00:00,-1.470525,53.370130,50,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-04-01 09:14:00 +00:00,-1.438137,53.392400,36,2,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-04-02 09:14:00 +00:00,-1.438971,53.388801,26,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-04-03 19:14:00 +00:00,-1.499583,53.389171,52,1,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-04-04 19:14:00 +00:00,-1.516079,53.370426,61,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-04-05 09:14:00 +00:00,-1.443704,53.372853,72,2,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-04-06 09:14:00 +00:00,-1.445036,53.391698,35,2,1,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2019-04-07 19:14:00 +00:00,-1.472215,53.375345,21,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-04-08 19:14:00 +00:00,-1.452713,53.376738,63,2,1,1,Android,1,BT,PrePaid,Passive,NotInUse
+2019-04-09 19:14:00 +00:00,-1.472378,53.371742,82,2,4,1,Android,5,Three,PrePaid,Passive,NotInUse
+2019-04-10 19:14:00 +00:00,-1.441121,53.389734,53,1,2,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2019-04-11 19:14:00 +00:00,-1.504172,53.375748,52,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-04-12 19:14:00 +00:00,-1.511358,53.373748,46,1,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2019-04-13 18:14:00 +00:00,-1.486971,53.378552,59,1,4,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2019-04-14 20:14:00 +00:00,-1.502292,53.375715,55,1,4,2,Apple,4,EE,PrePaid,Active,Data
+2019-04-15 20:14:00 +00:00,-1.461699,53.371472,79,2,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-04-16 20:14:00 +00:00,-1.512097,53.377778,48,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-04-17 18:14:00 +00:00,-1.446135,53.385667,15,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-04-18 19:14:00 +00:00,-1.453799,53.387228,81,2,1,2,Android,4,EE,PostPaid,Active,Data
+2022-04-19 19:14:00,-1.441427,53.382867,39,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-04-20 19:14:00,-1.454530,53.377024,39,2,4,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2022-04-21 19:14:00,-1.501851,53.380936,53,1,2,2,Apple,5,Three,PrePaid,Passive,NotInUse
+2022-04-22 19:14:00,-1.467284,53.389655,24,2,5,1,Android,5,Three,PostPaid,Active,Data
+2022-04-23 19:14:00,-1.488292,53.389870,58,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-04-24 19:14:00,-1.507703,53.374626,65,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-04-25 19:14:00,-1.512156,53.381852,41,1,4,1,Android,3,Vodafone,PostPaid,Active,Data
+2022-04-26 19:14:00,-1.486457,53.376854,79,1,3,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2022-04-27 19:14:00,-1.446420,53.368428,63,2,1,3,Android,1,BT,PostPaid,Passive,NotInUse
+2022-04-28 19:14:00,-1.486968,53.385147,19,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-04-29 19:14:00,-1.484752,53.381762,82,2,4,1,Apple,4,EE,PostPaid,Active,Data
+2022-04-30 19:14:00,-1.467381,53.378449,78,1,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-05-01 19:14:00,-1.469274,53.378474,66,2,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-05-02 19:14:00,-1.442956,53.380988,77,1,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2022-05-03 19:14:00,-1.452319,53.369162,53,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-05-04 19:14:00,-1.493477,53.382666,14,2,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2022-05-05 19:14:00,-1.490422,53.383460,13,2,2,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2022-05-06 19:14:00,-1.506266,53.371692,59,2,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2022-05-07 19:14:00,-1.513859,53.382898,13,2,5,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2022-05-08 19:14:00,-1.452697,53.381996,59,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-05-09 19:14:00,-1.460346,53.370729,45,1,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-05-10 19:14:00,-1.468457,53.387622,28,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-05-11 19:14:00,-1.461441,53.389404,15,1,4,2,Android,1,BT,PostPaid,Passive,NotInUse
+2022-05-12 19:14:00,-1.450811,53.383946,15,2,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2022-05-13 19:14:00,-1.464616,53.389240,55,2,2,1,Android,6,MVNO,PostPaid,Active,Voice
+2022-05-14 19:14:00,-1.435276,53.368054,58,2,5,1,Android,6,MVNO,PostPaid,Active,Data
+2022-05-15 19:14:00,-1.496162,53.384759,39,2,5,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2022-05-16 19:14:00,-1.456108,53.373116,22,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-05-17 19:14:00,-1.452305,53.387813,40,2,4,2,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2022-05-18 19:14:00,-1.478105,53.389159,14,2,5,3,Android,2,O2,PostPaid,Passive,NotInUse
+2022-05-19 19:14:00,-1.470244,53.388516,17,2,2,1,Android,1,BT,PrePaid,Active,Voice
+2022-05-20 19:14:00,-1.452964,53.382067,78,2,1,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2022-05-21 19:14:00,-1.484012,53.370513,56,2,2,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-05-22 19:14:00,-1.489562,53.384527,45,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-05-23 19:14:00,-1.483048,53.381235,33,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-05-24 19:14:00,-1.479561,53.372093,68,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-05-25 19:14:00,-1.465897,53.378193,74,2,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-05-26 19:14:00,-1.495553,53.377320,82,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-05-27 19:14:00,-1.461777,53.386217,52,2,1,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2022-05-28 19:14:00,-1.508008,53.369511,54,2,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-05-29 19:14:00,-1.451787,53.369738,31,2,5,2,Android,6,MVNO,PrePaid,Passive,NotInUse
+2022-05-30 19:14:00,-1.498938,53.375800,52,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-05-31 19:14:00,-1.450286,53.384136,53,1,3,2,Android,2,O2,PostPaid,Active,Data
+2022-06-01 19:14:00,-1.478619,53.370127,76,1,5,2,Android,5,Three,PostPaid,Passive,NotInUse
+2022-06-02 19:14:00,-1.479810,53.388569,12,2,3,3,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-06-03 19:14:00,-1.482801,53.379962,30,1,2,3,Apple,4,EE,PostPaid,Passive,NotInUse
+2022-06-04 19:14:00,-1.443184,53.370777,26,1,5,2,Android,6,MVNO,PrePaid,Passive,NotInUse
+2022-06-05 19:14:00,-1.438320,53.374782,29,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-06-06 19:14:00,-1.464927,53.389237,15,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-06-07 19:14:00,-1.456836,53.372578,28,1,1,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2022-06-08 19:14:00,-1.476471,53.381551,79,1,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-06-09 19:14:00,-1.498696,53.378298,53,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-06-10 19:14:00,-1.475732,53.372930,55,2,2,2,Android,1,BT,PrePaid,Passive,NotInUse
+2022-06-11 19:14:00,-1.486461,53.380114,56,1,5,1,Apple,1,BT,PostPaid,Active,Data
+2022-06-12 19:14:00,-1.505548,53.382600,63,2,2,2,Android,1,BT,PostPaid,Passive,NotInUse
+2022-06-13 19:14:00,-1.502360,53.377424,83,1,3,1,Android,2,O2,PostPaid,Active,Data
+2022-06-14 19:14:00,-1.506741,53.382901,66,2,4,1,Android,5,Three,PrePaid,Passive,NotInUse
+2022-06-15 19:14:00,-1.478406,53.376356,44,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-06-16 19:14:00,-1.512875,53.375863,42,1,2,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2022-06-17 19:14:00,-1.514809,53.373885,32,1,2,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2022-06-18 19:14:00,-1.434687,53.377751,45,1,3,2,Android,5,Three,PostPaid,Passive,NotInUse
+2022-06-19 19:14:00,-1.508775,53.386614,38,1,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-06-20 19:14:00,-1.491258,53.377314,16,1,2,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2022-06-21 19:14:00,-1.484249,53.378524,42,2,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-06-22 19:14:00,-1.474732,53.368136,85,1,1,1,Android,5,Three,PostPaid,Active,Data
+2022-06-23 19:14:00,-1.490686,53.371206,31,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-06-24 19:14:00,-1.493648,53.385061,50,2,3,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2022-06-25 19:14:00,-1.494858,53.379101,75,1,3,3,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2022-06-26 19:14:00,-1.515773,53.369551,38,2,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-06-27 19:14:00,-1.503404,53.392341,79,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-06-28 19:14:00,-1.466171,53.383618,45,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-06-29 19:14:00,-1.458562,53.374615,30,1,1,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2022-06-30 19:14:00,-1.436683,53.369246,19,1,5,1,Android,3,Vodafone,PostPaid,Active,Data
+2022-07-01 19:14:00,-1.447737,53.371467,71,2,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-07-02 19:14:00,-1.461444,53.388630,44,1,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-07-03 19:14:00,-1.459311,53.379256,35,1,1,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2022-07-04 19:14:00,-1.445231,53.388812,53,1,3,1,Android,4,EE,PostPaid,Active,Data
+2022-07-05 19:14:00,-1.439304,53.390584,65,1,4,2,Android,2,O2,PostPaid,Passive,NotInUse
+2022-07-06 19:14:00,-1.503950,53.368559,32,2,2,2,Android,2,O2,PostPaid,Passive,NotInUse
+2022-07-07 19:14:00,-1.451513,53.387065,20,1,3,1,Android,1,BT,PrePaid,Passive,NotInUse
+2022-07-08 19:14:00,-1.481454,53.368453,21,2,2,2,Android,4,EE,PostPaid,Passive,NotInUse
+2022-07-09 19:14:00,-1.502326,53.385759,79,1,2,2,Android,1,BT,PostPaid,Passive,NotInUse
+2022-07-10 19:14:00,-1.472624,53.382464,49,2,2,2,Android,4,EE,PostPaid,Passive,NotInUse
+2022-07-11 19:14:00,-1.486875,53.378994,49,2,2,1,Android,2,O2,PrePaid,Passive,NotInUse
+2022-07-12 19:14:00,-1.460272,53.374240,33,2,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2022-07-13 19:14:00,-1.487428,53.373023,18,2,5,2,Android,5,Three,PrePaid,Passive,NotInUse
+2022-07-14 19:14:00,-1.491622,53.370246,71,2,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-07-15 19:14:00,-1.451540,53.367709,74,1,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-07-16 19:14:00,-1.467813,53.387150,58,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-07-17 19:14:00,-1.496724,53.368036,85,2,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-07-18 19:14:00,-1.502992,53.389172,22,2,2,1,Apple,1,BT,PostPaid,Active,Data
+2022-07-19 19:14:00,-1.450754,53.380899,13,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-07-20 19:14:00,-1.507692,53.378308,49,2,3,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2022-07-21 19:14:00,-1.476377,53.381053,76,1,3,2,Android,5,Three,PostPaid,Passive,NotInUse
+2022-07-22 19:14:00,-1.439913,53.384428,53,2,2,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2022-07-23 19:14:00,-1.500434,53.381493,60,1,3,2,Android,6,MVNO,PrePaid,Active,Data
+2022-07-24 19:14:00,-1.438521,53.382907,65,2,2,1,Android,4,EE,PrePaid,Passive,NotInUse
+2022-07-25 19:14:00,-1.483348,53.375154,47,2,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-07-26 19:14:00,-1.479304,53.381246,64,2,4,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2022-07-27 19:14:00,-1.504623,53.374468,67,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-07-28 19:14:00,-1.462605,53.372674,21,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-07-29 19:14:00,-1.474923,53.370518,72,1,2,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2022-07-30 19:14:00,-1.488867,53.369606,62,2,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2022-07-31 19:14:00,-1.483006,53.386204,13,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-08-01 19:14:00,-1.457330,53.385043,40,2,3,1,Apple,2,O2,PostPaid,Active,Voice
+2022-08-02 19:14:00,-1.437127,53.390670,37,1,2,2,Android,2,O2,PrePaid,Passive,NotInUse
+2022-08-03 19:14:00,-1.445628,53.370372,12,2,4,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2022-08-04 19:14:00,-1.436655,53.376140,68,1,3,2,Android,1,BT,PostPaid,Passive,NotInUse
+2022-08-05 19:14:00,-1.438921,53.369067,27,2,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-08-06 19:14:00,-1.446473,53.386308,64,1,2,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-08-07 19:14:00,-1.494373,53.374785,67,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-08-08 19:14:00,-1.511898,53.372291,83,1,1,3,Android,1,BT,PostPaid,Passive,NotInUse
+2022-08-09 19:14:00,-1.499198,53.372832,23,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-08-10 19:14:00,-1.447996,53.379798,84,2,2,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-08-11 19:14:00,-1.477485,53.384240,54,2,4,2,Android,5,Three,PostPaid,Active,Data
+2022-08-12 19:14:00,-1.459364,53.373137,72,1,3,2,Android,2,O2,PostPaid,Passive,NotInUse
+2022-08-13 19:14:00,-1.461141,53.380577,73,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-08-14 19:14:00,-1.465133,53.370588,71,2,1,1,Android,4,EE,PrePaid,Passive,NotInUse
+2022-08-15 19:14:00,-1.513873,53.374754,38,2,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-08-16 19:14:00,-1.475566,53.379913,31,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-08-17 19:14:00,-1.503050,53.392188,30,1,1,3,Android,4,EE,PostPaid,Active,Data
+2022-08-18 19:14:00,-1.446778,53.385519,24,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-08-19 19:14:00,-1.437888,53.371068,13,1,2,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2022-08-20 19:14:00,-1.439244,53.370134,29,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-08-21 19:14:00,-1.501283,53.370678,83,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-08-22 19:14:00,-1.514460,53.369031,29,2,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-08-23 19:14:00,-1.490879,53.392228,27,2,5,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2022-08-24 19:14:00,-1.491046,53.385190,80,2,2,1,Apple,6,MVNO,PostPaid,Active,Data
+2022-08-25 19:14:00,-1.469133,53.374034,41,2,2,1,Android,3,Vodafone,PostPaid,Active,Voice
+2022-08-26 19:14:00,-1.479526,53.383549,72,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-08-27 19:14:00,-1.448372,53.372325,43,2,4,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-08-28 19:14:00,-1.493290,53.388574,56,1,4,3,Android,3,Vodafone,PostPaid,Active,Voice
+2022-08-29 19:14:00,-1.471925,53.369096,61,1,5,2,Apple,6,MVNO,PostPaid,Active,Data
+2022-08-30 19:14:00,-1.450681,53.391278,45,2,5,2,Android,4,EE,PrePaid,Passive,NotInUse
+2022-08-31 19:14:00,-1.445773,53.382304,17,1,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-09-01 19:14:00,-1.453820,53.383955,39,2,4,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2022-09-02 19:14:00,-1.483347,53.389892,69,2,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-09-03 19:14:00,-1.509572,53.388391,81,1,3,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2022-09-04 19:14:00,-1.443367,53.385801,80,1,5,2,Android,4,EE,PostPaid,Passive,NotInUse
+2022-09-05 19:14:00,-1.500635,53.385426,17,1,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-09-06 19:14:00,-1.514952,53.368564,35,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-09-07 19:14:00,-1.470976,53.371867,40,1,4,3,Android,2,O2,PostPaid,Passive,NotInUse
+2022-09-08 19:14:00,-1.483834,53.385120,12,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-09-09 19:14:00,-1.459708,53.378442,46,1,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-09-10 19:14:00,-1.456160,53.380166,45,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-09-11 19:14:00,-1.504444,53.388997,33,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-09-12 19:14:00,-1.502031,53.384565,71,1,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2022-09-13 19:14:00,-1.514557,53.391795,12,2,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2022-09-14 19:14:00,-1.492770,53.370449,25,1,1,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-09-15 19:14:00,-1.478342,53.367741,77,1,5,1,Android,6,MVNO,PostPaid,Active,Voice
+2022-09-16 19:14:00,-1.496900,53.383292,31,2,1,1,Android,3,Vodafone,PostPaid,Active,Data
+2022-09-17 19:14:00,-1.443507,53.383727,50,2,3,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2022-09-18 19:14:00,-1.505411,53.386067,51,1,2,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2022-09-19 19:14:00,-1.490727,53.388521,78,1,4,1,Android,5,Three,PrePaid,Active,Data
+2022-09-20 19:14:00,-1.464921,53.386818,34,2,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2022-09-21 19:14:00,-1.449131,53.371309,80,2,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-09-22 19:14:00,-1.479980,53.380760,69,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-09-23 19:14:00,-1.447140,53.370384,23,2,5,1,Apple,5,Three,PostPaid,Active,Data
+2022-09-24 19:14:00,-1.454338,53.373590,85,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-09-25 19:14:00,-1.497466,53.390701,61,2,5,3,Android,2,O2,PostPaid,Active,Data
+2022-09-26 19:14:00,-1.450862,53.388380,66,1,5,1,Apple,4,EE,PostPaid,Active,Voice
+2022-09-27 19:14:00,-1.485614,53.376616,58,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-09-28 19:14:00,-1.506753,53.388767,36,2,2,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2022-09-29 19:14:00,-1.477213,53.371710,23,1,4,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2022-09-30 19:14:00,-1.456059,53.376872,55,1,4,1,Android,5,Three,PrePaid,Passive,NotInUse
+2022-10-01 19:14:00,-1.478521,53.386927,53,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-10-02 19:14:00,-1.461548,53.391116,66,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-10-03 19:14:00,-1.469212,53.388099,32,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-10-04 19:14:00,-1.514270,53.374777,50,1,5,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2022-10-05 19:14:00,-1.441884,53.378117,62,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-10-06 19:14:00,-1.482872,53.376407,75,1,1,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2022-10-07 19:14:00,-1.457203,53.378009,74,1,2,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2022-10-08 19:14:00,-1.485815,53.388649,33,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-10-09 19:14:00,-1.511507,53.373563,70,2,3,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2022-10-10 19:14:00,-1.449436,53.383159,36,2,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-10-11 19:14:00,-1.486791,53.382282,77,2,4,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2022-10-12 19:14:00,-1.463102,53.376108,15,2,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-10-13 19:14:00,-1.496391,53.390647,69,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-10-14 19:14:00,-1.487469,53.389585,40,2,3,2,Apple,1,BT,PrePaid,Active,Voice
+2022-10-15 19:14:00,-1.506498,53.389322,18,1,3,1,Android,1,BT,PostPaid,Active,Voice
+2022-10-16 19:14:00,-1.474385,53.392363,66,1,2,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2022-10-17 19:14:00,-1.516223,53.374370,44,2,5,2,Apple,2,O2,PrePaid,Passive,NotInUse
+2022-10-18 19:14:00,-1.509680,53.377193,45,1,3,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2022-10-19 19:14:00,-1.505642,53.369317,59,1,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2022-10-20 19:14:00,-1.458639,53.372505,65,1,2,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2022-10-21 19:14:00,-1.514115,53.384606,57,2,2,2,Android,1,BT,PostPaid,Passive,NotInUse
+2022-10-22 19:14:00,-1.504109,53.379280,57,2,5,1,Apple,6,MVNO,PostPaid,Active,Voice
+2022-10-23 19:14:00,-1.479442,53.376382,18,1,3,1,Android,6,MVNO,PostPaid,Active,Data
+2022-10-24 19:14:00,-1.501403,53.372759,39,2,4,3,Apple,1,BT,PostPaid,Passive,NotInUse
+2022-10-25 19:14:00,-1.499094,53.375439,14,1,2,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2022-10-26 19:14:00,-1.514275,53.374781,35,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-10-27 19:14:00,-1.468289,53.368922,31,2,2,2,Apple,4,EE,PrePaid,Passive,NotInUse
+2022-10-28 19:14:00,-1.495714,53.389025,65,1,4,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-10-29 19:14:00,-1.473088,53.375224,76,1,4,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2022-10-30 19:14:00,-1.479697,53.380598,68,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-10-31 19:14:00,-1.451473,53.376071,38,1,2,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2022-11-01 19:14:00,-1.461820,53.369805,52,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-11-02 19:14:00,-1.449583,53.389283,74,2,1,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2022-11-03 19:14:00,-1.480578,53.383273,85,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-11-04 19:14:00,-1.452091,53.380191,58,2,2,2,Android,5,Three,PostPaid,Passive,NotInUse
+2022-11-05 19:14:00,-1.490203,53.389760,22,1,4,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2022-11-06 19:14:00,-1.486678,53.382528,68,2,3,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2022-11-07 19:14:00,-1.467151,53.382529,45,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-11-08 19:14:00,-1.447056,53.373287,43,2,5,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2022-11-09 19:14:00,-1.504781,53.367894,47,1,2,3,Android,5,Three,PrePaid,Active,Data
+2022-11-10 19:14:00,-1.508399,53.369616,52,2,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-11-11 19:14:00,-1.492127,53.371505,34,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-11-12 19:14:00,-1.498446,53.373114,82,2,1,3,Android,4,EE,PostPaid,Passive,NotInUse
+2022-11-13 19:14:00,-1.464745,53.392323,47,2,1,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2022-11-14 19:14:00,-1.481255,53.381955,23,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-11-15 19:14:00,-1.452195,53.371069,61,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-11-16 19:14:00,-1.497479,53.382876,43,1,2,2,Apple,3,Vodafone,PostPaid,Active,Data
+2022-11-17 19:14:00,-1.442334,53.389983,37,1,4,1,Android,4,EE,PrePaid,Active,Voice
+2022-11-18 19:14:00,-1.468183,53.383900,84,1,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-11-19 19:14:00,-1.488202,53.385856,70,2,1,1,Apple,6,MVNO,PrePaid,Active,Data
+2022-11-20 19:14:00,-1.503855,53.386854,55,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-11-21 19:14:00,-1.495818,53.374724,25,1,4,1,Android,4,EE,PrePaid,Passive,NotInUse
+2022-11-22 19:14:00,-1.438996,53.378738,14,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-11-23 19:14:00,-1.451356,53.391098,83,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-11-24 19:14:00,-1.466646,53.384039,63,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-11-25 19:14:00,-1.463366,53.389124,33,2,3,2,Apple,5,Three,PostPaid,Passive,NotInUse
+2022-11-26 19:14:00,-1.512426,53.373770,74,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-11-27 19:14:00,-1.484558,53.383736,57,1,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2022-11-28 19:14:00,-1.440399,53.368731,39,2,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-11-29 19:14:00,-1.512142,53.368259,37,2,2,1,Android,5,Three,PrePaid,Passive,NotInUse
+2022-11-30 19:14:00,-1.448122,53.373640,60,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-12-01 19:14:00,-1.450132,53.384978,32,2,1,2,Android,5,Three,PostPaid,Passive,NotInUse
+2022-12-02 19:14:00,-1.441844,53.384591,55,2,1,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2022-12-03 19:14:00,-1.451725,53.387429,18,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-12-04 19:14:00,-1.493666,53.387249,38,2,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-12-05 19:14:00,-1.436176,53.378881,31,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-12-06 19:14:00,-1.444094,53.378449,65,2,3,1,Apple,2,O2,PrePaid,Active,Data
+2022-12-07 19:14:00,-1.456786,53.385214,83,2,2,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2022-12-08 19:14:00,-1.473728,53.375667,23,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-12-09 19:14:00,-1.485747,53.386994,15,2,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-12-10 19:14:00,-1.445913,53.383236,34,1,5,3,Apple,5,Three,PrePaid,Passive,NotInUse
+2022-12-11 19:14:00,-1.449389,53.374548,83,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-12-12 19:14:00,-1.447647,53.372869,28,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-12-13 19:14:00,-1.511888,53.385714,23,2,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-12-14 19:14:00,-1.489729,53.373970,27,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-12-15 19:14:00,-1.464330,53.372142,26,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-12-16 19:14:00,-1.478835,53.376309,17,2,2,2,Apple,5,Three,PostPaid,Passive,NotInUse
+2022-12-17 19:14:00,-1.492130,53.380301,70,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-12-18 19:14:00,-1.451248,53.386628,17,2,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2022-12-19 19:14:00,-1.485814,53.382937,76,2,3,2,Android,2,O2,PostPaid,Passive,NotInUse
+2022-12-20 19:14:00,-1.445177,53.375019,82,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-12-21 19:14:00,-1.490709,53.369682,45,1,3,2,Android,5,Three,PostPaid,Passive,NotInUse
+2022-12-22 19:14:00,-1.483755,53.383792,39,1,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2022-12-23 19:14:00,-1.481278,53.375557,52,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-12-24 19:14:00,-1.488645,53.371459,75,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-12-25 19:14:00,-1.470050,53.389904,81,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-12-26 19:14:00,-1.457581,53.378276,42,2,3,2,Android,1,BT,PostPaid,Passive,NotInUse
+2022-12-27 19:14:00,-1.496715,53.372183,67,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2022-12-28 19:14:00,-1.467816,53.387526,64,1,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2022-12-29 19:14:00,-1.473329,53.389094,21,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-12-30 19:14:00,-1.495567,53.388948,27,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-12-31 19:14:00,-1.507601,53.390486,84,1,2,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-01-01 19:14:00,-1.495390,53.383963,48,2,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-01-02 19:14:00,-1.463715,53.368614,29,2,1,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-01-03 19:14:00,-1.502931,53.387352,35,2,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-01-04 19:14:00,-1.510379,53.368367,13,2,4,2,Android,5,Three,PostPaid,Active,Voice
+2023-01-05 19:14:00,-1.471047,53.374294,75,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-01-06 19:14:00,-1.462457,53.378091,40,2,3,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-01-07 19:14:00,-1.511733,53.386477,75,2,4,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-01-08 19:14:00,-1.475730,53.373497,69,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-01-09 19:14:00,-1.488947,53.383774,68,1,1,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-01-10 19:14:00,-1.498415,53.388801,80,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-01-11 19:14:00,-1.480863,53.372635,22,2,5,2,Android,1,BT,PostPaid,Active,Voice
+2023-01-12 19:14:00,-1.506489,53.370053,14,1,3,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-01-13 19:14:00,-1.494953,53.386899,63,1,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-01-14 19:14:00,-1.489808,53.367910,74,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-01-15 19:14:00,-1.477710,53.370319,19,1,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-01-16 19:14:00,-1.492078,53.370501,25,2,1,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-01-17 19:14:00,-1.493057,53.368794,64,1,1,1,Android,1,BT,PrePaid,Passive,NotInUse
+2023-01-18 19:14:00,-1.509369,53.378903,19,2,1,2,Apple,2,O2,PrePaid,Passive,NotInUse
+2023-01-19 19:14:00,-1.507640,53.384566,24,1,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-01-20 19:14:00,-1.505228,53.388259,28,2,5,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-01-21 19:14:00,-1.465778,53.374356,54,1,1,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-01-22 19:14:00,-1.500848,53.386136,63,2,5,1,Android,1,BT,PrePaid,Passive,NotInUse
+2023-01-23 19:14:00,-1.510803,53.373712,59,1,5,1,Android,2,O2,PostPaid,Active,Data
+2023-01-24 19:14:00,-1.494855,53.391128,55,2,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-01-25 19:14:00,-1.439615,53.385526,26,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-01-26 19:14:00,-1.447029,53.385216,60,1,1,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-01-27 19:14:00,-1.440291,53.384476,70,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-01-28 19:14:00,-1.476112,53.386678,77,2,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-01-29 19:14:00,-1.456507,53.388167,50,1,2,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-01-30 19:14:00,-1.443472,53.387352,65,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-01-31 19:14:00,-1.463361,53.384958,79,1,2,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-02-01 19:14:00,-1.477828,53.384931,20,2,2,2,Android,1,BT,PrePaid,Active,Data
+2023-02-02 19:14:00,-1.478484,53.374009,75,1,3,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-02-03 19:14:00,-1.450952,53.385877,24,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-02-04 19:14:00,-1.452231,53.387223,32,2,4,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-02-05 19:14:00,-1.495496,53.378262,59,2,1,2,Android,4,EE,PostPaid,Passive,NotInUse
+2023-02-06 19:14:00,-1.516194,53.385804,43,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-02-07 19:14:00,-1.466837,53.377674,81,2,3,1,Android,5,Three,PrePaid,Passive,NotInUse
+2023-02-08 19:14:00,-1.463315,53.384383,80,2,1,2,Android,1,BT,PostPaid,Passive,NotInUse
+2023-02-09 19:14:00,-1.486466,53.384105,29,2,2,3,Android,1,BT,PostPaid,Passive,NotInUse
+2023-02-10 19:14:00,-1.483222,53.372876,72,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-02-11 19:14:00,-1.442863,53.376374,37,1,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-02-12 19:14:00,-1.468682,53.391988,44,1,2,2,Android,6,MVNO,PrePaid,Active,Voice
+2023-02-13 19:14:00,-1.439915,53.389564,72,2,1,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-02-14 19:14:00,-1.456125,53.377406,53,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-02-15 19:14:00,-1.502365,53.369261,64,2,4,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-02-16 19:14:00,-1.449543,53.372387,26,2,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-02-17 19:14:00,-1.437925,53.369278,72,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-02-18 19:14:00,-1.471194,53.383193,33,1,4,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2023-02-19 19:14:00,-1.469112,53.379263,57,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-02-20 19:14:00,-1.435021,53.370577,16,1,4,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2023-02-21 19:14:00,-1.477529,53.370130,35,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-02-22 19:14:00,-1.449062,53.386648,28,2,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-02-23 19:14:00,-1.508627,53.383724,14,1,2,1,Apple,5,Three,PostPaid,Active,Data
+2023-02-24 19:14:00,-1.509005,53.385906,39,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-02-25 19:14:00,-1.479967,53.384422,74,2,2,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-02-26 19:14:00,-1.471912,53.374286,47,2,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-02-27 19:14:00,-1.449710,53.379791,25,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-02-28 19:14:00,-1.509641,53.371990,76,2,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-03-01 19:14:00,-1.462665,53.384370,67,2,2,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-03-02 19:14:00,-1.481639,53.378361,61,1,5,1,Android,3,Vodafone,PrePaid,Active,Data
+2023-03-03 19:14:00,-1.512938,53.381748,51,2,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-03-04 19:14:00,-1.498671,53.390348,36,2,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-03-05 19:14:00,-1.455246,53.379844,41,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-03-06 19:14:00,-1.464216,53.390345,35,1,2,2,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-03-07 19:14:00,-1.463930,53.373816,49,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-03-08 19:14:00,-1.440174,53.379553,21,2,4,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2023-03-09 19:14:00,-1.455858,53.377551,44,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-03-10 19:14:00,-1.454645,53.369845,28,1,3,3,Android,2,O2,PrePaid,Active,Data
+2023-03-11 19:14:00,-1.448767,53.374490,75,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-03-12 19:14:00,-1.449046,53.391192,25,U,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-03-13 19:14:00,-1.468705,53.387342,48,U,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-03-14 19:14:00,-1.510526,53.371810,40,1,3,1,Android,5,Three,PrePaid,Passive,NotInUse
+2023-03-15 19:14:00,-1.485377,53.376736,15,1,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2023-03-16 19:14:00,-1.473827,53.378163,43,1,5,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-03-17 19:14:00,-1.493645,53.383462,84,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-03-18 19:14:00,-1.490027,53.378214,62,2,4,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-03-19 19:14:00,-1.502183,53.379115,21,1,1,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-03-20 19:14:00,-1.489044,53.368951,79,1,1,1,Apple,2,O2,PrePaid,Active,Data
+2023-03-21 19:14:00,-1.465061,53.388700,58,1,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-03-22 19:14:00,-1.494934,53.386936,78,2,2,1,Android,4,EE,PostPaid,Active,Data
+2023-03-23 19:14:00,-1.459961,53.386109,51,2,2,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-03-24 19:14:00,-1.459535,53.379063,45,1,1,1,Apple,2,O2,PostPaid,Active,Voice
+2023-03-25 19:14:00,-1.508453,53.375051,24,2,5,2,Android,2,O2,PrePaid,Passive,NotInUse
+2023-03-26 19:14:00,-1.465273,53.380672,56,1,2,1,Android,1,BT,PrePaid,Passive,NotInUse
+2023-03-27 19:14:00,-1.443047,53.382825,63,2,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-03-28 19:14:00,-1.478474,53.372842,39,2,3,2,Android,2,O2,PostPaid,Active,Data
+2023-03-29 19:14:00,-1.467786,53.370469,83,2,1,1,Android,5,Three,PrePaid,Passive,NotInUse
+2023-03-30 19:14:00,-1.508990,53.368182,79,1,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2023-03-31 19:14:00,-1.494089,53.373956,16,2,5,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-04-01 19:14:00,-1.471836,53.390021,34,1,5,1,Android,2,O2,PrePaid,Active,Voice
+2023-04-02 19:14:00,-1.510161,53.375379,12,1,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-04-03 19:14:00,-1.471242,53.383228,30,1,1,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-04-04 19:14:00,-1.467020,53.387260,74,1,2,1,Android,2,O2,PostPaid,Active,Data
+2023-04-05 19:14:00,-1.443448,53.388425,34,2,5,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-04-06 19:14:00,-1.498379,53.392401,14,2,3,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-04-07 19:14:00,-1.441691,53.384858,63,1,2,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-04-08 19:14:00,-1.464838,53.373233,67,1,5,3,Android,1,BT,PostPaid,Passive,NotInUse
+2023-04-09 19:14:00,-1.450136,53.373122,74,2,2,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-04-10 19:14:00,-1.483537,53.373309,67,2,2,1,Android,4,EE,PrePaid,Passive,NotInUse
+2023-04-11 19:14:00,-1.470741,53.378119,58,2,2,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-04-12 19:14:00,-1.452506,53.386640,23,1,5,3,Android,5,Three,PostPaid,Passive,NotInUse
+2023-04-13 19:14:00,-1.511052,53.379464,79,1,1,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-04-14 19:14:00,-1.492919,53.379974,42,2,3,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-04-15 19:14:00,-1.437001,53.379702,81,2,3,2,Android,4,EE,PrePaid,Passive,NotInUse
+2023-04-16 19:14:00,-1.497258,53.368240,74,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-04-17 19:14:00,-1.464144,53.384624,80,2,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-04-18 19:14:00,-1.516034,53.368856,34,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-04-19 19:14:00,-1.504800,53.369524,24,1,5,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2023-04-20 19:14:00,-1.483968,53.390837,72,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-04-21 19:14:00,-1.487388,53.377340,61,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-04-22 19:14:00,-1.508701,53.374196,56,2,2,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-04-23 19:14:00,-1.512304,53.380287,56,1,1,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-04-24 19:14:00,-1.488309,53.382254,68,2,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-04-25 19:14:00,-1.493696,53.381561,49,1,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-04-26 19:14:00,-1.511436,53.384649,25,2,3,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-04-27 19:14:00,-1.461502,53.375173,18,1,1,3,Android,5,Three,PostPaid,Passive,NotInUse
+2023-04-28 19:14:00,-1.486247,53.370577,49,1,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-04-29 19:14:00,-1.441675,53.381467,52,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-04-30 19:14:00,-1.483776,53.369128,34,1,5,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-05-01 19:14:00,-1.492412,53.375863,43,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-05-02 19:14:00,-1.476998,53.376056,32,1,4,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-05-03 19:14:00,-1.484465,53.371376,31,1,5,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-05-04 19:14:00,-1.463933,53.372817,13,2,2,3,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-05-05 19:14:00,-1.499986,53.392305,46,2,5,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-05-06 19:14:00,-1.442504,53.373552,72,1,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-05-07 19:14:00,-1.485510,53.386743,53,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-05-08 19:14:00,-1.467908,53.382487,47,2,1,1,Apple,1,BT,PostPaid,Active,Voice
+2023-05-09 19:14:00,-1.434866,53.387856,75,1,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-05-10 19:14:00,-1.482670,53.382180,35,1,1,1,Android,4,EE,PostPaid,Active,Data
+2023-05-11 19:14:00,-1.469900,53.384662,58,2,1,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2023-05-12 19:14:00,-1.470918,53.371713,54,2,5,2,Android,2,O2,PostPaid,Passive,NotInUse
+2023-05-13 19:14:00,-1.467611,53.380800,67,2,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2023-05-14 19:14:00,-1.484392,53.370624,27,2,2,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-05-15 19:14:00,-1.452765,53.392134,27,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-05-16 19:14:00,-1.442872,53.379844,47,2,4,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2023-05-17 19:14:00,-1.480798,53.385476,77,2,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-05-18 19:14:00,-1.461873,53.386109,78,2,1,1,Apple,4,EE,PostPaid,Active,Voice
+2023-05-19 19:14:00,-1.501893,53.391077,17,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-05-20 19:14:00,-1.461613,53.387175,47,2,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-05-21 19:14:00,-1.466064,53.387506,72,1,4,2,Android,2,O2,PrePaid,Passive,NotInUse
+2023-05-22 19:14:00,-1.485413,53.377355,72,2,4,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-05-23 19:14:00,-1.462146,53.385301,81,2,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-05-24 19:14:00,-1.502429,53.386807,21,2,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-05-25 19:14:00,-1.513208,53.376367,81,1,3,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2023-05-26 19:14:00,-1.453517,53.372343,81,2,5,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-05-27 19:14:00,-1.480956,53.370361,56,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-05-28 19:14:00,-1.515355,53.379609,76,2,2,1,Android,5,Three,PostPaid,Active,Voice
+2023-05-29 19:14:00,-1.489851,53.389104,80,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-05-30 19:14:00,-1.462733,53.386499,59,1,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2023-05-31 19:14:00,-1.452094,53.385440,81,2,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-06-01 19:14:00,-1.506743,53.377476,74,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-06-02 19:14:00,-1.459778,53.368782,53,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-06-03 19:14:00,-1.499227,53.369331,12,2,5,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2023-06-04 19:14:00,-1.447708,53.389515,68,1,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-06-05 19:14:00,-1.493685,53.389910,12,2,3,1,Android,4,EE,PrePaid,Passive,NotInUse
+2023-06-06 19:14:00,-1.508292,53.387984,37,2,3,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2023-06-07 19:14:00,-1.438748,53.389946,37,2,2,3,Apple,1,BT,PrePaid,Passive,NotInUse
+2023-06-08 19:14:00,-1.502754,53.387918,18,2,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-06-09 19:14:00,-1.437465,53.379216,51,1,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-06-10 19:14:00,-1.491706,53.381599,76,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-06-11 19:14:00,-1.453136,53.374272,47,2,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-06-12 19:14:00,-1.442725,53.374575,74,1,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-06-13 19:14:00,-1.452968,53.388992,49,1,1,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-06-14 19:14:00,-1.504953,53.392023,57,2,5,2,Android,1,BT,PrePaid,Active,Data
+2023-06-15 19:14:00,-1.488102,53.382008,30,1,1,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-06-16 19:14:00,-1.441057,53.381631,31,2,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-06-17 19:14:00,-1.476547,53.378653,64,1,3,2,Android,5,Three,PostPaid,Passive,NotInUse
+2023-06-18 19:14:00,-1.505833,53.387384,32,1,5,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-06-19 19:14:00,-1.508855,53.384746,67,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-06-20 19:14:00,-1.486353,53.374980,23,2,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-06-21 19:14:00,-1.502738,53.379053,27,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-06-22 19:14:00,-1.443680,53.379674,54,2,5,3,Android,1,BT,PrePaid,Passive,NotInUse
+2023-06-23 19:14:00,-1.483743,53.392314,29,1,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-06-24 19:14:00,-1.473274,53.373037,73,2,2,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-06-25 19:14:00,-1.442032,53.381651,61,2,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2023-06-26 19:14:00,-1.499731,53.368610,51,2,5,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-06-27 19:14:00,-1.461084,53.383447,81,1,2,2,Apple,2,O2,PrePaid,Active,Data
+2023-06-28 19:14:00,-1.477438,53.388768,81,2,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2023-06-29 19:14:00,-1.446274,53.390443,21,1,1,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-06-30 19:14:00,-1.460528,53.388392,35,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-07-01 19:14:00,-1.470568,53.368139,34,2,2,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-07-02 19:14:00,-1.472220,53.380658,71,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-07-03 19:14:00,-1.502863,53.370010,40,2,3,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-07-04 19:14:00,-1.471183,53.377314,46,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-07-05 19:14:00,-1.474084,53.383947,21,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-07-06 19:14:00,-1.512372,53.375971,40,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-07-07 19:14:00,-1.500681,53.389542,75,1,5,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-07-08 19:14:00,-1.491086,53.391361,63,2,1,1,Android,2,O2,PrePaid,Passive,NotInUse
+2023-07-09 19:14:00,-1.466816,53.391350,55,1,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2023-07-10 19:14:00,-1.485430,53.379640,47,1,2,1,Android,4,EE,PrePaid,Passive,NotInUse
+2023-07-11 19:14:00,-1.452684,53.375212,40,1,4,1,Apple,2,O2,PostPaid,Active,Data
+2023-07-12 19:14:00,-1.438638,53.373492,28,2,3,2,Android,4,EE,PostPaid,Passive,NotInUse
+2023-07-13 19:14:00,-1.482588,53.383048,77,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-07-14 19:14:00,-1.439221,53.368010,70,2,1,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-07-15 19:14:00,-1.473843,53.367670,50,2,1,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2023-07-16 19:14:00,-1.435630,53.372408,70,1,3,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-07-17 19:14:00,-1.499370,53.385558,17,2,1,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-07-18 19:14:00,-1.476551,53.371158,78,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-07-19 19:14:00,-1.452072,53.377700,61,1,1,1,Android,5,Three,PrePaid,Passive,NotInUse
+2023-07-20 19:14:00,-1.478728,53.389135,52,2,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-07-21 19:14:00,-1.497316,53.374476,82,1,3,1,Android,5,Three,PrePaid,Passive,NotInUse
+2023-07-22 19:14:00,-1.481492,53.379783,54,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-07-23 19:14:00,-1.493300,53.375956,21,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-07-24 19:14:00,-1.468231,53.377622,83,2,4,3,Android,2,O2,PostPaid,Passive,NotInUse
+2023-07-25 19:14:00,-1.499427,53.386405,15,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-07-26 19:14:00,-1.501209,53.382032,59,2,4,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-07-27 19:14:00,-1.455942,53.368770,55,2,5,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-07-28 19:14:00,-1.468427,53.379732,70,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-07-29 19:14:00,-1.469153,53.392173,24,2,3,1,Android,6,MVNO,PostPaid,Active,Voice
+2023-07-30 19:14:00,-1.500156,53.372778,84,1,4,2,Android,1,BT,PostPaid,Passive,NotInUse
+2023-07-31 19:14:00,-1.445499,53.385324,48,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-08-01 19:14:00,-1.466712,53.382554,44,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-08-02 19:14:00,-1.493743,53.383250,57,2,5,2,Android,6,MVNO,PrePaid,Passive,NotInUse
+2023-08-03 19:14:00,-1.506846,53.374294,62,1,2,2,Android,4,EE,PostPaid,Passive,NotInUse
+2023-08-04 19:14:00,-1.514466,53.386839,34,2,2,1,Android,5,Three,PostPaid,Active,Data
+2023-08-05 19:14:00,-1.473769,53.376029,55,1,4,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-08-06 19:14:00,-1.505483,53.392009,42,1,3,2,Android,2,O2,PrePaid,Passive,NotInUse
+2023-08-07 19:14:00,-1.444794,53.384385,84,2,5,2,Android,4,EE,PostPaid,Passive,NotInUse
+2023-08-08 19:14:00,-1.459611,53.369962,45,2,4,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-08-09 19:14:00,-1.477554,53.367919,68,2,4,3,Android,6,MVNO,PostPaid,Active,Data
+2023-08-10 19:14:00,-1.448030,53.372438,49,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-08-11 19:14:00,-1.461808,53.376725,68,2,4,2,Android,2,O2,PostPaid,Passive,NotInUse
+2023-08-12 19:14:00,-1.453231,53.377643,72,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-08-13 19:14:00,-1.500747,53.370043,26,2,5,2,Android,5,Three,PostPaid,Passive,NotInUse
+2023-08-14 19:14:00,-1.470086,53.376453,50,2,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-08-15 19:14:00,-1.436502,53.381665,53,2,3,1,Android,1,BT,PostPaid,Active,Data
+2023-08-16 19:14:00,-1.506023,53.390602,29,1,2,1,Apple,6,MVNO,PostPaid,Active,Data
+2023-08-17 19:14:00,-1.487011,53.369954,84,1,1,1,Apple,4,EE,PrePaid,Active,Data
+2023-08-18 19:14:00,-1.436277,53.387649,30,2,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-08-19 19:14:00,-1.486053,53.384044,31,1,5,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-08-20 19:14:00,-1.513545,53.373475,60,2,2,1,Android,5,Three,PrePaid,Passive,NotInUse
+2023-08-21 19:14:00,-1.476881,53.368823,75,1,2,1,Android,2,O2,PrePaid,Passive,NotInUse
+2023-08-22 19:14:00,-1.505778,53.369787,77,2,3,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2023-08-23 19:14:00,-1.453465,53.391393,26,1,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-08-24 19:14:00,-1.466722,53.381139,66,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-08-25 19:14:00,-1.515242,53.368539,67,2,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-08-26 19:14:00,-1.501671,53.382785,30,2,5,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-08-27 19:14:00,-1.467074,53.369455,83,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-08-28 19:14:00,-1.511516,53.370953,70,2,3,1,Apple,1,BT,PrePaid,Active,Data
+2023-08-29 19:14:00,-1.513627,53.367888,43,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-08-30 19:14:00,-1.446210,53.383349,68,2,1,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2023-08-31 19:14:00,-1.469839,53.377219,74,2,4,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-09-01 19:14:00,-1.488082,53.381892,34,1,5,1,Android,3,Vodafone,PrePaid,Active,Voice
+2023-09-02 19:14:00,-1.488221,53.378381,57,1,5,2,Android,5,Three,PostPaid,Passive,NotInUse
+2023-09-03 19:14:00,-1.493990,53.391162,81,1,1,2,Android,5,Three,PostPaid,Passive,NotInUse
+2023-09-04 19:14:00,-1.448453,53.381251,56,1,1,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-09-05 19:14:00,-1.471304,53.384248,29,1,5,1,Android,2,O2,PostPaid,Active,Data
+2023-09-06 19:14:00,-1.512933,53.379881,21,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-09-07 19:14:00,-1.509241,53.388420,48,1,4,1,Android,4,EE,PostPaid,Active,Data
+2023-09-08 19:14:00,-1.459361,53.382600,69,U,3,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-09-09 19:14:00,-1.491350,53.383918,20,1,5,1,Android,1,BT,PrePaid,Active,Voice
+2023-09-10 19:14:00,-1.438229,53.391799,68,2,4,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-09-11 19:14:00,-1.435380,53.372718,56,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-09-12 19:14:00,-1.496173,53.384121,43,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-09-13 19:14:00,-1.488004,53.385506,75,2,1,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2023-09-14 19:14:00,-1.483424,53.372048,19,1,1,1,Android,4,EE,PrePaid,Passive,NotInUse
+2023-09-15 19:14:00,-1.451253,53.389304,12,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-09-16 19:14:00,-1.477626,53.383772,40,1,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-09-17 19:14:00,-1.498567,53.369555,47,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-09-18 19:14:00,-1.465869,53.377097,55,1,1,1,Android,1,BT,PostPaid,Active,Data
+2023-09-19 19:14:00,-1.443757,53.389739,68,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-09-20 19:14:00,-1.496925,53.391318,24,1,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-09-21 19:14:00,-1.513292,53.385498,66,1,2,3,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-09-22 19:14:00,-1.477133,53.369431,19,2,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-09-23 19:14:00,-1.512119,53.374957,75,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-09-24 19:14:00,-1.469965,53.367919,44,2,2,1,Android,4,EE,PrePaid,Passive,NotInUse
+2023-09-25 19:14:00,-1.480107,53.382262,19,2,3,2,Apple,5,Three,PrePaid,Passive,NotInUse
+2023-09-26 19:14:00,-1.442757,53.373641,56,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-09-27 19:14:00,-1.434810,53.391750,45,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-09-28 19:14:00,-1.458962,53.367811,50,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-09-29 19:14:00,-1.438670,53.389501,72,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-09-30 19:14:00,-1.451795,53.375416,42,1,3,1,Android,2,O2,PostPaid,Active,Data
+2023-10-01 19:14:00,-1.486485,53.384806,31,1,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-10-02 19:14:00,-1.458989,53.376336,56,1,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2023-10-03 19:14:00,-1.460164,53.380345,46,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-10-04 19:14:00,-1.507807,53.379859,51,1,2,2,Apple,1,BT,PrePaid,Passive,NotInUse
+2023-10-05 19:14:00,-1.493210,53.382761,72,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-10-06 19:14:00,-1.514286,53.382430,35,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-10-07 19:14:00,-1.451333,53.376475,74,2,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-10-08 19:14:00,-1.485751,53.387105,84,2,5,1,Apple,5,Three,PostPaid,Active,Voice
+2023-10-09 19:14:00,-1.461301,53.385012,63,1,2,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-10-10 19:14:00,-1.466240,53.382436,66,2,1,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-10-11 19:14:00,-1.507141,53.383367,71,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-10-12 19:14:00,-1.505876,53.388679,58,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-10-13 19:14:00,-1.458340,53.382082,68,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-10-14 19:14:00,-1.507717,53.384114,75,1,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2023-10-15 19:14:00,-1.504326,53.369315,14,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-10-16 19:14:00,-1.451353,53.384683,23,1,4,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-10-17 19:14:00,-1.510713,53.390572,52,2,3,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-10-18 19:14:00,-1.474481,53.386729,19,2,2,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2023-10-19 19:14:00,-1.462484,53.377550,23,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-10-20 19:14:00,-1.458188,53.371248,16,1,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-10-21 19:14:00,-1.437529,53.392177,23,2,4,2,Android,6,MVNO,PrePaid,Passive,NotInUse
+2023-10-22 19:14:00,-1.451765,53.380198,41,1,5,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-10-23 19:14:00,-1.508246,53.373755,33,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-10-24 19:14:00,-1.508793,53.375983,26,1,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2023-10-25 19:14:00,-1.506141,53.376514,24,1,3,2,Android,4,EE,PostPaid,Passive,NotInUse
+2023-10-26 19:14:00,-1.491775,53.383085,58,1,5,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2023-10-27 19:14:00,-1.500241,53.374337,67,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-10-28 19:14:00,-1.449959,53.376417,19,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-10-29 19:14:00,-1.497247,53.371540,55,2,4,1,Android,5,Three,PrePaid,Active,Data
+2023-10-30 19:14:00,-1.507901,53.387000,19,1,1,1,Android,1,BT,PrePaid,Passive,NotInUse
+2023-10-31 19:14:00,-1.498270,53.369755,71,2,2,2,Android,5,Three,PostPaid,Passive,NotInUse
+2023-11-01 19:14:00,-1.452134,53.383357,22,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-11-02 19:14:00,-1.514595,53.386163,70,2,2,1,Apple,2,O2,PostPaid,Active,Data
+2023-11-03 19:14:00,-1.493333,53.386250,59,1,5,1,Apple,6,MVNO,PostPaid,Active,Data
+2023-11-04 19:14:00,-1.492597,53.368324,44,2,4,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-11-05 19:14:00,-1.441313,53.371392,70,1,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2023-11-06 19:14:00,-1.484804,53.371565,75,2,4,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2023-11-07 19:14:00,-1.438119,53.380990,31,1,5,2,Android,5,Three,PostPaid,Passive,NotInUse
+2023-11-08 19:14:00,-1.504186,53.388426,32,1,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-11-09 19:14:00,-1.459811,53.381437,79,1,4,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-11-10 19:14:00,-1.450548,53.368957,56,2,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2023-11-11 19:14:00,-1.480781,53.386400,73,2,3,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-11-12 19:14:00,-1.436512,53.384714,14,2,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-11-13 19:14:00,-1.455931,53.373979,63,1,2,1,Android,4,EE,PrePaid,Passive,NotInUse
+2023-11-14 19:14:00,-1.483433,53.372089,24,1,5,3,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-11-15 19:14:00,-1.485241,53.391608,76,2,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-11-16 19:14:00,-1.513188,53.368181,20,1,1,1,Apple,2,O2,PostPaid,Active,Data
+2023-11-17 19:14:00,-1.439610,53.383003,48,2,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-11-18 19:14:00,-1.442488,53.367842,76,1,5,2,Android,5,Three,PostPaid,Passive,NotInUse
+2023-11-19 19:14:00,-1.443882,53.370482,36,2,1,1,Android,1,BT,PrePaid,Passive,NotInUse
+2023-11-20 19:14:00,-1.471053,53.388895,68,2,5,1,Android,5,Three,PrePaid,Passive,NotInUse
+2023-11-21 19:14:00,-1.443045,53.371564,25,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-11-22 19:14:00,-1.477861,53.390281,42,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-11-23 19:14:00,-1.514218,53.378113,66,2,1,1,Android,4,EE,PostPaid,Active,Data
+2023-11-24 19:14:00,-1.506635,53.384534,27,2,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-11-25 19:14:00,-1.446530,53.367879,35,1,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2023-11-26 19:14:00,-1.516000,53.380583,14,2,2,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-11-27 19:14:00,-1.440830,53.368517,54,2,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-11-28 19:14:00,-1.451071,53.381213,57,2,4,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-11-29 19:14:00,-1.480792,53.381766,31,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-11-30 19:14:00,-1.496631,53.379969,72,1,5,2,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-12-01 19:14:00,-1.442468,53.375303,64,2,5,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-12-02 19:14:00,-1.444107,53.375212,37,2,4,3,Apple,5,Three,PrePaid,Passive,NotInUse
+2023-12-03 19:14:00,-1.499341,53.382862,30,1,4,2,Android,1,BT,PostPaid,Passive,NotInUse
+2023-12-04 19:14:00,-1.509865,53.372779,13,1,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-12-05 19:14:00,-1.480912,53.386769,74,1,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-12-06 19:14:00,-1.447614,53.378130,23,1,1,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2023-12-07 19:14:00,-1.434923,53.383781,72,1,3,2,Apple,4,EE,PrePaid,Passive,NotInUse
+2023-12-08 19:14:00,-1.463119,53.377218,37,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-12-09 19:14:00,-1.451649,53.383432,68,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-12-10 19:14:00,-1.444012,53.384666,58,1,4,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2023-12-11 19:14:00,-1.465404,53.383871,64,2,5,3,Android,1,BT,PrePaid,Passive,NotInUse
+2023-12-12 19:14:00,-1.481011,53.383007,45,1,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-12-13 19:14:00,-1.504151,53.382030,14,1,2,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2023-12-14 19:14:00,-1.435400,53.380893,28,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-12-15 19:14:00,-1.500937,53.387687,17,1,2,2,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-12-16 19:14:00,-1.505641,53.387600,82,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-12-17 19:14:00,-1.453124,53.367637,17,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-12-18 19:14:00,-1.494055,53.367936,41,1,2,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2023-12-19 19:14:00,-1.459786,53.368341,54,2,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-12-20 19:14:00,-1.472174,53.379703,28,2,3,1,Android,2,O2,PrePaid,Active,Data
+2023-12-21 19:14:00,-1.467172,53.375076,61,1,1,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-12-22 19:14:00,-1.487863,53.386299,39,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-12-23 19:14:00,-1.498693,53.385709,21,2,1,2,Android,1,BT,PostPaid,Passive,NotInUse
+2023-12-24 19:14:00,-1.437995,53.388419,53,1,4,2,Android,5,Three,PostPaid,Active,Data
+2023-12-25 19:14:00,-1.481012,53.381369,42,2,4,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-12-26 19:14:00,-1.488307,53.383280,31,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-12-27 19:14:00,-1.475731,53.368859,18,2,4,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-12-28 19:14:00,-1.465556,53.390090,22,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-12-29 19:14:00,-1.493922,53.370962,23,1,3,1,Android,1,BT,PostPaid,Active,Voice
+2023-12-30 19:14:00,-1.445073,53.374987,31,2,2,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-12-31 19:14:00,-1.481445,53.381970,17,2,3,1,Android,5,Three,PrePaid,Passive,NotInUse
+2024-01-01 19:14:00,-1.500330,53.388407,49,2,4,2,Apple,4,EE,PostPaid,Active,Data
+2024-01-02 19:14:00,-1.497412,53.368939,72,1,4,2,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-01-03 19:14:00,-1.509556,53.379210,20,1,4,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2024-01-04 19:14:00,-1.504597,53.392068,65,1,2,1,Android,5,Three,PostPaid,Active,Data
+2024-01-05 19:14:00,-1.446660,53.391291,29,2,5,1,Android,2,O2,PrePaid,Passive,NotInUse
+2024-01-06 19:14:00,-1.498590,53.372974,60,1,3,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2024-01-07 19:14:00,-1.448841,53.389299,80,1,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-01-08 19:14:00,-1.490937,53.370760,14,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2024-01-09 19:14:00,-1.467594,53.380682,16,1,5,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2024-01-10 19:14:00,-1.502646,53.369653,13,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2024-01-11 19:14:00,-1.497225,53.386048,55,2,5,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-01-12 19:14:00,-1.487362,53.378666,27,1,1,1,Android,4,EE,PrePaid,Passive,NotInUse
+2024-01-13 19:14:00,-1.475584,53.377290,72,2,5,2,Android,2,O2,PrePaid,Passive,NotInUse
+2024-01-14 19:14:00,-1.435099,53.392358,42,2,1,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-01-15 19:14:00,-1.436310,53.371872,22,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-01-16 19:14:00,-1.480162,53.370838,66,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2024-01-17 19:14:00,-1.515070,53.371729,67,2,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2024-01-18 19:14:00,-1.462658,53.368385,77,1,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2024-01-19 19:14:00,-1.446852,53.376823,37,1,3,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2024-01-20 19:14:00,-1.448213,53.372429,30,1,3,2,Apple,1,BT,PrePaid,Passive,NotInUse
+2024-01-21 19:14:00,-1.453606,53.374957,69,2,3,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2024-01-22 19:14:00,-1.455359,53.374153,22,1,1,1,Android,4,EE,PostPaid,Active,Data
+2024-01-23 19:14:00,-1.452525,53.379400,77,2,5,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2024-01-24 19:14:00,-1.490176,53.368047,49,2,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-01-25 19:14:00,-1.498361,53.376384,61,2,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2024-01-26 19:14:00,-1.491019,53.387363,33,2,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-01-27 19:14:00,-1.502447,53.377399,55,2,3,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2024-01-28 19:14:00,-1.452266,53.369813,28,2,2,1,Android,5,Three,PrePaid,Passive,NotInUse
+2024-01-29 19:14:00,-1.510775,53.370851,80,2,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-01-30 19:14:00,-1.491625,53.371396,14,1,1,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2024-01-31 19:14:00,-1.434530,53.391480,53,2,4,1,Android,5,Three,PostPaid,Active,Voice
+2024-02-01 19:14:00,-1.493729,53.375659,54,1,4,2,Android,2,O2,PrePaid,Active,Data
+2024-02-02 19:14:00,-1.466022,53.387537,59,2,4,2,Android,4,EE,PostPaid,Active,Data
+2024-02-03 19:14:00,-1.470580,53.385765,71,2,3,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-02-04 19:14:00,-1.478052,53.377009,38,1,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2024-02-05 19:14:00,-1.515086,53.372264,61,2,1,2,Android,5,Three,PostPaid,Active,Data
+2024-02-06 19:14:00,-1.503638,53.379616,75,2,4,2,Apple,5,Three,PrePaid,Passive,NotInUse
+2024-02-07 19:14:00,-1.498754,53.386146,46,1,1,1,Android,5,Three,PrePaid,Passive,NotInUse
+2024-02-08 19:14:00,-1.474041,53.370060,15,1,3,3,Android,4,EE,PostPaid,Passive,NotInUse
+2024-02-09 19:14:00,-1.438790,53.380878,14,1,5,1,Android,2,O2,PostPaid,Active,Voice
+2024-02-10 19:14:00,-1.459032,53.369409,76,1,2,2,Android,1,BT,PostPaid,Passive,NotInUse
+2024-02-11 19:14:00,-1.448328,53.377893,24,2,2,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2024-02-12 19:14:00,-1.442836,53.389572,76,1,2,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2024-02-13 19:14:00,-1.460059,53.389960,72,2,3,2,Android,5,Three,PostPaid,Passive,NotInUse
+2024-02-14 19:14:00,-1.482559,53.390189,76,1,5,2,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-02-15 19:14:00,-1.474786,53.382093,18,2,2,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2024-02-16 19:14:00,-1.455025,53.377609,55,1,3,1,Apple,2,O2,PrePaid,Passive,NotInUse
+2024-02-17 19:14:00,-1.498513,53.374967,70,2,2,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2024-02-18 19:14:00,-1.500787,53.389749,26,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-02-19 19:14:00,-1.449885,53.387838,71,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2024-02-20 19:14:00,-1.479886,53.387864,84,1,2,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2024-02-21 19:14:00,-1.443949,53.381144,18,2,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-02-22 19:14:00,-1.448697,53.386273,50,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-02-23 19:14:00,-1.468031,53.388403,79,2,2,2,Apple,4,EE,PostPaid,Passive,NotInUse
+2024-02-24 19:14:00,-1.445049,53.373914,82,1,5,1,Android,1,BT,PostPaid,Passive,NotInUse
+2024-02-25 19:14:00,-1.466031,53.385391,79,2,5,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2024-02-26 19:14:00,-1.476194,53.381433,62,2,4,2,Android,5,Three,PrePaid,Passive,NotInUse
+2024-02-27 19:14:00,-1.481357,53.388374,82,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-02-28 19:14:00,-1.506329,53.388103,17,2,3,1,Android,4,EE,PostPaid,Active,Voice
+2024-02-29 19:14:00,-1.471972,53.371574,23,2,5,1,Android,5,Three,PrePaid,Passive,NotInUse
+2024-03-01 19:14:00,-1.464512,53.390713,81,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-03-02 19:14:00,-1.488751,53.386956,66,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2024-03-03 19:14:00,-1.455693,53.388874,73,1,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2024-03-04 19:14:00,-1.451712,53.376390,31,1,4,1,Android,1,BT,PrePaid,Passive,NotInUse
+2024-03-05 19:14:00,-1.471161,53.380184,42,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-03-06 19:14:00,-1.454733,53.385445,68,1,2,2,Android,4,EE,PostPaid,Passive,NotInUse
+2024-03-07 19:14:00,-1.485646,53.374529,58,2,3,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-03-08 19:14:00,-1.444968,53.391191,25,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2024-03-09 19:14:00,-1.442544,53.370224,29,1,5,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-03-10 19:14:00,-1.454736,53.382637,64,1,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2024-03-11 19:14:00,-1.455995,53.372536,79,1,2,2,Android,1,BT,PostPaid,Passive,NotInUse
+2024-03-12 19:14:00,-1.496680,53.381526,52,2,5,1,Android,1,BT,PrePaid,Active,Data
+2024-03-13 19:14:00,-1.500976,53.373619,41,1,4,1,Apple,1,BT,PostPaid,Active,Voice
+2024-03-14 19:14:00,-1.486434,53.380385,34,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2024-03-15 19:14:00,-1.488480,53.379531,27,2,1,1,Apple,4,EE,PostPaid,Active,Data
+2024-03-16 19:14:00,-1.490527,53.380633,73,2,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-03-17 19:14:00,-1.442757,53.374445,50,2,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2024-03-18 19:14:00,-1.501678,53.374144,69,2,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2024-03-19 19:14:00,-1.504609,53.380433,22,1,3,2,Android,4,EE,PrePaid,Passive,NotInUse
+2024-03-20 19:14:00,-1.484878,53.367652,63,2,4,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2024-03-21 19:14:00,-1.492534,53.367749,53,2,4,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2024-03-22 19:14:00,-1.515977,53.372476,32,1,4,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2024-03-23 19:14:00,-1.449754,53.368248,71,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-03-24 19:14:00,-1.439045,53.386044,45,2,3,1,Apple,1,BT,PostPaid,Active,Data
+2024-03-25 19:14:00,-1.439080,53.388445,32,1,3,1,Android,1,BT,PrePaid,Active,Data
+2024-03-26 19:14:00,-1.493569,53.386021,78,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2024-03-27 19:14:00,-1.434721,53.378323,55,2,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-03-28 19:14:00,-1.481498,53.372840,57,2,1,2,Android,5,Three,PrePaid,Passive,NotInUse
+2024-03-29 19:14:00,-1.449615,53.371057,12,1,1,1,Android,4,EE,PrePaid,Passive,NotInUse
+2024-03-30 19:14:00,-1.480431,53.387781,24,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-03-31 19:14:00,-1.504401,53.374894,60,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
+2024-04-01 19:14:00,-1.454689,53.392288,41,1,1,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2024-04-02 19:14:00,-1.461088,53.389432,36,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-04-03 19:14:00,-1.455120,53.371644,26,1,5,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2024-04-04 19:14:00,-1.511569,53.370873,68,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2024-04-05 19:14:00,-1.505431,53.386934,31,2,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-04-06 19:14:00,-1.458577,53.386176,58,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2024-04-07 19:14:00,-1.444388,53.370559,40,2,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-04-08 19:14:00,-1.478384,53.386993,21,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-04-09 19:14:00,-1.508186,53.378920,33,2,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2024-04-10 19:14:00,-1.514772,53.389399,21,1,1,1,Android,2,O2,PrePaid,Passive,NotInUse
+2024-04-11 19:14:00,-1.462765,53.381457,48,2,1,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2024-04-12 19:14:00,-1.454452,53.377593,60,2,1,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
+2024-04-13 19:14:00,-1.492930,53.386977,25,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2024-04-14 19:14:00,-1.455251,53.387560,73,1,5,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2024-04-15 19:14:00,-1.483794,53.385837,24,2,5,2,Android,2,O2,PostPaid,Passive,NotInUse
+2024-04-16 19:14:00,-1.506515,53.369376,20,2,5,2,Android,6,MVNO,PostPaid,Active,Data
+2024-04-17 19:14:00,-1.492687,53.368808,78,2,4,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2024-04-18 19:14:00,-1.499202,53.380461,26,1,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2024-04-19 19:14:00,-1.438699,53.369003,48,2,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2024-04-20 19:14:00,-1.513793,53.380315,60,2,2,2,Android,5,Three,PostPaid,Passive,NotInUse
+2024-04-21 19:14:00,-1.455489,53.385877,45,2,2,2,Android,2,O2,PrePaid,Passive,NotInUse
+2024-04-22 19:14:00,-1.437599,53.380217,21,1,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-04-23 19:14:00,-1.486157,53.376293,56,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-04-24 19:14:00,-1.454023,53.367673,77,1,2,2,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-04-25 19:14:00,-1.459708,53.384239,68,2,4,2,Apple,3,Vodafone,PostPaid,Active,Data
+2024-04-26 19:14:00,-1.461198,53.390390,74,2,5,1,Android,5,Three,PrePaid,Passive,NotInUse
+2024-04-27 19:14:00,-1.496272,53.368354,23,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2024-04-28 19:14:00,-1.468326,53.371339,83,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-04-29 19:14:00,-1.446442,53.380324,24,1,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2024-04-30 19:14:00,-1.496606,53.368934,53,1,2,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2024-05-01 19:14:00,-1.479090,53.381086,62,2,1,1,Android,4,EE,PostPaid,Passive,NotInUse
+2024-05-02 19:14:00,-1.436592,53.379549,26,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-05-03 19:14:00,-1.496179,53.377318,18,2,4,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2024-05-04 19:14:00,-1.497758,53.391458,73,1,2,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2024-05-05 19:14:00,-1.464312,53.386149,41,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
+2024-05-06 19:14:00,-1.452027,53.378034,64,2,1,2,Apple,2,O2,PrePaid,Active,Voice
+2024-05-07 19:14:00,-1.485520,53.380646,63,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-05-08 19:14:00,-1.511955,53.391211,66,2,2,2,Android,5,Three,PostPaid,Passive,NotInUse
+2024-05-09 19:14:00,-1.483946,53.392281,64,1,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2024-05-10 19:14:00,-1.487453,53.368219,43,1,2,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2024-05-11 19:14:00,-1.515928,53.379942,54,1,3,1,Android,5,Three,PrePaid,Passive,NotInUse
+2024-05-12 19:14:00,-1.467044,53.392145,16,1,3,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2024-05-13 19:14:00,-1.499684,53.381261,83,2,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-05-14 19:14:00,-1.447539,53.368511,77,2,3,1,Android,2,O2,PostPaid,Passive,NotInUse
+2024-05-15 19:14:00,-1.448514,53.391739,18,2,3,1,Apple,1,BT,PrePaid,Passive,NotInUse
+2024-05-16 19:14:00,-1.453329,53.389155,71,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2024-05-17 19:14:00,-1.482604,53.380828,77,2,4,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2024-05-18 19:14:00,-1.471606,53.371958,14,1,4,2,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-05-19 19:14:00,-1.487083,53.389557,53,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-05-20 19:14:00,-1.480405,53.384597,54,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-05-21 19:14:00,-1.477595,53.374563,66,2,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-05-22 19:14:00,-1.485222,53.387052,47,1,4,2,Android,2,O2,PrePaid,Passive,NotInUse
+2024-05-23 19:14:00,-1.516017,53.385712,17,2,1,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-05-24 19:14:00,-1.440664,53.380942,47,2,1,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2024-05-25 19:14:00,-1.509587,53.373703,62,2,2,3,Android,2,O2,PostPaid,Passive,NotInUse
+2024-05-26 19:14:00,-1.477928,53.383592,37,1,3,1,Android,2,O2,PostPaid,Active,Data
+2024-05-27 19:14:00,-1.465109,53.371398,74,2,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2024-05-28 19:14:00,-1.504715,53.370450,65,2,3,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2024-05-29 19:14:00,-1.467838,53.378232,80,1,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2024-05-30 19:14:00,-1.473619,53.390271,64,1,1,2,Android,3,Vodafone,PostPaid,Active,Voice
+2024-05-31 19:14:00,-1.483325,53.376930,69,1,5,2,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-06-01 19:14:00,-1.465798,53.380750,43,2,3,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2024-06-02 19:14:00,-1.461550,53.383271,45,2,3,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2024-06-03 19:14:00,-1.454731,53.380272,51,2,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-06-04 19:14:00,-1.444727,53.389678,38,1,5,3,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-06-05 19:14:00,-1.488768,53.369056,79,2,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2024-06-06 19:14:00,-1.444725,53.389820,42,2,2,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2024-06-07 19:14:00,-1.443023,53.384789,40,1,4,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2024-06-08 19:14:00,-1.494509,53.385151,66,1,5,1,Apple,4,EE,PostPaid,Active,Voice
+2024-06-09 19:14:00,-1.493229,53.371195,63,2,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2024-06-10 19:14:00,-1.476135,53.390680,49,2,5,3,Android,6,MVNO,PrePaid,Passive,NotInUse
+2024-06-11 19:14:00,-1.487927,53.389501,62,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2024-06-12 19:14:00,-1.434829,53.378063,39,1,2,1,Apple,4,EE,PrePaid,Passive,NotInUse
+2024-06-13 19:14:00,-1.502395,53.382955,35,1,3,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2024-06-14 19:14:00,-1.490482,53.379069,70,1,5,1,Android,4,EE,PrePaid,Passive,NotInUse
+2024-06-15 19:14:00,-1.501443,53.371587,84,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-06-16 19:14:00,-1.491680,53.372148,68,2,2,2,Apple,5,Three,PostPaid,Passive,NotInUse
+2024-06-17 19:14:00,-1.465988,53.380288,84,1,5,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2024-06-18 19:14:00,-1.507223,53.382879,27,2,1,2,Android,2,O2,PostPaid,Passive,NotInUse
+2024-06-19 19:14:00,-1.442434,53.380373,80,2,3,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2024-06-20 19:14:00,-1.475941,53.387113,55,2,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2024-06-21 19:14:00,-1.494450,53.387371,19,1,4,1,Android,1,BT,PrePaid,Passive,NotInUse`;
 
 const rows = data.split('\n');
 const fields = rows[0].split(',');
@@ -730,7 +1525,7 @@ const format = {
     Age: Number,
     Sex: Number,
     SpendCat: Number,
-    ResidentCat: String,
+    ResidentCat: Number,
     AppleAndorid: String,
     NetworkFlag: Number,
     NetworkProvider: String,

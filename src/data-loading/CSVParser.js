@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 //import "./styles.css";
 
 export const handleForce = (data, fileInfo) => console.log(data);
-//const errorMsg = console.log('ERROR');
+const errorMsg = console.log('ERROR');
 
 const papaparseOptions = {
     header: true,
@@ -17,21 +17,13 @@ const papaparseOptions = {
 
 export class DataParser extends Component {
 
-    // static propTypes = {
-    //     onUpload: PropTypes.func.isRequired
-    // };
-    _onChange = () => {
-        //this.props.onUpload(handleForce);
-        //console.log(files);
-    };
-
     render() {
         return(
             <div className="container" style={uploadButton}>
                 <CSVReader
                     cssClass="react-csv-input"
                     onFileLoaded={handleForce}
-                    //onError={errorMsg}
+                    onError={errorMsg}
                     parserOptions={papaparseOptions}
                     //onChange={this._onChange()}
                 />

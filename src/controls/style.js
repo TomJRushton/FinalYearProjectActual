@@ -18,7 +18,7 @@ export const mapStylePicker = {
     width: 200,
     position: 'absolute',
     top: '20px',
-    left: '20px',
+    left: '275px',
     zIndex: 100
 };
 
@@ -31,7 +31,7 @@ export const dataPicker = {
     width: 200,
     position: 'absolute',
     top: '50px',
-    left: '20px',
+    left: '275px',
     zIndex: 100
 };
 
@@ -43,7 +43,7 @@ export const dataControl = {
     lineHeight: 1.833,
     width: 200,
     position: 'absolute',
-    top: '130px',
+    top: '125px',
     left: '20px',
     padding: '20px',
     zIndex: 100,
@@ -95,7 +95,7 @@ export const spinner = {
     zIndex: 110
 };
 
-export const uploadButton = {
+export const uploadButton1 = {
     borderRadius: 3,
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
     fontFamily: 'ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif !important',
@@ -103,7 +103,22 @@ export const uploadButton = {
     lineHeight: 1.833,
     width: 200,
     position: 'absolute',
-    top: '80px',
+    top: '20px',
+    left: '20px',
+    padding: '20px',
+    zIndex: 100,
+    background: 'white'
+};
+
+export const uploadButton2 = {
+    borderRadius: 3,
+    boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
+    fontFamily: 'ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif !important',
+    fontSize: '12px',
+    lineHeight: 1.833,
+    width: 200,
+    position: 'absolute',
+    top: '70px',
     left: '20px',
     padding: '20px',
     zIndex: 100,
