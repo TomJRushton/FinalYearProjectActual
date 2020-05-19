@@ -1,6 +1,60 @@
+//Initial loaded data
+export const initialDataParsing = (importedData) => {
+    const data = importedData.reduce(
+        (accu, curr) => {
+
+            //Assign each variable from imported data to a local variable
+            const pickupHour = new Date(curr.PickUpDateTime).getUTCHours(),
+                sex = Number(curr.Sex),
+                age = Number(curr.Age),
+                pickupLongitude = Number(curr.Longitude),
+                pickupLatitude = Number(curr.Latitude),
+                spendingCategory = Number(curr.SpendCat),
+                residentCategory = Number(curr.ResidentCat),
+                networkFlag = Number(curr.NetworkFlag),
+                appleOrAndroid = Number(curr.AppleAndorid),
+                networkProvider = Number(curr.NetworkProvider),
+                prePaidOrPostPaid = Number(curr.PrePaidPostPaid),
+                activeOrPassive = Number(curr.ActivePassive),
+                voiceData = Number(curr.VoiceData);
+
+            //Push all the variables into an array of points
+            if (!isNaN(pickupLongitude) && !isNaN(pickupLatitude)) {
+                accu.points.push({
+                    position: [pickupLongitude, pickupLatitude],
+                    sex: sex,
+                    age: age,
+                    spendCategory: spendingCategory,
+                    residentCategory: residentCategory,
+                    networkFlag: networkFlag,
+                    appleOrAndroid: appleOrAndroid,
+                    networkProvider: networkProvider,
+                    prePaidOrPostPaid: prePaidOrPostPaid,
+                    activeOrPassive: activeOrPassive,
+                    voiceData: voiceData,
+                    hour: pickupHour,
+                    //pickup: true
+                });
+            }
+            const prevPickups = accu.pickupObj[pickupHour] || 0;
+
+            accu.pickupObj[pickupHour] = prevPickups + 1;
+
+            return accu;
+        },
+        {
+            points: [],
+            pickupObj: {},
+        }
+    );
+    data.pickups = Object.entries(data.pickupObj).map(([hour, count]) => {
+        return { hour: Number(hour), x: Number(hour) + 0.5, y: count };
+    });
+    console.log(data.points);
+    return data;
+}
 
 export const dataParsing = (importedData, fileInfo) => {
-    //console.log(importedData);
     sortOutParameters(importedData);
         const data = importedData.reduce(
             (accu, curr) => {
@@ -50,6 +104,7 @@ export const dataParsing = (importedData, fileInfo) => {
         return data;
 }
 
+//Data parser for csv files in a different format but with long and lat present
 export const abstractDataParser = (importedData, fileInfo) => {
     const data = importedData.reduce(
         (accu, curr) => {
@@ -74,6 +129,7 @@ export const abstractDataParser = (importedData, fileInfo) => {
     return data;
 }
 
+//To sort out parameters to make filters for imported data
 function sortOutParameters(importedData){
     const dataSemiParsed = importedData.reduce(
     (accu, curr) => {

@@ -1,6 +1,6 @@
 const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,AppleAndorid,NetworkFlag,NetworkProvider,PrePaidPostPaid,ActivePassive,VoiceData
-2020-04-29 19:14:00 +00:00,-1.485501,53.372683,85,1,5,2,Android,4,EE,PostPaid,Passive,NotInUse
-2020-04-30 19:14:00 +00:00,-1.461127,53.381278,47,1,3,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2020-04-29 09:14:00 +00:00,-1.485501,53.372683,85,1,5,2,Android,4,EE,PostPaid,Passive,NotInUse
+2020-04-30 08:14:00 +00:00,-1.461127,53.381278,47,1,3,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
 2020-05-01 09:14:00 +00:00,-1.448171,53.388471,64,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
 2020-05-02 09:14:00 +00:00,-1.444236,53.388691,76,2,2,1,Apple,2,O2,PrePaid,Passive,NotInUse
 2020-05-03 19:14:00 +00:00,-1.515010,53.373948,45,2,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
@@ -29,8 +29,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2020-05-26 19:14:00 +00:00,-1.446262,53.382109,76,1,2,1,Android,6,MVNO,PrePaid,Passive,NotInUse
 2020-05-27 17:14:00 +00:00,-1.452657,53.374159,30,1,3,2,Apple,5,Three,PostPaid,Passive,NotInUse
 2020-05-28 15:14:00 +00:00,-1.515806,53.379709,63,2,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-05-29 19:14:00 +00:00,-1.507000,53.376952,79,1,3,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2020-05-30 19:14:00 +00:00,-1.468814,53.376051,21,1,4,1,Apple,2,O2,PostPaid,Passive,NotInUse
+2020-05-29 09:14:00 +00:00,-1.507000,53.376952,79,1,3,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2020-05-30 08:14:00 +00:00,-1.468814,53.376051,21,1,4,1,Apple,2,O2,PostPaid,Passive,NotInUse
 2020-05-31 19:14:00 +00:00,-1.498426,53.375488,41,2,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
 2020-06-01 09:14:00 +00:00,-1.474850,53.376359,69,2,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2020-06-02 09:14:00 +00:00,-1.479257,53.383120,38,1,5,1,Android,4,EE,PrePaid,Passive,NotInUse
@@ -60,8 +60,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2020-06-26 19:14:00 +00:00,-1.508779,53.389299,18,2,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
 2020-06-27 17:14:00 +00:00,-1.496568,53.381536,68,1,1,2,Android,2,O2,PostPaid,Passive,NotInUse
 2020-06-28 15:14:00 +00:00,-1.491720,53.370983,18,2,4,2,Android,4,EE,PostPaid,Passive,NotInUse
-2020-06-29 19:14:00 +00:00,-1.445981,53.381027,26,2,3,2,Android,2,O2,PostPaid,Passive,NotInUse
-2020-06-30 19:14:00 +00:00,-1.436924,53.388377,41,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-06-29 09:14:00 +00:00,-1.445981,53.381027,26,2,3,2,Android,2,O2,PostPaid,Passive,NotInUse
+2020-06-30 08:14:00 +00:00,-1.436924,53.388377,41,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
 2020-07-01 09:14:00 +00:00,-1.504452,53.374417,63,1,4,1,Android,5,Three,PrePaid,Passive,NotInUse
 2020-07-02 09:14:00 +00:00,-1.499076,53.387648,18,2,1,1,Android,2,O2,PostPaid,Active,Data
 2020-07-03 19:14:00 +00:00,-1.441109,53.385284,12,2,4,2,Android,5,Three,PrePaid,Passive,NotInUse
@@ -90,8 +90,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2020-07-26 19:14:00 +00:00,-1.454984,53.374960,79,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2020-07-27 17:14:00 +00:00,-1.492956,53.369134,52,2,2,1,Apple,1,BT,PostPaid,Passive,NotInUse
 2020-07-28 15:14:00 +00:00,-1.445192,53.391307,36,1,3,1,Android,1,BT,PrePaid,Passive,NotInUse
-2020-07-29 19:14:00 +00:00,-1.461619,53.369493,50,2,5,1,Apple,3,Vodafone,PostPaid,Active,Data
-2020-07-30 19:14:00 +00:00,-1.445980,53.374799,48,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-07-29 09:14:00 +00:00,-1.461619,53.369493,50,2,5,1,Apple,3,Vodafone,PostPaid,Active,Data
+2020-07-30 08:14:00 +00:00,-1.445980,53.374799,48,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
 2020-07-31 19:14:00 +00:00,-1.496655,53.374198,25,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
 2020-08-01 09:14:00 +00:00,-1.500793,53.381287,55,2,4,2,Android,2,O2,PostPaid,Passive,NotInUse
 2020-08-02 09:14:00 +00:00,-1.471538,53.376004,40,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
@@ -121,8 +121,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2020-08-26 19:14:00 +00:00,-1.439971,53.387652,54,1,5,3,Apple,6,MVNO,PostPaid,Passive,NotInUse
 2020-08-27 17:14:00 +00:00,-1.491932,53.388964,71,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2020-08-28 15:14:00 +00:00,-1.446968,53.386440,68,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-08-29 19:14:00 +00:00,-1.500452,53.382007,25,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
-2020-08-30 19:14:00 +00:00,-1.498699,53.376817,18,1,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-08-29 09:14:00 +00:00,-1.500452,53.382007,25,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2020-08-30 08:14:00 +00:00,-1.498699,53.376817,18,1,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2020-08-31 19:14:00 +00:00,-1.488107,53.384048,22,2,4,1,Apple,4,EE,PostPaid,Passive,NotInUse
 2020-09-01 09:14:00 +00:00,-1.473456,53.390696,76,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2020-09-02 09:14:00 +00:00,-1.458842,53.387619,12,2,5,1,Android,2,O2,PrePaid,Active,Voice
@@ -152,8 +152,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2020-09-26 19:14:00 +00:00,-1.474888,53.390357,48,1,2,2,Apple,4,EE,PostPaid,Passive,NotInUse
 2020-09-27 17:14:00 +00:00,-1.437608,53.369193,69,2,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2020-09-28 15:14:00 +00:00,-1.471890,53.374334,54,2,4,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2020-09-29 19:14:00 +00:00,-1.447031,53.386749,79,2,4,1,Apple,2,O2,PostPaid,Active,Voice
-2020-09-30 19:14:00 +00:00,-1.464409,53.367820,32,2,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2020-09-29 09:14:00 +00:00,-1.447031,53.386749,79,2,4,1,Apple,2,O2,PostPaid,Active,Voice
+2020-09-30 08:14:00 +00:00,-1.464409,53.367820,32,2,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
 2020-10-01 09:14:00 +00:00,-1.474763,53.386987,69,2,2,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
 2020-10-02 09:14:00 +00:00,-1.498433,53.367914,58,1,5,2,Android,6,MVNO,PostPaid,Active,Data
 2020-10-03 19:14:00 +00:00,-1.477432,53.372488,82,1,3,1,Apple,5,Three,PostPaid,Active,Voice
@@ -182,8 +182,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2020-10-26 19:14:00 +00:00,-1.479591,53.379932,38,2,4,2,Android,2,O2,PostPaid,Passive,NotInUse
 2020-10-27 17:14:00 +00:00,-1.506600,53.379995,65,1,5,1,Android,2,O2,PrePaid,Passive,NotInUse
 2020-10-28 15:14:00 +00:00,-1.461436,53.392339,66,1,1,2,Android,6,MVNO,PostPaid,Passive,NotInUse
-2020-10-29 19:14:00 +00:00,-1.473737,53.369790,80,1,4,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
-2020-10-30 19:14:00 +00:00,-1.501330,53.379009,54,1,2,1,Android,4,EE,PostPaid,Passive,NotInUse
+2020-10-29 09:14:00 +00:00,-1.473737,53.369790,80,1,4,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
+2020-10-30 08:14:00 +00:00,-1.501330,53.379009,54,1,2,1,Android,4,EE,PostPaid,Passive,NotInUse
 2020-10-31 19:14:00 +00:00,-1.485371,53.381040,31,2,1,1,Android,1,BT,PostPaid,Passive,NotInUse
 2020-11-01 09:14:00 +00:00,-1.490549,53.385778,82,2,4,1,Android,1,BT,PrePaid,Passive,NotInUse
 2020-11-02 09:14:00 +00:00,-1.505107,53.382839,35,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
@@ -213,8 +213,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2020-11-26 19:14:00 +00:00,-1.500098,53.381773,12,1,3,1,Apple,2,O2,PostPaid,Passive,NotInUse
 2020-11-27 17:14:00 +00:00,-1.459849,53.373013,70,1,3,1,Android,4,EE,PrePaid,Passive,NotInUse
 2020-11-28 15:14:00 +00:00,-1.482610,53.371327,32,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
-2020-11-29 19:14:00 +00:00,-1.498333,53.369565,20,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
-2020-11-30 19:14:00 +00:00,-1.482532,53.382235,16,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
+2020-11-29 09:14:00 +00:00,-1.498333,53.369565,20,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
+2020-11-30 08:14:00 +00:00,-1.482532,53.382235,16,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
 2020-12-01 09:14:00 +00:00,-1.451945,53.392093,61,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
 2020-12-02 09:14:00 +00:00,-1.452249,53.391199,20,2,3,1,Android,4,EE,PrePaid,Passive,NotInUse
 2020-12-03 19:14:00 +00:00,-1.471315,53.375976,55,2,1,1,Android,4,EE,PostPaid,Active,Data
@@ -243,8 +243,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2020-12-26 19:14:00 +00:00,-1.502620,53.386561,43,1,4,1,Apple,5,Three,PostPaid,Passive,NotInUse
 2020-12-27 17:14:00 +00:00,-1.472348,53.371333,29,1,3,3,Android,1,BT,PostPaid,Passive,NotInUse
 2020-12-28 15:14:00 +00:00,-1.505824,53.373435,42,1,1,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2020-12-29 19:14:00 +00:00,-1.509232,53.392285,77,2,5,1,Android,1,BT,PostPaid,Active,Voice
-2020-12-30 19:14:00 +00:00,-1.463678,53.387192,61,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2020-12-29 09:14:00 +00:00,-1.509232,53.392285,77,2,5,1,Android,1,BT,PostPaid,Active,Voice
+2020-12-30 08:14:00 +00:00,-1.463678,53.387192,61,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2020-12-31 19:14:00 +00:00,-1.499303,53.372840,35,1,3,1,Android,3,Vodafone,PostPaid,Active,Data
 2019-01-01 09:14:00 +00:00,-1.513079,53.381326,43,1,4,2,Android,2,O2,PostPaid,Passive,NotInUse
 2019-01-02 09:14:00 +00:00,-1.496715,53.372145,46,2,5,1,Android,4,EE,PrePaid,Passive,NotInUse
@@ -274,8 +274,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-01-26 19:14:00 +00:00,-1.502935,53.368546,14,2,3,1,Android,3,Vodafone,PostPaid,Active,Data
 2019-01-27 17:14:00 +00:00,-1.479886,53.371585,21,1,3,1,Android,2,O2,PrePaid,Passive,NotInUse
 2019-01-28 15:14:00 +00:00,-1.475241,53.383595,35,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2019-01-29 19:14:00 +00:00,-1.489127,53.369615,64,2,2,1,Android,2,O2,PostPaid,Active,Data
-2019-01-30 19:14:00 +00:00,-1.501978,53.382425,40,2,4,1,Apple,5,Three,PrePaid,Passive,NotInUse
+2019-01-29 09:14:00 +00:00,-1.489127,53.369615,64,2,2,1,Android,2,O2,PostPaid,Active,Data
+2019-01-30 08:14:00 +00:00,-1.501978,53.382425,40,2,4,1,Apple,5,Three,PrePaid,Passive,NotInUse
 2019-01-31 19:14:00 +00:00,-1.501602,53.387706,79,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2019-02-01 09:14:00 +00:00,-1.469321,53.368222,62,2,2,1,Apple,1,BT,PostPaid,Passive,NotInUse
 2019-02-02 09:14:00 +00:00,-1.450295,53.373703,32,2,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
@@ -333,8 +333,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-03-26 19:14:00 +00:00,-1.484298,53.379948,17,1,3,1,Android,5,Three,PostPaid,Active,Voice
 2019-03-27 17:14:00 +00:00,-1.494127,53.378508,59,2,4,2,Android,2,O2,PostPaid,Passive,NotInUse
 2019-03-28 15:14:00 +00:00,-1.487339,53.374703,60,1,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
-2019-03-29 19:14:00 +00:00,-1.436544,53.379353,19,2,5,1,Android,2,O2,PrePaid,Active,Data
-2019-03-30 19:14:00 +00:00,-1.470350,53.373826,53,1,1,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-03-29 09:14:00 +00:00,-1.436544,53.379353,19,2,5,1,Android,2,O2,PrePaid,Active,Data
+2019-03-30 08:14:00 +00:00,-1.470350,53.373826,53,1,1,1,Android,2,O2,PrePaid,Passive,NotInUse
 2019-03-31 19:14:00 +00:00,-1.505098,53.380397,83,2,4,1,Apple,2,O2,PrePaid,Active,Data
 2019-04-01 09:14:00 +00:00,-1.487209,53.371293,75,1,4,1,Android,2,O2,PostPaid,Active,Voice
 2019-04-02 09:14:00 +00:00,-1.484461,53.377975,70,2,2,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
@@ -364,8 +364,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-04-26 19:14:00 +00:00,-1.449580,53.376322,55,1,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
 2019-04-27 17:14:00 +00:00,-1.465371,53.381608,32,2,4,2,Apple,6,MVNO,PostPaid,Active,Data
 2019-04-28 15:14:00 +00:00,-1.503529,53.381423,25,2,5,1,Android,6,MVNO,PostPaid,Active,Data
-2019-04-29 19:14:00 +00:00,-1.476170,53.379390,30,1,4,3,Android,2,O2,PrePaid,Passive,NotInUse
-2019-04-30 19:14:00 +00:00,-1.464376,53.379144,66,2,2,1,Apple,1,BT,PostPaid,Active,Data
+2019-04-29 09:14:00 +00:00,-1.476170,53.379390,30,1,4,3,Android,2,O2,PrePaid,Passive,NotInUse
+2019-04-30 08:14:00 +00:00,-1.464376,53.379144,66,2,2,1,Apple,1,BT,PostPaid,Active,Data
 2019-05-01 09:14:00 +00:00,-1.448383,53.378656,67,1,4,2,Apple,2,O2,PrePaid,Passive,NotInUse
 2019-05-02 09:14:00 +00:00,-1.515433,53.384323,14,1,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
 2019-05-03 19:14:00 +00:00,-1.492690,53.387790,35,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
@@ -394,8 +394,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-05-26 19:14:00 +00:00,-1.484457,53.367706,52,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
 2019-05-27 17:14:00 +00:00,-1.475321,53.368180,58,1,5,1,Android,6,MVNO,PostPaid,Active,Data
 2019-05-28 15:14:00 +00:00,-1.467177,53.368980,31,2,2,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2019-05-29 19:14:00 +00:00,-1.444604,53.374079,16,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
-2019-05-30 19:14:00 +00:00,-1.437992,53.379265,24,2,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2019-05-29 09:14:00 +00:00,-1.444604,53.374079,16,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-05-30 08:14:00 +00:00,-1.437992,53.379265,24,2,4,1,Android,2,O2,PrePaid,Passive,NotInUse
 2019-05-31 19:14:00 +00:00,-1.444239,53.374743,17,2,4,1,Android,5,Three,PostPaid,Passive,NotInUse
 2019-06-01 09:14:00 +00:00,-1.453835,53.380537,42,1,1,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
 2019-06-02 09:14:00 +00:00,-1.477164,53.384247,43,1,3,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
@@ -425,8 +425,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-06-26 19:14:00 +00:00,-1.451131,53.386080,79,1,5,1,Android,4,EE,PostPaid,Active,Data
 2019-06-27 17:14:00 +00:00,-1.512325,53.379664,21,2,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
 2019-06-28 15:14:00 +00:00,-1.490491,53.373218,39,1,5,1,Apple,1,BT,PostPaid,Active,Voice
-2019-06-29 19:14:00 +00:00,-1.443082,53.369507,36,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
-2019-06-30 19:14:00 +00:00,-1.462912,53.391882,70,2,4,2,Android,5,Three,PrePaid,Active,Data
+2019-06-29 09:14:00 +00:00,-1.443082,53.369507,36,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-06-30 08:14:00 +00:00,-1.462912,53.391882,70,2,4,2,Android,5,Three,PrePaid,Active,Data
 2019-07-01 09:14:00 +00:00,-1.463134,53.379841,12,2,3,1,Android,2,O2,PrePaid,Passive,NotInUse
 2019-07-02 09:14:00 +00:00,-1.498974,53.383736,34,2,2,1,Android,4,EE,PostPaid,Passive,NotInUse
 2019-07-03 19:14:00 +00:00,-1.500176,53.388535,41,2,3,1,Apple,2,O2,PostPaid,Passive,NotInUse
@@ -455,8 +455,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-07-26 19:14:00 +00:00,-1.515303,53.383040,76,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
 2019-07-27 17:14:00 +00:00,-1.492630,53.388421,59,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
 2019-07-28 15:14:00 +00:00,-1.502281,53.384869,48,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
-2019-07-29 19:14:00 +00:00,-1.469835,53.387013,59,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2019-07-30 19:14:00 +00:00,-1.515600,53.386035,58,2,1,2,Android,1,BT,PostPaid,Passive,NotInUse
+2019-07-29 09:14:00 +00:00,-1.469835,53.387013,59,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-07-30 08:14:00 +00:00,-1.515600,53.386035,58,2,1,2,Android,1,BT,PostPaid,Passive,NotInUse
 2019-07-31 19:14:00 +00:00,-1.455248,53.377660,77,2,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2019-08-01 09:14:00 +00:00,-1.481878,53.368714,18,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
 2019-08-02 09:14:00 +00:00,-1.487813,53.379183,77,1,2,1,Android,4,EE,PostPaid,Passive,NotInUse
@@ -486,8 +486,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-08-26 19:14:00 +00:00,-1.442947,53.382988,49,1,3,1,Android,5,Three,PostPaid,Passive,NotInUse
 2019-08-27 17:14:00 +00:00,-1.479711,53.376849,65,1,3,1,Android,5,Three,PrePaid,Passive,NotInUse
 2019-08-28 15:14:00 +00:00,-1.484547,53.371108,80,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
-2019-08-29 19:14:00 +00:00,-1.479049,53.387015,61,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2019-08-30 19:14:00 +00:00,-1.478189,53.373640,68,1,1,1,Android,5,Three,PostPaid,Active,Data
+2019-08-29 09:14:00 +00:00,-1.479049,53.387015,61,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-08-30 08:14:00 +00:00,-1.478189,53.373640,68,1,1,1,Android,5,Three,PostPaid,Active,Data
 2019-08-31 19:14:00 +00:00,-1.463390,53.382577,83,1,3,2,Android,4,EE,PostPaid,Passive,NotInUse
 2019-09-01 09:14:00 +00:00,-1.505767,53.371913,29,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2019-09-02 09:14:00 +00:00,-1.454587,53.374086,77,2,4,1,Android,1,BT,PostPaid,Passive,NotInUse
@@ -517,8 +517,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-09-26 19:14:00 +00:00,-1.475093,53.374680,72,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
 2019-09-27 17:14:00 +00:00,-1.444448,53.379584,66,2,1,2,Android,4,EE,PostPaid,Passive,NotInUse
 2019-09-28 15:14:00 +00:00,-1.503570,53.372243,37,2,2,1,Android,2,O2,PrePaid,Passive,NotInUse
-2019-09-29 19:14:00 +00:00,-1.487275,53.382674,34,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
-2019-09-30 19:14:00 +00:00,-1.474560,53.372664,41,1,2,3,Android,6,MVNO,PrePaid,Active,Data
+2019-09-29 09:14:00 +00:00,-1.487275,53.382674,34,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2019-09-30 08:14:00 +00:00,-1.474560,53.372664,41,1,2,3,Android,6,MVNO,PrePaid,Active,Data
 2019-10-01 09:14:00 +00:00,-1.501269,53.374294,59,1,1,1,Apple,2,O2,PostPaid,Passive,NotInUse
 2019-10-02 09:14:00 +00:00,-1.505345,53.377478,65,1,3,3,Android,2,O2,PostPaid,Passive,NotInUse
 2019-10-03 19:14:00 +00:00,-1.448660,53.378629,43,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
@@ -547,8 +547,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-10-26 19:14:00 +00:00,-1.460629,53.383541,33,2,2,1,Apple,6,MVNO,PrePaid,Passive,NotInUse
 2019-10-27 17:14:00 +00:00,-1.448291,53.369346,16,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2019-10-28 15:14:00 +00:00,-1.434738,53.379493,56,2,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
-2019-10-29 19:14:00 +00:00,-1.483851,53.378455,83,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
-2019-10-30 19:14:00 +00:00,-1.508843,53.376703,31,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
+2019-10-29 09:14:00 +00:00,-1.483851,53.378455,83,1,3,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2019-10-30 08:14:00 +00:00,-1.508843,53.376703,31,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
 2019-10-31 19:14:00 +00:00,-1.438417,53.375599,74,1,5,1,Android,2,O2,PrePaid,Passive,NotInUse
 2019-11-01 09:14:00 +00:00,-1.500717,53.382720,45,1,5,1,Apple,5,Three,PostPaid,Active,Data
 2019-11-02 09:14:00 +00:00,-1.510242,53.378689,69,1,2,1,Android,5,Three,PrePaid,Passive,NotInUse
@@ -578,8 +578,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-11-26 19:14:00 +00:00,-1.447085,53.376320,60,2,5,2,Android,1,BT,PostPaid,Passive,NotInUse
 2019-11-27 17:14:00 +00:00,-1.435108,53.385215,54,1,5,3,Android,5,Three,PostPaid,Passive,NotInUse
 2019-11-28 15:14:00 +00:00,-1.505657,53.376983,18,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
-2019-11-29 19:14:00 +00:00,-1.438629,53.391310,14,1,5,1,Android,1,BT,PostPaid,Active,Voice
-2019-11-30 19:14:00 +00:00,-1.449817,53.389843,40,1,4,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2019-11-29 09:14:00 +00:00,-1.438629,53.391310,14,1,5,1,Android,1,BT,PostPaid,Active,Voice
+2019-11-30 08:14:00 +00:00,-1.449817,53.389843,40,1,4,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
 2019-12-01 09:14:00 +00:00,-1.453818,53.377329,25,1,3,2,Android,1,BT,PostPaid,Active,Data
 2019-12-02 09:14:00 +00:00,-1.451793,53.390178,42,2,4,1,Android,2,O2,PostPaid,Active,Data
 2019-12-03 19:14:00 +00:00,-1.439619,53.376094,24,2,3,2,Apple,5,Three,PostPaid,Passive,NotInUse
@@ -608,8 +608,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-12-26 19:14:00 +00:00,-1.449134,53.388261,40,2,2,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
 2019-12-27 17:14:00 +00:00,-1.489607,53.370092,71,1,2,1,Android,2,O2,PostPaid,Passive,NotInUse
 2019-12-28 15:14:00 +00:00,-1.457525,53.368315,21,1,3,1,Android,1,BT,PostPaid,Passive,NotInUse
-2019-12-29 19:14:00 +00:00,-1.506881,53.391345,59,1,2,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2019-12-30 19:14:00 +00:00,-1.474824,53.378842,30,2,1,2,Android,3,Vodafone,PostPaid,Active,Voice
+2019-12-29 09:14:00 +00:00,-1.506881,53.391345,59,1,2,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2019-12-30 08:14:00 +00:00,-1.474824,53.378842,30,2,1,2,Android,3,Vodafone,PostPaid,Active,Voice
 2019-12-31 19:14:00 +00:00,-1.498320,53.392159,44,2,3,1,Android,1,BT,PrePaid,Passive,NotInUse
 2019-01-01 09:14:00 +00:00,-1.496562,53.391247,25,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2019-01-02 09:14:00 +00:00,-1.446280,53.388917,60,U,1,1,Android,2,O2,PostPaid,Passive,NotInUse
@@ -639,8 +639,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-01-26 19:14:00 +00:00,-1.513251,53.378134,49,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
 2019-01-27 17:14:00 +00:00,-1.466434,53.379407,24,1,1,2,Android,3,Vodafone,PostPaid,Active,Data
 2019-01-28 15:14:00 +00:00,-1.504809,53.369702,14,2,5,1,Apple,4,EE,PrePaid,Passive,NotInUse
-2019-01-29 19:14:00 +00:00,-1.459996,53.376426,41,1,1,1,Android,3,Vodafone,PrePaid,Active,Data
-2019-01-30 19:14:00 +00:00,-1.495379,53.374338,61,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2019-01-29 09:14:00 +00:00,-1.459996,53.376426,41,1,1,1,Android,3,Vodafone,PrePaid,Active,Data
+2019-01-30 08:14:00 +00:00,-1.495379,53.374338,61,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
 2019-01-31 19:14:00 +00:00,-1.490424,53.369621,65,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
 2019-02-01 09:14:00 +00:00,-1.479924,53.368464,80,2,2,1,Apple,5,Three,PostPaid,Passive,NotInUse
 2019-02-02 09:14:00 +00:00,-1.465370,53.388664,25,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
@@ -698,8 +698,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2019-03-26 19:14:00 +00:00,-1.454403,53.388846,20,1,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2019-03-27 17:14:00 +00:00,-1.454769,53.384035,54,1,1,1,Apple,1,BT,PostPaid,Passive,NotInUse
 2019-03-28 15:14:00 +00:00,-1.438141,53.376865,34,2,5,1,Android,5,Three,PostPaid,Passive,NotInUse
-2019-03-29 19:14:00 +00:00,-1.446259,53.380906,13,1,3,1,Android,1,BT,PostPaid,Active,Data
-2019-03-30 19:14:00 +00:00,-1.459676,53.390395,12,2,1,1,Android,4,EE,PrePaid,Passive,NotInUse
+2019-03-29 09:14:00 +00:00,-1.446259,53.380906,13,1,3,1,Android,1,BT,PostPaid,Active,Data
+2019-03-30 08:14:00 +00:00,-1.459676,53.390395,12,2,1,1,Android,4,EE,PrePaid,Passive,NotInUse
 2019-03-31 19:14:00 +00:00,-1.470525,53.370130,50,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2019-04-01 09:14:00 +00:00,-1.438137,53.392400,36,2,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2019-04-02 09:14:00 +00:00,-1.438971,53.388801,26,1,1,1,Android,2,O2,PostPaid,Passive,NotInUse
@@ -729,8 +729,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2022-04-26 19:14:00,-1.486457,53.376854,79,1,3,1,Apple,5,Three,PrePaid,Passive,NotInUse
 2022-04-27 19:14:00,-1.446420,53.368428,63,2,1,3,Android,1,BT,PostPaid,Passive,NotInUse
 2022-04-28 19:14:00,-1.486968,53.385147,19,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-04-29 19:14:00,-1.484752,53.381762,82,2,4,1,Apple,4,EE,PostPaid,Active,Data
-2022-04-30 19:14:00,-1.467381,53.378449,78,1,3,1,Android,5,Three,PostPaid,Passive,NotInUse
+2022-04-29 09:14:00,-1.484752,53.381762,82,2,4,1,Apple,4,EE,PostPaid,Active,Data
+2022-04-30 08:14:00,-1.467381,53.378449,78,1,3,1,Android,5,Three,PostPaid,Passive,NotInUse
 2022-05-01 19:14:00,-1.469274,53.378474,66,2,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2022-05-02 19:14:00,-1.442956,53.380988,77,1,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
 2022-05-03 19:14:00,-1.452319,53.369162,53,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
@@ -759,8 +759,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2022-05-26 19:14:00,-1.495553,53.377320,82,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2022-05-27 19:14:00,-1.461777,53.386217,52,2,1,1,Apple,3,Vodafone,PrePaid,Passive,NotInUse
 2022-05-28 19:14:00,-1.508008,53.369511,54,2,5,1,Android,1,BT,PostPaid,Passive,NotInUse
-2022-05-29 19:14:00,-1.451787,53.369738,31,2,5,2,Android,6,MVNO,PrePaid,Passive,NotInUse
-2022-05-30 19:14:00,-1.498938,53.375800,52,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-05-29 09:14:00,-1.451787,53.369738,31,2,5,2,Android,6,MVNO,PrePaid,Passive,NotInUse
+2022-05-30 08:14:00,-1.498938,53.375800,52,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2022-05-31 19:14:00,-1.450286,53.384136,53,1,3,2,Android,2,O2,PostPaid,Active,Data
 2022-06-01 19:14:00,-1.478619,53.370127,76,1,5,2,Android,5,Three,PostPaid,Passive,NotInUse
 2022-06-02 19:14:00,-1.479810,53.388569,12,2,3,3,Android,6,MVNO,PostPaid,Passive,NotInUse
@@ -790,8 +790,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2022-06-26 19:14:00,-1.515773,53.369551,38,2,1,1,Android,4,EE,PostPaid,Passive,NotInUse
 2022-06-27 19:14:00,-1.503404,53.392341,79,1,4,1,Android,1,BT,PostPaid,Passive,NotInUse
 2022-06-28 19:14:00,-1.466171,53.383618,45,2,3,1,Android,5,Three,PostPaid,Passive,NotInUse
-2022-06-29 19:14:00,-1.458562,53.374615,30,1,1,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2022-06-30 19:14:00,-1.436683,53.369246,19,1,5,1,Android,3,Vodafone,PostPaid,Active,Data
+2022-06-29 09:14:00,-1.458562,53.374615,30,1,1,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2022-06-30 08:14:00,-1.436683,53.369246,19,1,5,1,Android,3,Vodafone,PostPaid,Active,Data
 2022-07-01 19:14:00,-1.447737,53.371467,71,2,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2022-07-02 19:14:00,-1.461444,53.388630,44,1,4,1,Android,5,Three,PostPaid,Passive,NotInUse
 2022-07-03 19:14:00,-1.459311,53.379256,35,1,1,1,Apple,5,Three,PrePaid,Passive,NotInUse
@@ -820,8 +820,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2022-07-26 19:14:00,-1.479304,53.381246,64,2,4,1,Apple,4,EE,PostPaid,Passive,NotInUse
 2022-07-27 19:14:00,-1.504623,53.374468,67,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
 2022-07-28 19:14:00,-1.462605,53.372674,21,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
-2022-07-29 19:14:00,-1.474923,53.370518,72,1,2,1,Apple,4,EE,PostPaid,Passive,NotInUse
-2022-07-30 19:14:00,-1.488867,53.369606,62,2,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2022-07-29 09:14:00,-1.474923,53.370518,72,1,2,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2022-07-30 08:14:00,-1.488867,53.369606,62,2,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
 2022-07-31 19:14:00,-1.483006,53.386204,13,1,5,1,Android,4,EE,PostPaid,Passive,NotInUse
 2022-08-01 19:14:00,-1.457330,53.385043,40,2,3,1,Apple,2,O2,PostPaid,Active,Voice
 2022-08-02 19:14:00,-1.437127,53.390670,37,1,2,2,Android,2,O2,PrePaid,Passive,NotInUse
@@ -851,8 +851,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2022-08-26 19:14:00,-1.479526,53.383549,72,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2022-08-27 19:14:00,-1.448372,53.372325,43,2,4,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2022-08-28 19:14:00,-1.493290,53.388574,56,1,4,3,Android,3,Vodafone,PostPaid,Active,Voice
-2022-08-29 19:14:00,-1.471925,53.369096,61,1,5,2,Apple,6,MVNO,PostPaid,Active,Data
-2022-08-30 19:14:00,-1.450681,53.391278,45,2,5,2,Android,4,EE,PrePaid,Passive,NotInUse
+2022-08-29 09:14:00,-1.471925,53.369096,61,1,5,2,Apple,6,MVNO,PostPaid,Active,Data
+2022-08-30 08:14:00,-1.450681,53.391278,45,2,5,2,Android,4,EE,PrePaid,Passive,NotInUse
 2022-08-31 19:14:00,-1.445773,53.382304,17,1,3,1,Android,5,Three,PostPaid,Passive,NotInUse
 2022-09-01 19:14:00,-1.453820,53.383955,39,2,4,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
 2022-09-02 19:14:00,-1.483347,53.389892,69,2,1,1,Android,1,BT,PostPaid,Passive,NotInUse
@@ -882,8 +882,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2022-09-26 19:14:00,-1.450862,53.388380,66,1,5,1,Apple,4,EE,PostPaid,Active,Voice
 2022-09-27 19:14:00,-1.485614,53.376616,58,2,5,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2022-09-28 19:14:00,-1.506753,53.388767,36,2,2,1,Android,6,MVNO,PrePaid,Passive,NotInUse
-2022-09-29 19:14:00,-1.477213,53.371710,23,1,4,1,Android,6,MVNO,PrePaid,Passive,NotInUse
-2022-09-30 19:14:00,-1.456059,53.376872,55,1,4,1,Android,5,Three,PrePaid,Passive,NotInUse
+2022-09-29 09:14:00,-1.477213,53.371710,23,1,4,1,Android,6,MVNO,PrePaid,Passive,NotInUse
+2022-09-30 08:14:00,-1.456059,53.376872,55,1,4,1,Android,5,Three,PrePaid,Passive,NotInUse
 2022-10-01 19:14:00,-1.478521,53.386927,53,1,3,1,Android,2,O2,PostPaid,Passive,NotInUse
 2022-10-02 19:14:00,-1.461548,53.391116,66,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2022-10-03 19:14:00,-1.469212,53.388099,32,1,1,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
@@ -912,8 +912,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2022-10-26 19:14:00,-1.514275,53.374781,35,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
 2022-10-27 19:14:00,-1.468289,53.368922,31,2,2,2,Apple,4,EE,PrePaid,Passive,NotInUse
 2022-10-28 19:14:00,-1.495714,53.389025,65,1,4,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-10-29 19:14:00,-1.473088,53.375224,76,1,4,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2022-10-30 19:14:00,-1.479697,53.380598,68,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
+2022-10-29 09:14:00,-1.473088,53.375224,76,1,4,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2022-10-30 08:14:00,-1.479697,53.380598,68,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
 2022-10-31 19:14:00,-1.451473,53.376071,38,1,2,1,Apple,4,EE,PostPaid,Passive,NotInUse
 2022-11-01 19:14:00,-1.461820,53.369805,52,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2022-11-02 19:14:00,-1.449583,53.389283,74,2,1,1,Apple,4,EE,PostPaid,Passive,NotInUse
@@ -943,8 +943,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2022-11-26 19:14:00,-1.512426,53.373770,74,1,5,1,Android,2,O2,PostPaid,Passive,NotInUse
 2022-11-27 19:14:00,-1.484558,53.383736,57,1,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
 2022-11-28 19:14:00,-1.440399,53.368731,39,2,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
-2022-11-29 19:14:00,-1.512142,53.368259,37,2,2,1,Android,5,Three,PrePaid,Passive,NotInUse
-2022-11-30 19:14:00,-1.448122,53.373640,60,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-11-29 09:14:00,-1.512142,53.368259,37,2,2,1,Android,5,Three,PrePaid,Passive,NotInUse
+2022-11-30 08:14:00,-1.448122,53.373640,60,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2022-12-01 19:14:00,-1.450132,53.384978,32,2,1,2,Android,5,Three,PostPaid,Passive,NotInUse
 2022-12-02 19:14:00,-1.441844,53.384591,55,2,1,1,Apple,5,Three,PostPaid,Passive,NotInUse
 2022-12-03 19:14:00,-1.451725,53.387429,18,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
@@ -973,8 +973,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2022-12-26 19:14:00,-1.457581,53.378276,42,2,3,2,Android,1,BT,PostPaid,Passive,NotInUse
 2022-12-27 19:14:00,-1.496715,53.372183,67,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
 2022-12-28 19:14:00,-1.467816,53.387526,64,1,1,1,Android,4,EE,PostPaid,Passive,NotInUse
-2022-12-29 19:14:00,-1.473329,53.389094,21,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
-2022-12-30 19:14:00,-1.495567,53.388948,27,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2022-12-29 09:14:00,-1.473329,53.389094,21,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
+2022-12-30 08:14:00,-1.495567,53.388948,27,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2022-12-31 19:14:00,-1.507601,53.390486,84,1,2,2,Android,6,MVNO,PostPaid,Passive,NotInUse
 2023-01-01 19:14:00,-1.495390,53.383963,48,2,1,1,Android,4,EE,PostPaid,Passive,NotInUse
 2023-01-02 19:14:00,-1.463715,53.368614,29,2,1,2,Apple,2,O2,PostPaid,Passive,NotInUse
@@ -1004,8 +1004,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-01-26 19:14:00,-1.447029,53.385216,60,1,1,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
 2023-01-27 19:14:00,-1.440291,53.384476,70,2,1,1,Android,2,O2,PostPaid,Passive,NotInUse
 2023-01-28 19:14:00,-1.476112,53.386678,77,2,3,1,Android,2,O2,PostPaid,Passive,NotInUse
-2023-01-29 19:14:00,-1.456507,53.388167,50,1,2,2,Apple,2,O2,PostPaid,Passive,NotInUse
-2023-01-30 19:14:00,-1.443472,53.387352,65,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-01-29 09:14:00,-1.456507,53.388167,50,1,2,2,Apple,2,O2,PostPaid,Passive,NotInUse
+2023-01-30 08:14:00,-1.443472,53.387352,65,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
 2023-01-31 19:14:00,-1.463361,53.384958,79,1,2,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
 2023-02-01 19:14:00,-1.477828,53.384931,20,2,2,2,Android,1,BT,PrePaid,Active,Data
 2023-02-02 19:14:00,-1.478484,53.374009,75,1,3,1,Apple,2,O2,PostPaid,Passive,NotInUse
@@ -1063,8 +1063,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-03-26 19:14:00,-1.465273,53.380672,56,1,2,1,Android,1,BT,PrePaid,Passive,NotInUse
 2023-03-27 19:14:00,-1.443047,53.382825,63,2,3,2,Android,6,MVNO,PostPaid,Passive,NotInUse
 2023-03-28 19:14:00,-1.478474,53.372842,39,2,3,2,Android,2,O2,PostPaid,Active,Data
-2023-03-29 19:14:00,-1.467786,53.370469,83,2,1,1,Android,5,Three,PrePaid,Passive,NotInUse
-2023-03-30 19:14:00,-1.508990,53.368182,79,1,3,1,Android,2,O2,PrePaid,Passive,NotInUse
+2023-03-29 09:14:00,-1.467786,53.370469,83,2,1,1,Android,5,Three,PrePaid,Passive,NotInUse
+2023-03-30 08:14:00,-1.508990,53.368182,79,1,3,1,Android,2,O2,PrePaid,Passive,NotInUse
 2023-03-31 19:14:00,-1.494089,53.373956,16,2,5,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
 2023-04-01 19:14:00,-1.471836,53.390021,34,1,5,1,Android,2,O2,PrePaid,Active,Voice
 2023-04-02 19:14:00,-1.510161,53.375379,12,1,5,1,Apple,2,O2,PostPaid,Passive,NotInUse
@@ -1094,8 +1094,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-04-26 19:14:00,-1.511436,53.384649,25,2,3,1,Apple,5,Three,PostPaid,Passive,NotInUse
 2023-04-27 19:14:00,-1.461502,53.375173,18,1,1,3,Android,5,Three,PostPaid,Passive,NotInUse
 2023-04-28 19:14:00,-1.486247,53.370577,49,1,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
-2023-04-29 19:14:00,-1.441675,53.381467,52,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
-2023-04-30 19:14:00,-1.483776,53.369128,34,1,5,2,Apple,1,BT,PostPaid,Passive,NotInUse
+2023-04-29 09:14:00,-1.441675,53.381467,52,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2023-04-30 08:14:00,-1.483776,53.369128,34,1,5,2,Apple,1,BT,PostPaid,Passive,NotInUse
 2023-05-01 19:14:00,-1.492412,53.375863,43,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
 2023-05-02 19:14:00,-1.476998,53.376056,32,1,4,2,Apple,2,O2,PostPaid,Passive,NotInUse
 2023-05-03 19:14:00,-1.484465,53.371376,31,1,5,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
@@ -1124,8 +1124,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-05-26 19:14:00,-1.453517,53.372343,81,2,5,1,Apple,4,EE,PostPaid,Passive,NotInUse
 2023-05-27 19:14:00,-1.480956,53.370361,56,1,2,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2023-05-28 19:14:00,-1.515355,53.379609,76,2,2,1,Android,5,Three,PostPaid,Active,Voice
-2023-05-29 19:14:00,-1.489851,53.389104,80,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
-2023-05-30 19:14:00,-1.462733,53.386499,59,1,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2023-05-29 09:14:00,-1.489851,53.389104,80,1,5,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-05-30 08:14:00,-1.462733,53.386499,59,1,4,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
 2023-05-31 19:14:00,-1.452094,53.385440,81,2,2,1,Android,5,Three,PostPaid,Passive,NotInUse
 2023-06-01 19:14:00,-1.506743,53.377476,74,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
 2023-06-02 19:14:00,-1.459778,53.368782,53,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
@@ -1155,8 +1155,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-06-26 19:14:00,-1.499731,53.368610,51,2,5,1,Apple,4,EE,PostPaid,Passive,NotInUse
 2023-06-27 19:14:00,-1.461084,53.383447,81,1,2,2,Apple,2,O2,PrePaid,Active,Data
 2023-06-28 19:14:00,-1.477438,53.388768,81,2,4,1,Android,2,O2,PrePaid,Passive,NotInUse
-2023-06-29 19:14:00,-1.446274,53.390443,21,1,1,1,Apple,4,EE,PostPaid,Passive,NotInUse
-2023-06-30 19:14:00,-1.460528,53.388392,35,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
+2023-06-29 09:14:00,-1.446274,53.390443,21,1,1,1,Apple,4,EE,PostPaid,Passive,NotInUse
+2023-06-30 08:14:00,-1.460528,53.388392,35,2,4,1,Android,2,O2,PostPaid,Passive,NotInUse
 2023-07-01 19:14:00,-1.470568,53.368139,34,2,2,2,Android,6,MVNO,PostPaid,Passive,NotInUse
 2023-07-02 19:14:00,-1.472220,53.380658,71,1,4,1,Android,2,O2,PostPaid,Passive,NotInUse
 2023-07-03 19:14:00,-1.502863,53.370010,40,2,3,2,Apple,1,BT,PostPaid,Passive,NotInUse
@@ -1185,8 +1185,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-07-26 19:14:00,-1.501209,53.382032,59,2,4,3,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2023-07-27 19:14:00,-1.455942,53.368770,55,2,5,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
 2023-07-28 19:14:00,-1.468427,53.379732,70,1,2,1,Android,1,BT,PostPaid,Passive,NotInUse
-2023-07-29 19:14:00,-1.469153,53.392173,24,2,3,1,Android,6,MVNO,PostPaid,Active,Voice
-2023-07-30 19:14:00,-1.500156,53.372778,84,1,4,2,Android,1,BT,PostPaid,Passive,NotInUse
+2023-07-29 09:14:00,-1.469153,53.392173,24,2,3,1,Android,6,MVNO,PostPaid,Active,Voice
+2023-07-30 08:14:00,-1.500156,53.372778,84,1,4,2,Android,1,BT,PostPaid,Passive,NotInUse
 2023-07-31 19:14:00,-1.445499,53.385324,48,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2023-08-01 19:14:00,-1.466712,53.382554,44,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2023-08-02 19:14:00,-1.493743,53.383250,57,2,5,2,Android,6,MVNO,PrePaid,Passive,NotInUse
@@ -1216,8 +1216,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-08-26 19:14:00,-1.501671,53.382785,30,2,5,1,Apple,1,BT,PostPaid,Passive,NotInUse
 2023-08-27 19:14:00,-1.467074,53.369455,83,2,3,1,Android,1,BT,PostPaid,Passive,NotInUse
 2023-08-28 19:14:00,-1.511516,53.370953,70,2,3,1,Apple,1,BT,PrePaid,Active,Data
-2023-08-29 19:14:00,-1.513627,53.367888,43,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
-2023-08-30 19:14:00,-1.446210,53.383349,68,2,1,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
+2023-08-29 09:14:00,-1.513627,53.367888,43,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
+2023-08-30 08:14:00,-1.446210,53.383349,68,2,1,2,Apple,6,MVNO,PostPaid,Passive,NotInUse
 2023-08-31 19:14:00,-1.469839,53.377219,74,2,4,2,Apple,2,O2,PostPaid,Passive,NotInUse
 2023-09-01 19:14:00,-1.488082,53.381892,34,1,5,1,Android,3,Vodafone,PrePaid,Active,Voice
 2023-09-02 19:14:00,-1.488221,53.378381,57,1,5,2,Android,5,Three,PostPaid,Passive,NotInUse
@@ -1247,8 +1247,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-09-26 19:14:00,-1.442757,53.373641,56,2,5,1,Android,4,EE,PostPaid,Passive,NotInUse
 2023-09-27 19:14:00,-1.434810,53.391750,45,1,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2023-09-28 19:14:00,-1.458962,53.367811,50,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
-2023-09-29 19:14:00,-1.438670,53.389501,72,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
-2023-09-30 19:14:00,-1.451795,53.375416,42,1,3,1,Android,2,O2,PostPaid,Active,Data
+2023-09-29 09:14:00,-1.438670,53.389501,72,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
+2023-09-30 08:14:00,-1.451795,53.375416,42,1,3,1,Android,2,O2,PostPaid,Active,Data
 2023-10-01 19:14:00,-1.486485,53.384806,31,1,5,1,Apple,5,Three,PostPaid,Passive,NotInUse
 2023-10-02 19:14:00,-1.458989,53.376336,56,1,1,1,Android,6,MVNO,PrePaid,Passive,NotInUse
 2023-10-03 19:14:00,-1.460164,53.380345,46,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
@@ -1277,8 +1277,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-10-26 19:14:00,-1.491775,53.383085,58,1,5,1,Android,6,MVNO,PrePaid,Passive,NotInUse
 2023-10-27 19:14:00,-1.500241,53.374337,67,2,4,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2023-10-28 19:14:00,-1.449959,53.376417,19,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
-2023-10-29 19:14:00,-1.497247,53.371540,55,2,4,1,Android,5,Three,PrePaid,Active,Data
-2023-10-30 19:14:00,-1.507901,53.387000,19,1,1,1,Android,1,BT,PrePaid,Passive,NotInUse
+2023-10-29 09:14:00,-1.497247,53.371540,55,2,4,1,Android,5,Three,PrePaid,Active,Data
+2023-10-30 08:14:00,-1.507901,53.387000,19,1,1,1,Android,1,BT,PrePaid,Passive,NotInUse
 2023-10-31 19:14:00,-1.498270,53.369755,71,2,2,2,Android,5,Three,PostPaid,Passive,NotInUse
 2023-11-01 19:14:00,-1.452134,53.383357,22,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
 2023-11-02 19:14:00,-1.514595,53.386163,70,2,2,1,Apple,2,O2,PostPaid,Active,Data
@@ -1308,8 +1308,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-11-26 19:14:00,-1.516000,53.380583,14,2,2,1,Android,2,O2,PostPaid,Passive,NotInUse
 2023-11-27 19:14:00,-1.440830,53.368517,54,2,2,1,Apple,2,O2,PostPaid,Passive,NotInUse
 2023-11-28 19:14:00,-1.451071,53.381213,57,2,4,2,Android,3,Vodafone,PrePaid,Passive,NotInUse
-2023-11-29 19:14:00,-1.480792,53.381766,31,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
-2023-11-30 19:14:00,-1.496631,53.379969,72,1,5,2,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2023-11-29 09:14:00,-1.480792,53.381766,31,2,1,1,Android,5,Three,PostPaid,Passive,NotInUse
+2023-11-30 08:14:00,-1.496631,53.379969,72,1,5,2,Apple,3,Vodafone,PostPaid,Passive,NotInUse
 2023-12-01 19:14:00,-1.442468,53.375303,64,2,5,1,Android,2,O2,PostPaid,Passive,NotInUse
 2023-12-02 19:14:00,-1.444107,53.375212,37,2,4,3,Apple,5,Three,PrePaid,Passive,NotInUse
 2023-12-03 19:14:00,-1.499341,53.382862,30,1,4,2,Android,1,BT,PostPaid,Passive,NotInUse
@@ -1338,8 +1338,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2023-12-26 19:14:00,-1.488307,53.383280,31,2,3,1,Android,4,EE,PostPaid,Passive,NotInUse
 2023-12-27 19:14:00,-1.475731,53.368859,18,2,4,1,Apple,1,BT,PostPaid,Passive,NotInUse
 2023-12-28 19:14:00,-1.465556,53.390090,22,1,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
-2023-12-29 19:14:00,-1.493922,53.370962,23,1,3,1,Android,1,BT,PostPaid,Active,Voice
-2023-12-30 19:14:00,-1.445073,53.374987,31,2,2,1,Apple,5,Three,PostPaid,Passive,NotInUse
+2023-12-29 09:14:00,-1.493922,53.370962,23,1,3,1,Android,1,BT,PostPaid,Active,Voice
+2023-12-30 08:14:00,-1.445073,53.374987,31,2,2,1,Apple,5,Three,PostPaid,Passive,NotInUse
 2023-12-31 19:14:00,-1.481445,53.381970,17,2,3,1,Android,5,Three,PrePaid,Passive,NotInUse
 2024-01-01 19:14:00,-1.500330,53.388407,49,2,4,2,Apple,4,EE,PostPaid,Active,Data
 2024-01-02 19:14:00,-1.497412,53.368939,72,1,4,2,Apple,3,Vodafone,PostPaid,Passive,NotInUse
@@ -1369,8 +1369,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2024-01-26 19:14:00,-1.491019,53.387363,33,2,4,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
 2024-01-27 19:14:00,-1.502447,53.377399,55,2,3,1,Apple,4,EE,PostPaid,Passive,NotInUse
 2024-01-28 19:14:00,-1.452266,53.369813,28,2,2,1,Android,5,Three,PrePaid,Passive,NotInUse
-2024-01-29 19:14:00,-1.510775,53.370851,80,2,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
-2024-01-30 19:14:00,-1.491625,53.371396,14,1,1,1,Apple,1,BT,PostPaid,Passive,NotInUse
+2024-01-29 09:14:00,-1.510775,53.370851,80,2,3,1,Apple,3,Vodafone,PostPaid,Passive,NotInUse
+2024-01-30 08:14:00,-1.491625,53.371396,14,1,1,1,Apple,1,BT,PostPaid,Passive,NotInUse
 2024-01-31 19:14:00,-1.434530,53.391480,53,2,4,1,Android,5,Three,PostPaid,Active,Voice
 2024-02-01 19:14:00,-1.493729,53.375659,54,1,4,2,Android,2,O2,PrePaid,Active,Data
 2024-02-02 19:14:00,-1.466022,53.387537,59,2,4,2,Android,4,EE,PostPaid,Active,Data
@@ -1400,7 +1400,7 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2024-02-26 19:14:00,-1.476194,53.381433,62,2,4,2,Android,5,Three,PrePaid,Passive,NotInUse
 2024-02-27 19:14:00,-1.481357,53.388374,82,2,4,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2024-02-28 19:14:00,-1.506329,53.388103,17,2,3,1,Android,4,EE,PostPaid,Active,Voice
-2024-02-29 19:14:00,-1.471972,53.371574,23,2,5,1,Android,5,Three,PrePaid,Passive,NotInUse
+2024-02-29 09:14:00,-1.471972,53.371574,23,2,5,1,Android,5,Three,PrePaid,Passive,NotInUse
 2024-03-01 19:14:00,-1.464512,53.390713,81,1,3,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2024-03-02 19:14:00,-1.488751,53.386956,66,1,3,1,Android,4,EE,PostPaid,Passive,NotInUse
 2024-03-03 19:14:00,-1.455693,53.388874,73,1,1,1,Android,5,Three,PostPaid,Passive,NotInUse
@@ -1429,8 +1429,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2024-03-26 19:14:00,-1.493569,53.386021,78,1,2,1,Android,5,Three,PostPaid,Passive,NotInUse
 2024-03-27 19:14:00,-1.434721,53.378323,55,2,5,2,Android,3,Vodafone,PostPaid,Passive,NotInUse
 2024-03-28 19:14:00,-1.481498,53.372840,57,2,1,2,Android,5,Three,PrePaid,Passive,NotInUse
-2024-03-29 19:14:00,-1.449615,53.371057,12,1,1,1,Android,4,EE,PrePaid,Passive,NotInUse
-2024-03-30 19:14:00,-1.480431,53.387781,24,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
+2024-03-29 09:14:00,-1.449615,53.371057,12,1,1,1,Android,4,EE,PrePaid,Passive,NotInUse
+2024-03-30 08:14:00,-1.480431,53.387781,24,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2024-03-31 19:14:00,-1.504401,53.374894,60,1,4,1,Android,4,EE,PostPaid,Passive,NotInUse
 2024-04-01 19:14:00,-1.454689,53.392288,41,1,1,1,Apple,1,BT,PostPaid,Passive,NotInUse
 2024-04-02 19:14:00,-1.461088,53.389432,36,1,2,1,Android,3,Vodafone,PostPaid,Passive,NotInUse
@@ -1460,8 +1460,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2024-04-26 19:14:00,-1.461198,53.390390,74,2,5,1,Android,5,Three,PrePaid,Passive,NotInUse
 2024-04-27 19:14:00,-1.496272,53.368354,23,1,1,1,Android,1,BT,PostPaid,Passive,NotInUse
 2024-04-28 19:14:00,-1.468326,53.371339,83,1,1,1,Android,6,MVNO,PostPaid,Passive,NotInUse
-2024-04-29 19:14:00,-1.446442,53.380324,24,1,4,1,Android,5,Three,PostPaid,Passive,NotInUse
-2024-04-30 19:14:00,-1.496606,53.368934,53,1,2,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
+2024-04-29 09:14:00,-1.446442,53.380324,24,1,4,1,Android,5,Three,PostPaid,Passive,NotInUse
+2024-04-30 08:14:00,-1.496606,53.368934,53,1,2,1,Android,3,Vodafone,PrePaid,Passive,NotInUse
 2024-05-01 19:14:00,-1.479090,53.381086,62,2,1,1,Android,4,EE,PostPaid,Passive,NotInUse
 2024-05-02 19:14:00,-1.436592,53.379549,26,2,5,1,Android,6,MVNO,PostPaid,Passive,NotInUse
 2024-05-03 19:14:00,-1.496179,53.377318,18,2,4,1,Apple,4,EE,PostPaid,Passive,NotInUse
@@ -1490,8 +1490,8 @@ const data = `PickUpDateTime,Longitude,Latitude,Age,Sex,SpendCat,ResidentCat,App
 2024-05-26 19:14:00,-1.477928,53.383592,37,1,3,1,Android,2,O2,PostPaid,Active,Data
 2024-05-27 19:14:00,-1.465109,53.371398,74,2,2,1,Android,4,EE,PostPaid,Passive,NotInUse
 2024-05-28 19:14:00,-1.504715,53.370450,65,2,3,1,Apple,6,MVNO,PostPaid,Passive,NotInUse
-2024-05-29 19:14:00,-1.467838,53.378232,80,1,4,1,Android,2,O2,PrePaid,Passive,NotInUse
-2024-05-30 19:14:00,-1.473619,53.390271,64,1,1,2,Android,3,Vodafone,PostPaid,Active,Voice
+2024-05-29 09:14:00,-1.467838,53.378232,80,1,4,1,Android,2,O2,PrePaid,Passive,NotInUse
+2024-05-30 08:14:00,-1.473619,53.390271,64,1,1,2,Android,3,Vodafone,PostPaid,Active,Voice
 2024-05-31 19:14:00,-1.483325,53.376930,69,1,5,2,Android,6,MVNO,PostPaid,Passive,NotInUse
 2024-06-01 19:14:00,-1.465798,53.380750,43,2,3,1,Apple,2,O2,PostPaid,Passive,NotInUse
 2024-06-02 19:14:00,-1.461550,53.383271,45,2,3,1,Android,6,MVNO,PrePaid,Passive,NotInUse

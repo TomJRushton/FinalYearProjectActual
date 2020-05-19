@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c725c84-8794-464a-8755-e3ba6eeeeb33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/data/csv/TomFinalDataSet3 (1).csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/csv/TomFinalDataSet3.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/csv/phoneDataNew.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/js/phoneDataNew.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controls/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controls/charts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controls/controls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controls/controls.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controls/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controls/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-loading/CSVParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-loading/CSVParser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data-loading/uploadButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data-loading/uploadButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/dataParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dataParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-loading/uploadButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data-loading/uploadFile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dataParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controls/dataParser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/js/phoneData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/js/phoneData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/js/taxi.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/deckgl-layers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deckgl-layers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../kepler.gl2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/data/csv" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,14 +61,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src\data\csv" />
       <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\node_modules\deck.gl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src\tests" />
       <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src\controls" />
+      <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src\data\csv" />
+      <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src\tests" />
       <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src\data" />
       <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\src" />
-      <recent name="C:\Users\tomru\Documents\FinalYearProjectActual\data" />
     </key>
   </component>
   <component name="RunManager">
@@ -105,7 +112,10 @@
       <workItem from="1588271071866" duration="2518000" />
       <workItem from="1588334859389" duration="907000" />
       <workItem from="1588336340869" duration="41338000" />
-      <workItem from="1588511701877" duration="111348000" />
+      <workItem from="1588511701877" duration="122387000" />
+      <workItem from="1589813343137" duration="216000" />
+      <workItem from="1589830748776" duration="3001000" />
+      <workItem from="1589834842331" duration="8283000" />
     </task>
     <servers />
   </component>
@@ -149,11 +159,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="88" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588173621015" />
-    <state x="2501" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1588512363379">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1589834877067">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1588184819677" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1589830737579" />
     <state x="2501" y="298" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588512363379" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589834877067" />
     <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1588185448080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

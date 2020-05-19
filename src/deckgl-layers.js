@@ -27,7 +27,7 @@ const LIGHT_SETTINGS = {
 
 const elevationRange = [0, 1000];
 
-
+//Render function to be called in app to render the layers
 export function renderLayers(props) {
     console.log('render layers called')
     const { data, hour, onHover, settings, dataSettings, firstAddedLayerData, secondAddedLayerData } = props;
@@ -45,7 +45,7 @@ export function renderLayers(props) {
     }else{sexUpperLimit = 2;}
 
 
-
+//Add different layers to the map
     return [
         settings.showScatterplot &&
         new ScatterplotLayer({
@@ -107,7 +107,7 @@ export function renderLayers(props) {
         }),
         settings.show1stAddedLayerScatterplot &&
         new ScatterplotLayer({
-            id: 'scatterplotAddedData',
+            id: 'scatterplotFirstAddedData',
             data: firstAddedLayerData,
             getPosition: d => d.position,
             getRadius: d => 5,
@@ -121,7 +121,7 @@ export function renderLayers(props) {
         }),
         settings.show1stAddedLayerHeatmap &&
         new HeatmapLayer({
-            id: 'heatmapAddedData',
+            id: 'heatmapFirstAddedData',
             data: firstAddedLayerData,
             getPosition: d => d.position,
             getRadius: d => 5,
@@ -135,7 +135,7 @@ export function renderLayers(props) {
         }),
         settings.show2ndAddedLayerScatterplot &&
         new ScatterplotLayer({
-            id: 'scatterplotAddedData',
+            id: 'scatterplotSecondAddedData',
             data: secondAddedLayerData,
             getPosition: d => d.position,
             getRadius: d => 5,
@@ -149,7 +149,7 @@ export function renderLayers(props) {
         }),
         settings.show2ndAddedLayerHeatmap &&
         new HeatmapLayer({
-            id: 'heatmapAddedData',
+            id: 'heatmapSecondAddedData',
             data: secondAddedLayerData,
             getPosition: d => d.position,
             getRadius: d => 5,

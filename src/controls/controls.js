@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { mapStylePicker, layerControl, dataPicker, dataControl } from './style';
+import { mapStylePicker, layerControl, firstDataPicker, secondDataPicker, dataControl } from './style';
 //import layersAvaliable from '../App';
 import 'rc-slider/assets/index.css';
 import Slider from 'rc-slider';
 import phoneData from '../data/js/phoneData'
-import phoneDataTest from '../data/js/phoneDataTest'
-import {layers} from '../App'
+import phoneDataNew from '../data/js/phoneDataNew';
+import {firstLayers, secondLayers} from '../App'
 
+//Layer controls to populate the layer controls container
 export const HEXAGON_CONTROLS = {
     showHexagon: {
         displayName: 'Show Hexagon (Not compatible w/ data filters)',
@@ -92,6 +93,8 @@ export const HEXAGON_CONTROLS = {
         value: false
     }
 };
+
+//Data controls to populate the data control container
 export const DATA_CONTROLS = {
     showMales:{
         displayName: 'Male',
@@ -122,8 +125,6 @@ export const DATA_CONTROLS = {
     lowerSpendCategory:{
         displayName: 'Lower Spend Category Limit',
         type: 'range',
-        // value1: 1,
-        // value2: 50,
         value: 1,
         step: 1,
         min: 1,
@@ -206,31 +207,46 @@ export const DATA_CONTROLS = {
     // }
 
 };
-export const layersAvaliable = ['phoneData'];
 
-export const avaliableDatalist = [
+//Arrays for layer one and two dropdowns
+export const firstLayersAvaliable = ['phoneData'];
+export const secondLayersAvaliable = [];
+
+export const avaliableFirstDatalist = [
     {label: 'Phone Data', value: 'phoneData', id: phoneData},
      ];
 
-export function recalculateLayers(){
-    for(let i = 0; i < layersAvaliable.length; i++){
-        avaliableDatalist[i] = {
-            label: layersAvaliable[i],
-            value: layersAvaliable[i],
-            id: layers[i]}
+export const avaliableSecondDatalist = [
+    {label: null, value: null, id: null},
+];
+
+//On new data imported add it to the layer selector drop downs
+export function recalculateFirstLayers(){
+    for(let i = 0; i < firstLayersAvaliable.length; i++){
+        avaliableFirstDatalist[i] = {
+            label: firstLayersAvaliable[i],
+            value: firstLayersAvaliable[i],
+            id: firstLayers[i]}
     }
 }
-
-const IMPORTED_DATA = avaliableDatalist;
-export function DataPicker({ currentData, onDataChange}){
+export function recalculateSecondLayers(){
+    for(let i = 0; i < secondLayersAvaliable.length; i++){
+        avaliableSecondDatalist[i] = {
+            label: secondLayersAvaliable[i],
+            value: secondLayersAvaliable[i],
+            id: secondLayers[i]}
+    }
+}
+const FIRST_IMPORTED_DATA = avaliableFirstDatalist;
+export function FirstDataPicker({ currentData, onDataChange}){
     return (
         <select
             className="data-selector"
-            style={dataPicker}
+            style={firstDataPicker}
             value={currentData}
             onChange={e => onDataChange (e.target.value)}
         >
-            {IMPORTED_DATA.map(data => (
+            {FIRST_IMPORTED_DATA.map(data => (
                 <option key={data.value} value={data.value}>
                     {data.label}
                 </option>
@@ -238,6 +254,24 @@ export function DataPicker({ currentData, onDataChange}){
         </select>
     );
 }
+const SECOND_IMPORTED_DATA = avaliableSecondDatalist;
+export function SecondDataPicker({ currentData, onDataChange}){
+    return (
+        <select
+            className="data-selector"
+            style={secondDataPicker}
+            value={currentData}
+            onChange={e => onDataChange (e.target.value)}
+        >
+            {SECOND_IMPORTED_DATA.map(data => (
+                <option key={data.value} value={data.value}>
+                    {data.label}
+                </option>
+            ))}
+        </select>
+    );
+}
+
 
 const MAPBOX_DEFAULT_MAPSTYLES = [
     { label: 'Streets V10', value: 'mapbox://styles/mapbox/streets-v10' },
@@ -266,6 +300,8 @@ const MAPBOX_DEFAULT_MAPSTYLES = [
         value: 'mapbox://styles/mapbox/navigation-guidance-night-v4'
     }
 ];
+
+
 export function MapStylePicker({ currentStyle, onStyleChange }) {
     return (
         <select
@@ -283,7 +319,7 @@ export function MapStylePicker({ currentStyle, onStyleChange }) {
     );
 }
 
-
+//Export data controls container to app
 export class DataControls extends Component{
     _onValueChange(settingName, newValue) {
         const { dataSettings } = this.props;
@@ -325,6 +361,7 @@ export class DataControls extends Component{
     }
 }
 
+//Export layer control container to app
 export class LayerControls extends Component {
     _onValueChange(settingName, newValue) {
         const { settings } = this.props;
@@ -365,6 +402,8 @@ export class LayerControls extends Component {
     }
 }
 
+
+//Decides what king of control is needed to be selected
 const Setting = props => {
     const { propType } = props;
    // console.log(propType);
@@ -383,6 +422,7 @@ const Setting = props => {
     }
 };
 
+//Checkbox container
 const Checkbox = ({ settingName, value, onChange }) => {
     return (
         <div key={settingName}>
@@ -398,6 +438,7 @@ const Checkbox = ({ settingName, value, onChange }) => {
     );
 };
 
+//Sliders container
 const Sliders = ({ settingName, value, propType, onChange }) => {
     const { max = 100 } = propType;
     const { min = 0 } = propType;

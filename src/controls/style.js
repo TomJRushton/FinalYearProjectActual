@@ -1,3 +1,4 @@
+//Style of the tooltip menu
 export const tooltipStyle = {
     position: 'absolute',
     padding: '4px',
@@ -9,6 +10,7 @@ export const tooltipStyle = {
     pointerEvents: 'none'
 };
 
+//Style of the map variant dropdown
 export const mapStylePicker = {
     borderRadius: 3,
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
@@ -22,7 +24,8 @@ export const mapStylePicker = {
     zIndex: 100
 };
 
-export const dataPicker = {
+//Style of the first layer dropdown
+export const firstDataPicker = {
     borderRadius: 3,
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
     fontFamily: 'ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif !important',
@@ -35,6 +38,21 @@ export const dataPicker = {
     zIndex: 100
 };
 
+//Style of the second layer dropdown
+export const secondDataPicker = {
+    borderRadius: 3,
+    boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
+    fontFamily: 'ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif !important',
+    fontSize: '12px',
+    lineHeight: 1.833,
+    width: 200,
+    position: 'absolute',
+    top: '70px',
+    left: '275px',
+    zIndex: 100
+};
+
+//Style of the data control container
 export const dataControl = {
     borderRadius: 3,
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
@@ -50,6 +68,7 @@ export const dataControl = {
     background: 'white'
 };
 
+//Style of the layer controls container
 export const layerControl = {
     borderRadius: 3,
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
@@ -65,6 +84,7 @@ export const layerControl = {
     background: 'white'
 };
 
+//Style of the chart container
 export const charts = {
     background: 'white',
     borderRadius: 3,
@@ -95,6 +115,7 @@ export const spinner = {
     zIndex: 110
 };
 
+//Style of the first layer upload button
 export const uploadButton1 = {
     borderRadius: 3,
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
@@ -110,6 +131,7 @@ export const uploadButton1 = {
     background: 'white'
 };
 
+//Style of the second layer upload button
 export const uploadButton2 = {
     borderRadius: 3,
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
@@ -123,4 +145,4 @@ export const uploadButton2 = {
     padding: '20px',
     zIndex: 100,
     background: 'white'
-}
+};
