@@ -17,10 +17,10 @@ export const mapStylePicker = {
     fontFamily: 'ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif !important',
     fontSize: '12px',
     lineHeight: 1.833,
-    width: 200,
+    width: 240,
     position: 'absolute',
-    top: '20px',
-    left: '275px',
+    top: '10px',
+    right: '20px',
     zIndex: 100
 };
 
@@ -33,7 +33,7 @@ export const firstDataPicker = {
     lineHeight: 1.833,
     width: 200,
     position: 'absolute',
-    top: '50px',
+    top: '10px',
     left: '275px',
     zIndex: 100
 };
@@ -47,7 +47,7 @@ export const secondDataPicker = {
     lineHeight: 1.833,
     width: 200,
     position: 'absolute',
-    top: '70px',
+    top: '30px',
     left: '275px',
     zIndex: 100
 };
@@ -61,7 +61,7 @@ export const dataControl = {
     lineHeight: 1.833,
     width: 200,
     position: 'absolute',
-    top: '125px',
+    top: '80px',
     left: '20px',
     padding: '20px',
     zIndex: 100,
@@ -77,7 +77,7 @@ export const layerControl = {
     lineHeight: 1.833,
     width: 200,
     position: 'absolute',
-    top: '20px',
+    top: '30px',
     right: '20px',
     padding: '20px',
     zIndex: 100,
@@ -91,12 +91,12 @@ export const charts = {
     boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
     fontFamily: 'ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif !important',
     fontSize: '12px',
-    lineHeight: 1.833,
+    lineHeight: 1,
     height: 210,
     padding: '10px',
     position: 'absolute',
     left: 20,
-    bottom: 20,
+    bottom: 10,
     width: 500,
     zIndex: 100
 };
@@ -122,11 +122,11 @@ export const uploadButton1 = {
     fontFamily: 'ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif !important',
     fontSize: '12px',
     lineHeight: 1.833,
-    width: 200,
+    width: 220,
     position: 'absolute',
-    top: '20px',
+    top: '10px',
     left: '20px',
-    padding: '20px',
+    padding: '10px',
     zIndex: 100,
     background: 'white'
 };
@@ -138,11 +138,11 @@ export const uploadButton2 = {
     fontFamily: 'ff-clan-web-pro, "Helvetica Neue", Helvetica, sans-serif !important',
     fontSize: '12px',
     lineHeight: 1.833,
-    width: 200,
+    width: 220,
     position: 'absolute',
-    top: '70px',
+    top: '45px',
     left: '20px',
-    padding: '20px',
+    padding: '10px',
     zIndex: 100,
     background: 'white'
 };
